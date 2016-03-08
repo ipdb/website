@@ -10,6 +10,9 @@ IPDB is operated by the IPDB Foundation, a charitable organization registered in
 ### How is IPDB funded?
 IPDB Foundation is currently funded by ascribe GmbH, but plans to become self-sufficient by selling transactions on IPDB.
 
+### Where can I find the IPDB governance documents?
+Our Articles of Association are available in German and in English.
+
 ## Caretakers
 ### What do Caretakers do? 
 Caretakers play a critical role in IPDB’s operation and governance (see “How does consensus work on IPDB?”). In addition to voting on transactions on IPDB, Caretakers vote to approve new Caretakers and to select the IPDB Foundation’s board of directors.
@@ -68,10 +71,10 @@ IPDB brings blockchain characteristics to an open source big data database: 1) d
 No. IPDB has native assets but those assets are not a currency. Instead, anyone can issue and transfer assets or tokens that represent something else. 
 
 ### Can other people see my transactions? 
-Yes, anyone can see the transactions made on IPDB. The BigchainDB software can be run as a private blockchain database but IPDB is a public instance.
+Yes. Anyone can see the transactions made on IPDB. IPDB is a public instance of BigchainDB.
 
 ### Can IPDB talk to other blockchains?
-BigchainDB has already been integrated into other services (see our Integrations section). Other integrations are waiting to be created. If you have a request, or better still, if you want to help out, you can head over to the BigchainDB developer community at Github.
+BigchainDB has already been integrated into other services (see our Integrations section). Other integrations are waiting to be created. If you have a request, or better still, if you want to help out, you can head over to the [BigchainDB developer community](https://github.com/bigchaindb/bigchaindb) at Github.
 
 ### Why is IPDB better than IPFS, Ethereum, Bitcoin, Dogecoin…?
 IPDB is not a replacement for decetralized computation platforms such as Ethereum, file storage from IPFS, or cryptocurrencies such as Bitcoin. IPDB is *complimentary* to them. We see IPDB as filling a gap in the decentralized stack. 
