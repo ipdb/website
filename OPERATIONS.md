@@ -102,6 +102,7 @@ March 17, 2016
 #### Transaction Agents
 - Users can purchase additional Transactions from Transaction Agents at a price negotiated with a Transaction Agent.
 - Transaction Agents pay for Transactions at a rate set by the Foundation.
+- Transaction Agents make a monthly payment to each of the Caretakers and the Foundation based on how many Transactions they sold during the previous month.
 - Transaction Agents compete with one another on price and services.
 
 #### Legal Requests
