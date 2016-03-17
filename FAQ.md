@@ -74,7 +74,7 @@ No. IPDB has native assets but those assets are not a currency. Instead, anyone 
 Yes. Anyone can see the transactions made on IPDB. IPDB is a public instance of BigchainDB.
 
 ### Can IPDB talk to other blockchains?
-BigchainDB has already been integrated into other services (see our Integrations section). Other integrations are waiting to be created. If you have a request, or better still, if you want to help out, you can head over to the [BigchainDB developer community](https://github.com/bigchaindb/bigchaindb) at Github.
+BigchainDB has already been integrated with other services (see our Integrations section). Other integrations are waiting to be created. If you have a request, or better still, if you want to help out, you can head over to the [BigchainDB developer community](https://github.com/bigchaindb/bigchaindb) at Github.
 
 ### Why is IPDB better than IPFS, Ethereum, Bitcoin, Dogecoin…?
 IPDB is not a replacement for decetralized computation platforms such as Ethereum, file storage from IPFS, or cryptocurrencies such as Bitcoin. IPDB is *complimentary* to them. We see IPDB as filling a gap in the decentralized stack. 
