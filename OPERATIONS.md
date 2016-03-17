@@ -3,7 +3,7 @@ March 17, 2016
 
 ## Definitions
 - **ascribe** means ascribe GmbH, a corporation registered in Berlin.
-- **BigchainDB** means the software project operated by ascribe and available at https://github.com/bigchaindb/bigchaindb.
+**BigchainDB** means the [BigchainDB project](https://github.com/bigchaindb/bigchaindb) operated by ascribe.
 - **Board** means the Board of Directors of the Foundation.
 - **Caretakers** means the member organizations of the Foundation.
 - **Caretaker Nodes** means the instance of BigchainDB operated by a Caretaker.
@@ -14,7 +14,7 @@ March 17, 2016
 - **User** means an individual using IPDB, as defined by a unique Key.
 
 ## Roadmap
-- May 2016 - Announcements of a “public BigchainDB” at various conferences: re:publica (Berlin), csv,conf,v2 (Berlin), OuiShare (Paris), including the announcement of some Caretakers and a private test net.
+- May 2016 - Announcements of a “public BigchainDB” at various conferences: [Re:publica](https://re-publica.de/en) (Berlin, May 2-4, 2016), [csv,conf,v2](http://csvconf.com/) (Berlin, May 3-4, 2016), [OuiShare](http://2016.ouisharefest.com/) (Paris), including the announcement of some Caretakers and a private test net.
 - June 8, 2016 - Announcement of IPDB at Internet Archive event, including announcement of additional Caretakers and a public test net.
 - September 1, 2016 - Launch of public production net, along with billing system.
 
@@ -25,9 +25,10 @@ March 17, 2016
 	To support an open Internet by developing and operating a decentralized database based on BigchainDB that anyone can use.
 
 ### Overview
-- The Foundation is governed by its members. Caretakers will elect a board
+- The Foundation is governed by its members. Caretakers will elect a Board. 
 
 ### Rules
+- [INFO ON BYLAWS, INTERACTION WITH THESE RULES]
 
 ### Member Organizations: Caretakers
 
@@ -48,12 +49,6 @@ March 17, 2016
 	- Manipulated or attempted to manipulate a past transaction.
 - A Caretaker can be removed for any reason with a 3/4 vote of all Caretakers.
 
-#### Term Limit
-- Initial Caretakers will be provided with a 
-- Caretakers are elected for one term with a two year duration. 
-- Caretakers are automatically nominated for reelection at the end of their term unless they ask to be excluded.
-- Caretakers can serve a maximum of 4 terms. 
-
 ### Board of Directors
 
 #### Number of Directors
@@ -63,6 +58,13 @@ March 17, 2016
 #### Electing Directors
 - Directors can be nominated by the Caretakers or by the Board.
 - The Directors will be elected by the Caretakers. 
+
+#### Term Limit
+- Initial members of the Board will be appointed for a term of not more than three years.
+- Directors will be elected for three year terms, staggered so no more than two Directors are replaced at a time.
+- Directors are elected for one term with a two year duration. 
+- Directors are automatically nominated for reelection at the end of their term unless they ask to be excluded.
+- Directors can serve a maximum of 3 consecutive terms. 
 
 ## Operations
 
@@ -119,17 +121,15 @@ March 17, 2016
 
 #### Board Meetings
 - The Board will meet at least every 90 days. Board meetings must be conducted in person or by tele- or videoconference.
-A quorum of 4 Board members is required to call the meeting to order.
-- Votes by the Board pass with a simple majority, except for votes to add or remove Caretakers
+- A quorum of 4 Board members is required to call the meeting to order.
 
 #### Votes by Board
-
 - Votes by the Board must be conducted in person or by tele- or videoconference. 
 - Votes by the Board pass with a simple majority.
 
 #### Votes by Caretakers
 - Votes by the Caretakers must be conducted in person, by tele- or videoconference, or through the IPDB voting system.
-- Votes taken by Caretakers will be binding on the Board if the vote passes with a 75% majority.
+- Votes taken by Caretakers will be binding on the Board if the vote passes with a 3/4 majority.
 
 #### Changes to the Rules
 - Changes to the Rules must be approved by a majority of the Board and a majority of the Caretakers.
