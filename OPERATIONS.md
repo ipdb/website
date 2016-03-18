@@ -114,8 +114,7 @@ March 17, 2016
 #### Transaction Security
 - If a Caretaker repeatedly votes against the majority of Caretakers, the Caretaker’s Key will be automatically revoked. 
 	- [DETAILS]
-- If a Caretaker attempts to modify a past Transaction, the Caretaker’s Key will be automatically revoked. The Caretaker can apply for a new key after 30 days, including an explanation of the incident.
-	- [DETAILS]
+- If a Caretaker attempts to modify a past Transaction, the Caretaker’s status will be suspended automatically by the other Caretakers. The Caretaker can apply to be reinstated after a complete review of the incident, or 30 days, whichever is longer.
 
 ### Governance
 
@@ -124,11 +123,11 @@ March 17, 2016
 - A quorum of 4 Board members is required to call the meeting to order.
 
 #### Votes by Board
-- Votes by the Board must be conducted in person or by tele- or videoconference. 
+- Votes by the Board must be conducted in person or by video conference. 
 - Votes by the Board pass with a simple majority.
 
 #### Votes by Caretakers
-- Votes by the Caretakers must be conducted in person, by tele- or videoconference, or through the IPDB voting system.
+- Votes by the Caretakers must be conducted in person, by video conference, or through the IPDB voting system.
 - Votes taken by Caretakers will be binding on the Board if the vote passes with a 3/4 majority.
 
 #### Changes to the Rules
