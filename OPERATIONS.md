@@ -3,7 +3,7 @@
 ## Definitions
 - **ascribe** means ascribe GmbH, a corporation registered in Berlin, Germany.
 **BigchainDB** means the [BigchainDB project](https://github.com/bigchaindb/bigchaindb) operated by ascribe.
-- **Board** means the Board of Directors of the Foundation.
+- **Executive** means the Executive Board of the Foundation.
 - **Caretakers** means the member organizations of the Foundation.
 - **Caretaker Nodes** means the instance of BigchainDB operated by a Caretaker.
 - **Foundation** means the IPDB Foundation e.V., registered in Berlin, Germany.
@@ -13,9 +13,13 @@
 - **User** means an individual using IPDB, as defined by a unique Key.
 
 ## Roadmap
+### Launch Roadmap
 - May 2016 - Announcements of a “public BigchainDB” at various conferences: [Re:publica](https://re-publica.de/en) (Berlin, May 2-4, 2016), [csv,conf,v2](http://csvconf.com/) (Berlin, May 3-4, 2016), [OuiShare](http://2016.ouisharefest.com/) (Paris), including the announcement of some Caretakers and a private test net.
 - June 8, 2016 - Announcement of IPDB at Internet Archive event, including announcement of additional Caretakers and a public test net.
-- September 1, 2016 - Launch of public production net, along with billing system.
+- September 2016 - Launch of public production net, along with billing system.
+
+### Technical Roadmap
+See [BigchainDB roadmap](https://github.com/bigchaindb/bigchaindb/blob/develop/ROADMAP.md).
 
 ## Structure
 ### Mission Statement
@@ -25,10 +29,10 @@ To support an open and decentralized Internet, resist censorship, and enable new
 
 ### Overview
 - The Foundation is registered in Berlin, Germany, as an *[Eingetragemer Verein](https://en.wikipedia.org/wiki/Eingetragener_Verein)*, or e.V., a registered voluntary association. 
-- The Foundation is governed by its members, the Caretakers, and by its Board.
+- The Foundation is governed by its members, the Caretakers, and by its Executive.
 
-### Rules
-- [INFO ON BYLAWS, INTERACTION WITH THESE RULES - NEEDS INPUT FROM LAWYERS]
+### Articles
+- [INFO ON ARTICLES, INTERACTION WITH THESE RULES - NEEDS INPUT FROM LAWYERS]
 
 ### Member Organizations: Caretakers
 
@@ -39,7 +43,7 @@ To support an open and decentralized Internet, resist censorship, and enable new
 #### Adding Caretakers
 - Caretakers can be added by a 2/3 majority vote of existing Caretakers.
 - Organizations that wish to become Caretakers can:
-	- be nominated by an existing Caretaker or the Board.
+	- be nominated by an existing Caretaker or the Executive.
 	- apply to be considered as a Caretaker. 
 
 #### Removing Caretakers
@@ -49,22 +53,14 @@ To support an open and decentralized Internet, resist censorship, and enable new
 	- Manipulated or attempted to manipulate a past transaction.
 - A Caretaker can be removed for any reason with a 3/4 vote of all Caretakers.
 
-### Board of Directors
+### Executive Directors
 
-#### Number of Directors
-- At any given time there will be no more than 5 Directors.
-- The Directors will include at least one individual who is employed by ascribe and at least one individual who is not employed by or a director of any of the Caretakers.
+#### Number of Executives
+- At any given time there will be no more than 5 Executives.
+- The Executives will include at least one individual who is employed by ascribe and at least one individual who is not employed by or a director of any of the Caretakers.
 
-#### Electing Directors
-- Directors can be nominated by the Caretakers or by the Board.
-- The Directors will be elected by the Caretakers. 
-
-#### Term Limit
-- Initial members of the Board will be appointed for a term of not more than three years.
-- Directors will be elected for three year terms, staggered so no more than two Directors are replaced at a time.
-- Directors are elected for one term with a two year duration. 
-- Directors are automatically nominated for reelection at the end of their term unless they ask to be excluded.
-- Directors can serve a maximum of 3 consecutive terms. 
+#### Electing Executives
+- Executives will be nominated and elected by the Caretakers.
 
 ## Operations
 
@@ -98,13 +94,13 @@ To support an open and decentralized Internet, resist censorship, and enable new
 
 #### User Transactions
 - Anyone can send a Transaction to IPDB if that Transaction is signed with their Key.
-- Users get [NUMBER] free transactions per month.
-- Users who want more than [NUMBER] transactions can buy addional transactions from the Foundation or through a Transaction Agents.
+- Users get [NUMBER] free Transactions per month, and [VOLUME] transfer per month.
+- Users who need more than the free service can buy addional Transactions or capacity from the Foundation or through a Transaction Agents.
 
 #### Transaction Agents
-- Users can purchase additional Transactions from Transaction Agents at a price negotiated with a Transaction Agent.
-- Transaction Agents pay for Transactions at a rate set by the Foundation.
-- Transaction Agents make a monthly payment to each of the Caretakers and the Foundation based on how many Transactions they sold during the previous month.
+- Users can purchase additional Transactions or capacity from Transaction Agents at a price negotiated with a Transaction Agent.
+- Transaction Agents pay for Transactions and capacity at a rate set by the Foundation.
+- Transaction Agents make a monthly payment to each of the Caretakers and the Foundation based on their users’ usage during the previous month.
 - Transaction Agents compete with one another on price and services.
 
 #### Legal Requests
@@ -118,17 +114,17 @@ To support an open and decentralized Internet, resist censorship, and enable new
 
 ### Governance
 
-#### Board Meetings
-- The Board will meet at least every 90 days. Board meetings must be conducted in person or by tele- or videoconference.
-- A quorum of 4 Board members is required to call the meeting to order.
+#### Executive Meetings
+- The Executive will meet at least every 90 days. Executive meetings must be conducted in person or by tele- or videoconference.
+- A quorum of half the Executive members is required.
 
-#### Votes by Board
-- Votes by the Board must be conducted in person or by video conference. 
-- Votes by the Board pass with a simple majority.
+#### Votes by Executive
+- Votes by the Executive must be conducted in person or by video conference. 
+- Votes by the Executive pass with a simple majority.
 
 #### Votes by Caretakers
 - Votes by the Caretakers must be conducted in person, by video conference, or through the IPDB voting system.
-- Votes taken by Caretakers will be binding on the Board if the vote passes with a 3/4 majority.
+- Votes taken by Caretakers will be binding on the Executive if the vote passes with a 3/4 majority.
 
 #### Changes to the Rules
-- Changes to the Rules must be approved by a majority of the Board and a majority of the Caretakers.
+- Changes to the Rules must be approved by a majority of the Executive and a majority of the Caretakers.
