@@ -1,0 +1,33 @@
+# The Basics
+# --------------------
+title:          "IPDB"
+description:    "The Interplanetary database."
+url:            "https://ipdb.io"
+email:          "contact@ipdb.io"
+
+github:
+    org:        "ipdb"
+    repo:       "site"
+
+analyticsID:    ""
+
+
+# Urls
+# --------------------
+permalink:      /:title/
+
+
+# Generator
+# --------------------
+source:         ./_src
+destination:    ./_dist
+
+
+# Plugins
+# --------------------
+plugins:
+    - jekyll-sitemap
+    - jekyll-redirect-from
+
+exclude:
+    - "*README.md"

@@ -1,0 +1,21 @@
+sudo: required
+dist: trusty
+
+language: ruby
+rvm:
+    - 2.4.0
+
+cache:
+  bundler: true
+  directories:
+  - $TRAVIS_BUILD_DIR/node_modules
+
+before_install:
+    - nvm install 8
+
+before_script: "_ci/setup.sh"
+script: "_ci/build.sh"
+after_success: "_ci/deploy.sh"
+
+notifications:
+    email: false

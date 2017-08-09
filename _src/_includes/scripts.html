@@ -1,0 +1,66 @@
+
+<!--
+//
+// Site scripts
+//
+-->
+<script src="/assets/js/ipdb.min.js"></script>
+
+{% if page.js %}
+    <script src="/assets/js/{{ page.js }}"></script>
+{% elsif layout.js %}
+    <script src="/assets/js/{{ layout.js }}"></script>
+{% endif %}
+
+
+<!--
+//
+// Google Analytics
+//
+-->
+<script>
+if (!_dntEnabled()) {
+    (function(window) {
+
+        // Google Analytics async snippet
+        // http://goo.gl/3FPNDx
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
+        ga.l=+new Date;
+
+        // Create the GA tracker
+        ga('create', '{{ site.analyticsID }}', 'auto', {siteSpeedSampleRate: 10});
+
+        {% if jekyll.environment != 'production' %}
+            // In non-production mode, simply log GA hits to the console.
+            // Note, tasks must be set before sending the first hit
+            ga(function(tracker) {
+                tracker.set('sendHitTask', function() {
+                    // Throw to stop subsequent tasks.
+                    throw 'Abort tracking in non-production environments.'
+                });
+            });
+        {% endif %}
+
+        // Send initial pageview
+        ga('send', 'pageview');
+
+        // Track uncaught errors
+        window.onerror = function(message, url, line, col) {
+            var desc = message + ' (line: ' + line + ', url: ' + url + ', col: '
+            + col + ')';
+
+            ga('send', 'exception', {
+                exDescription: 'window.onerror: ' + desc,
+                exFatal: false
+            });
+        };
+
+    }(window));
+}
+</script>
+
+{% if jekyll.environment == "production" %}
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+{% else %}
+    <script async src="//www.google-analytics.com/analytics_debug.js"></script>
+{% endif%}

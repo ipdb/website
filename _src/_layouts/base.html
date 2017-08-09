@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+    {% include head.html %}
+
+    {% capture id %}{% if page.front_page %}front{% else %}{{ page.url | replace:'/','-' | replace_first:'-','' | replace:'.html','' | replace:'-index','' }}{% endif %}{% endcapture %}
+
+    <body class="page-{{ id | remove:'-' }}" role="document">
+
+        <!--[if lt IE 9]>
+        <div class="browsehappy alert alert-warning">
+            <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">activate Google Chrome Frame</a> to improve your experience.</p>
+        </div>
+        <![endif]-->
+
+        {{ content }}
+
+        {% include scripts.html %}
+
+    </body>
+
+</html>

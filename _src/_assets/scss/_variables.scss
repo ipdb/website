@@ -1,0 +1,40 @@
+//
+// Colors
+//
+$brand-01:                  # !default;
+$brand-02:                  # !default;
+$brand-03:                  # !default;
+$brand-04:                  # !default;
+$brand-05:                  # !default;
+$brand-06:                  # !default;
+
+//
+// Typography
+//
+$font-family-base:           !default;
+$font-family-silkscreen:     !default;
+$font-size-root:            16px !default;
+$font-size-root-lg:         18px !default;
+$line-height:               1.4 !default;
+$spacer:                    1.5rem !default;
+
+$font-size-base:            1rem !default;
+$font-size-large:           1.3rem !default;
+$font-size-small:           .8rem !default;
+$font-size-mini:            .7rem !default;
+
+$font-weight-normal:        400 !default;
+$font-weight-bold:          700 !default;
+
+$text-color:                $brand-05 !default;
+
+//
+// Responsive breakpoints
+//
+$screen-sm-min:             40em !default;
+$screen-md-min:             58em !default;
+$screen-lg-min:             85em !default;
+
+$screen-sm:                 'min-width: #{$screen-sm-min}';
+$screen-md:                 'min-width: #{$screen-md-min}';
+$screen-lg:                 'min-width: #{$screen-lg-min}';

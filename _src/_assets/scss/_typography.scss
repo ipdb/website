@@ -1,0 +1,65 @@
+@import 'variables';
+
+html {
+    font-size: $font-size-root;
+    -webkit-tap-highlight-color: transparent;
+
+    @media ($screen-lg) {
+        font-size: $font-size-root-lg;
+    }
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    color: $text-color;
+    background: $brand-04;
+    margin: 0;
+
+    // Controversial! But prevents text flickering in
+    // Safari/Firefox when animations are running
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 { // stylelint-disable-line selector-list-comma-newline-after
+    color: $brand-03;
+    font-family: $font-family-silkscreen;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+p,
+ul,
+ol {
+    margin: 0 0 $spacer;
+}
+
+
+//
+// Lists
+//
+ul,
+ol {
+    margin-left: 0;
+    padding-left: $spacer;
+}
+
+a {
+    color: $brand-03;
+
+    &:hover,
+    &:focus {
+        color: darken($brand-03, 20%);
+    }
+}
+
+.lead {
+    color: $brand-03;
+    font-size: $font-size-large;
+}

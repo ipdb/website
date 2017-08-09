@@ -1,0 +1,10 @@
+.sass-cache
+.jekyll-metadata
+node_modules
+Gemfile.lock
+_dist
+.awspublish*
+yarn.lock
+.yarnclean
+.bundle
+package-lock.json
