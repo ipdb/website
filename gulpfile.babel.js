@@ -134,8 +134,8 @@ export const html = () => src(DIST + '**/*.html')
 // Styles
 //
 export const css = () => src([
-        SRC + '_assets/styles/ipdb.scss',
-        SRC + '_assets/styles/page-*.scss'
+        SRC + '_assets/scss/ipdb.scss',
+        SRC + '_assets/scss/page-*.scss'
     ])
     .pipe($.if(!(isProduction || isStaging), $.sourcemaps.init()))
     .pipe($.sass({
@@ -179,12 +179,12 @@ export const criticalCss = (done) => {
 //
 export const js = () =>
     src([
-        SRC + '_assets/scripts/ipdb.js',
-        SRC + '_assets/scripts/page-*.js'
+        SRC + '_assets/js/ipdb.js',
+        SRC + '_assets/js/page-*.js'
     ])
     .pipe($.if(!(isProduction || isStaging), $.sourcemaps.init()))
     .pipe($.include({
-        includePaths: ['node_modules', SRC + '_assets/scripts']
+        includePaths: ['node_modules', SRC + '_assets/js']
     })).on('error', onError)
     .pipe($.if(isProduction || isStaging, minify())).on('error', onError)
     .pipe($.if(!(isProduction || isStaging), $.sourcemaps.write()))
