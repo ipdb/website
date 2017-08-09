@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * Returns true or false based on whether doNotTack is enabled. It also takes into account the
  * anomalies, such as !bugzilla 887703, which effect versions of Fx 31 and lower. It also handles

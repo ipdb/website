@@ -12,7 +12,9 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "test": "eslint _src/_assets/js/* && stylelint _src/_assets/styles/**/*.scss"
+    "eslint": "./node_modules/eslint/bin/eslint.js _src/_assets/js/*",
+    "stylelint": "stylelint _src/_assets/styles/**/*.scss",
+    "test": "npm run eslint && npm run stylelint"
   },
   "browserslist": [
     "last 2 versions",
