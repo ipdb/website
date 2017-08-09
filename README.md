@@ -1,5 +1,7 @@
 # ![ipdb/site](.png)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ipdb/site.svg)](https://greenkeeper.io/)
+
 > The blockchain database governance site the universe needs
 > https://ipdb.io
 
