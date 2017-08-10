@@ -52,7 +52,9 @@ body {
 //
 // Headings
 //
-h1, h2, h3, h4, h5 { // stylelint-disable-line selector-list-comma-newline-after
+
+/* stylelint-disable selector-list-comma-newline-after  */
+h1, h2, h3, h4, h5 {
     color: $headings-color;
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
@@ -65,6 +67,33 @@ h1, h2, h3, h4, h5 { // stylelint-disable-line selector-list-comma-newline-after
     }
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    margin-top: ($spacer * 2);
+    margin-bottom: ($spacer * 2);
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+}
+
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+/* stylelint-enable */
+
+
+//
+// Body text
+//
 p,
 ul,
 ol {
@@ -77,10 +106,12 @@ ol {
 //
 a {
     color: $link-color;
+    text-decoration: none;
 
     &:hover,
     &:focus {
         color: lighten($link-color, 10%);
+        outline: 0;
     }
 }
 

@@ -3,7 +3,7 @@
 //
 $brand-01:                  #cd2d2d !default;
 $brand-02:                  #779bc3 !default;
-$brand-03:                  #444 !default;
+$brand-03:                  #201a16 !default;
 $brand-04:                  #444 !default;
 $brand-05:                  #636363 !default;
 $brand-06:                  #444 !default;
@@ -14,9 +14,9 @@ $brand-06:                  #444 !default;
 $font-family-base:          'futura-pt', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $font-family-monospace:     Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 
-$font-size-root:            16px !default;
-$font-size-root-lg:         18px !default;
-$line-height:               1.5 !default;
+$font-size-root:            18px !default;
+$font-size-root-lg:         20px !default;
+$line-height:               1.4 !default;
 $spacer:                    2rem !default;
 
 $font-weight-light:         300 !default;
@@ -24,20 +24,20 @@ $font-weight-normal:        400 !default;
 $font-weight-bold:          600 !default;
 
 $font-size-base:            1rem !default;
-$font-size-large:           1.3rem !default;
+$font-size-large:           1.2rem !default;
 $font-size-small:           .8rem !default;
 $font-size-mini:            .7rem !default;
 
-$font-size-h1:              2.7rem !default;
-$font-size-h2:              2.3rem !default;
-$font-size-h3:              1.8rem !default;
-$font-size-h4:              1.45rem !default;
+$font-size-h1:              2.5rem !default;
+$font-size-h2:              2rem !default;
+$font-size-h3:              1.7rem !default;
+$font-size-h4:              1.4rem !default;
 $font-size-h5:              $font-size-large !default;
 $font-size-h6:              $font-size-base !default;
 
 $headings-font-family:      inherit !default;
-$headings-font-weight:      $font-weight-light !default;
-$headings-line-height:      1.3 !default;
+$headings-font-weight:      $font-weight-normal !default;
+$headings-line-height:      inherit !default;
 $headings-color:            $brand-03 !default;
 
 $text-color:                $brand-05 !default;
