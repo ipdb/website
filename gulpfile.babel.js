@@ -268,10 +268,10 @@ export const server = (done) => {
 // Watch for file changes
 //
 export const watchSrc = () => {
-    watch(SRC + '_assets/styles/**/*.scss').on('all', series(css))
-    watch(SRC + '_assets/scripts/**/*.js').on('all', series(js, browser.reload))
-    watch(SRC + '_assets/images/**/*.{png,jpg,jpeg,gif,webp}').on('all', series(images, browser.reload))
-    watch(SRC + '_assets/images/**/*.{svg}').on('all', series(svg, browser.reload))
+    watch(SRC + '_assets/scss/**/*.scss').on('all', series(css))
+    watch(SRC + '_assets/js/**/*.js').on('all', series(js, browser.reload))
+    watch(SRC + '_assets/img/**/*.{png,jpg,jpeg,gif,webp}').on('all', series(images, browser.reload))
+    watch(SRC + '_assets/img/**/*.{svg}').on('all', series(svg, browser.reload))
     watch([SRC + '**/*.{html,xml,json,txt,md,yml}', './*.yml', SRC + '_includes/svg/*']).on('all', series('build', browser.reload))
 }
 

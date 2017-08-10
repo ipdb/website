@@ -12,9 +12,10 @@ html {
 body {
     font-family: $font-family-base;
     font-size: $font-size-base;
+    font-weight: $font-weight-normal;
     line-height: $line-height;
     color: $text-color;
-    background: $brand-04;
+    background: #fff;
     margin: 0;
 
     // Controversial! But prevents text flickering in
@@ -23,9 +24,39 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+//
+// Quickly fade in all content after
+// fonts have loaded. Not quite useful,
+// but beautiful.
+//
+.hero,
+.header,
+.section,
+.content {
+    .row {
+        transition: .15s ease-out;
+
+        .wf-loading & {
+            opacity: 0;
+        }
+
+        .wf-active &,
+        .wf-inactive & {
+            opacity: 1;
+        }
+    }
+}
+
+
+//
+// Headings
+//
 h1, h2, h3, h4, h5 { // stylelint-disable-line selector-list-comma-newline-after
-    color: $brand-03;
-    font-family: $font-family-silkscreen;
+    color: $headings-color;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
     margin-top: $spacer;
     margin-bottom: $spacer;
 
@@ -42,6 +73,19 @@ ol {
 
 
 //
+// Links
+//
+a {
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+        color: lighten($link-color, 10%);
+    }
+}
+
+
+//
 // Lists
 //
 ul,
@@ -50,14 +94,6 @@ ol {
     padding-left: $spacer;
 }
 
-a {
-    color: $brand-03;
-
-    &:hover,
-    &:focus {
-        color: darken($brand-03, 20%);
-    }
-}
 
 .lead {
     color: $brand-03;

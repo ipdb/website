@@ -5,7 +5,7 @@
 
     {% capture id %}{% if page.front_page %}front{% else %}{{ page.url | replace:'/','-' | replace_first:'-','' | replace:'.html','' | replace:'-index','' }}{% endif %}{% endcapture %}
 
-    <body class="page-{{ id | remove:'-' }}" role="document">
+    <body class="page--{{ id | remove:'-' }}" role="document">
 
         <!--[if lt IE 9]>
         <div class="browsehappy alert alert-warning">

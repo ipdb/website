@@ -1,7 +1,7 @@
 # The Basics
 # --------------------
 title:          "IPDB"
-description:    "The Interplanetary database."
+description:    "The Interplanetary Database."
 url:            "https://ipdb.io"
 email:          "contact@ipdb.io"
 
@@ -10,6 +10,7 @@ github:
     repo:       "site"
 
 analyticsID:    ""
+typekitID:      "rnq6byg"
 
 
 # Urls

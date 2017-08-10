@@ -1,0 +1,10 @@
+.hero {
+    background: $brand-02;
+    padding: 2rem;
+
+    &,
+    .hero__title,
+    .hero__action {
+        color: #fff;
+    }
+}
