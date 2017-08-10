@@ -1,0 +1,46 @@
+- name: COALA
+  link: http://coala.global
+
+- name: Internet Archive
+  link: https://archive.org
+
+- name: Human Data Commons Foundation
+  link: https://humandatacommons.org
+
+- name: Dyne.org
+  link: https://www.dyne.org
+
+- name: Monax
+  link: https://monax.io
+
+- name: IPFS
+  link: https://ipfs.io
+
+- name: Synereo
+  link: http://www.synereo.com
+
+- name: unMonastery
+  link: http://unmonastery.org
+
+- name: BigchainDB
+  link: https://www.bigchaindb.com
+
+- name: OpenMedia
+  link: https://openmedia.org
+
+- name: SmartContract
+  link: https://smartcontract.com
+
+- name: OuiShare
+  link: http://ouishare.net
+
+- name: Tendermint
+  link: https://tendermint.com
+
+- name: Stratumn
+  link: https://www.stratumn.com
+
+- name: CREATE-NET
+  link: http://create-net.fbk.eu
+
+
