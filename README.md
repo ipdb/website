@@ -5,7 +5,7 @@
 
 🐉🐲 **Highly in development right now, nothing in `master` is final. Content & structure development [happening in Google Doc](https://docs.google.com/a/bigchaindb.com/document/d/1bgQozCf47XGOViYT0KOCwRV2UdPlpeDQh1JuAPaHi-A/edit?usp=sharing)** 🐲🐉
 
-[![Build Status](https://travis-ci.org/ipdb/site.io.svg?branch=master)](https://travis-ci.org/ipdb/site.io)
+[![Build Status](https://travis-ci.org/ipdb/site.svg?branch=master)](https://travis-ci.org/ipdb/site)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
 [![js ascribe](https://img.shields.io/badge/js-ascribe-39BA91.svg)](https://github.com/ascribe/javascript)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ipdb/site.svg)](https://greenkeeper.io/)
