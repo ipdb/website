@@ -1,7 +1,5 @@
 # ![ipdb/site](.png)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ipdb/site.svg)](https://greenkeeper.io/)
-
 > The blockchain database governance site the universe needs
 > https://ipdb.io
 
@@ -10,6 +8,7 @@
 [![Build Status](https://travis-ci.org/ipdb/site.io.svg?branch=master)](https://travis-ci.org/ipdb/site.io)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
 [![js ascribe](https://img.shields.io/badge/js-ascribe-39BA91.svg)](https://github.com/ascribe/javascript)
+[![Greenkeeper badge](https://badges.greenkeeper.io/ipdb/site.svg)](https://greenkeeper.io/)
 
 # Contents
 
