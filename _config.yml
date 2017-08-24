@@ -12,6 +12,9 @@ github:
 analyticsID:    ""
 typekitID:      "bko7hwo"
 
+signup:
+    button: Sign up for free (testnet)
+    link: https://developers.ipdb.io
 
 # Urls
 # --------------------

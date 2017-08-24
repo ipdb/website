@@ -3,15 +3,16 @@ layout: base
 front_page: true
 ---
 
+{% assign content = site.data.content-front %}
+
 <header class="hero section">
 
     {% include menu-main.html %}
 
     <div class="hero__content row">
         <hgroup>
-            <h1 class="hero__title">The blockchain database platform
-for the decentralized stack</h1>
-            <a href="/getstarted/" class="hero__action button button--primary">Sign up for free (testnet)</a>
+            <h1 class="hero__title">{{ content.hero.title }}</h1>
+            <a href="{{ site.signup.link }}" class="hero__action button button--primary">{{ site.signup.button }}</a>
         </hgroup>
     </div>
 </header>
@@ -20,13 +21,13 @@ for the decentralized stack</h1>
 <section class="section section--intro">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">A planetary-scale blockchain database</h1>
-            <p class="section__description">The distributed, permanent web is evolving and needs a decentralized database. We are that database.</p>
+            <h1 class="section__title">{{ content.intro.title }}</h1>
+            <p class="section__description">{{ content.intro.description }}</p>
         </header>
 
-        <p>IPDB is a planetary-scale blockchain database built on BigchainDB. It’s a ready-to-use public network with a focus on strong governance. It shares all the features of BigchainDB to make developers’ lives easier.</p>
+        {{ content.intro.text | markdownify }}
 
-        <a href="" class="button button--primary">Sign up for free (testnet)</a>
+        <a href="{{ site.signup.link }}" class="hero__action button button--primary">{{ site.signup.button }}</a>
         <a href="" class="button button--primary">Read IPDB Documentation</a>
     </div>
 </section>
@@ -35,8 +36,8 @@ for the decentralized stack</h1>
 <section class="section section--background section--foundation">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">IPDB Foundation: human-scale governance</h1>
-            <p class="section__description">IPDB relies on caretakers to run the BigchainDB nodes that store and validate transactions. The IPDB Caretakers are the members of the IPDB Foundation and … summarize Jurisdictional diversity & Not for profit</p>
+            <h1 class="section__title">{{ content.foundation.title }}</h1>
+            <p class="section__description">{{ content.foundation.description }}</p>
         </header>
     </div>
     <div class="row">
@@ -44,7 +45,7 @@ for the decentralized stack</h1>
     </div>
 
     <div class="row">
-        <a href="/foundation/" class="button button--primary">Learn about IPDB Foundation and its caretakers</a>
+        <a href="/foundation/" class="button button--primary">{{ content.foundation.button }}</a>
     </div>
 </section>
 
@@ -52,8 +53,8 @@ for the decentralized stack</h1>
 <section class="section section--roadmap">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">Roadmap</h1>
-            <p class="section__description">The IPDB rollout plan follows six steps. First, a test network for demos, then for invited users, and then for the general public. When the test phase is complete, a production network will be launched in the same sequence.</p>
+            <h1 class="section__title">{{ content.roadmap.title }}</h1>
+            <p class="section__description">{{ content.roadmap.description }}</p>
         </header>
 
         <div class="roadmap">
@@ -66,8 +67,8 @@ for the decentralized stack</h1>
 <section class="section section--background section--getstarted">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">Get started</h1>
-            <p class="section__description">GET https://test.ipdb.io/api/</p>
+            <h1 class="section__title">{{ content.getstarted.title }}</h1>
+            <p class="section__description">{{ content.getstarted.description }}</p>
         </header>
     </div>
 </section>
@@ -76,21 +77,21 @@ for the decentralized stack</h1>
 <section class="section section--connect">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">Stay connected</h1>
-            <p class="section__description">Stalk us like there's no tomorrow.</p>
+            <h1 class="section__title">{{ content.connect.title }}</h1>
+            <p class="section__description">{{ content.connect.description }}</p>
         </header>
 
         <div class="connect connect--blog">
-            <h2 class="connect__title">From the blog</h2>
+            <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
             <a href="https://blog.ipdb.io" class="button button--primary">IPDB Blog</a>
         </div>
 
         <div class="connect connect--newsletter">
-            <h2 class="connect__title">Newsletter</h2>
+            <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
         </div>
 
         <div class="connect connect--social">
-            <h2 class="connect__title">Follow</h2>
+            <h2 class="connect__title">{{ content.connect.social_title }}</h2>
         </div>
     </div>
 </section>

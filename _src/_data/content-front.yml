@@ -1,0 +1,33 @@
+hero:
+    title: "The blockchain database platform for the decentralized stack"
+
+
+intro:
+    title: "A planetary-scale blockchain database"
+    description: "The distributed, permanent web is evolving and needs a decentralized database. We are that database."
+    text: |
+        IPDB is a planetary-scale blockchain database built on [BigchainDB](https://www.bigchaindb.com). It’s a ready-to-use public network with a focus on strong governance. It shares all the features of BigchainDB to make developers’ lives easier.
+
+
+foundation:
+    title: "IPDB Foundation: human-scale governance"
+    description: "IPDB relies on caretakers to run the BigchainDB nodes that store and validate transactions. The IPDB Caretakers are the members of the IPDB Foundation and … summarize Jurisdictional diversity & Not for profit"
+    button: "Learn about IPDB Foundation and its caretakers"
+
+
+roadmap:
+    title: "Roadmap"
+    description: "The IPDB rollout plan follows six steps. First, a test network for demos, then for invited users, and then for the general public. When the test phase is complete, a production network will be launched in the same sequence."
+
+
+getstarted:
+    title: "Get started"
+    description: "GET https://test.ipdb.io/api/"
+
+
+connect:
+    title: "Stay connected"
+    description: "Stalk us like there's no tomorrow."
+    blog_title: "From the blog"
+    newsletter_title: "Newsletter"
+    social_title: "Follow us"
