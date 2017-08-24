@@ -15,22 +15,23 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
 ##
 elif [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
-    gulp deploy --live;
+    #gulp deploy --live;
+    gulp deploy --beta;
 
 else
 
-    echo "$(tput setaf 64)" # green
+    tput setaf 64 # green
     echo "---------------------------------------------"
     echo "      ✓ nothing to deploy "
     echo "---------------------------------------------"
-    echo "$(tput sgr0)" # reset
+    tput sgr0 # reset
 
 fi;
 
-echo "$(tput setaf 64)" # green
+tput setaf 64 # green
 echo "---------------------------------------------"
 echo "         ✓ done deployment "
 echo "---------------------------------------------"
-echo "$(tput sgr0)" # reset
+tput sgr0 # reset
 
 exit;
