@@ -114,7 +114,7 @@ a {
 
     &:hover,
     &:focus {
-        color: lighten($link-color, 10%);
+        color: darken($link-color, 10%);
         outline: 0;
     }
 }

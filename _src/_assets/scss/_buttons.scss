@@ -1,0 +1,122 @@
+//
+// Buttons
+// ---
+// ipdb.io
+//
+@import 'variables';
+@import 'mixins';
+
+.button {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    box-shadow: none;
+    transition: .25s ease-out;
+
+    // default button
+    @include button-size($btn-padding-y, $btn-padding-x, .9rem, $line-height, $btn-border-radius);
+    @include button-variant($btn-secondary-color, $btn-secondary-bg);
+
+    &:hover,
+    &:focus {
+        transform: translateY(-1px);
+    }
+
+    &:active,
+    &.active {
+        background-image: none;
+        outline: 0;
+        transform: translateY(0);
+    }
+
+    &.disabled,
+    &:disabled {
+        opacity: .45;
+        box-shadow: none;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    .icon {
+        width: $font-size-base;
+        height: $font-size-base;
+        margin-right: .25rem;
+        margin-bottom: -1px;
+    }
+}
+
+
+//
+// Alternate buttons
+//
+.button--primary {
+    @include button-variant($btn-primary-color, $btn-primary-bg);
+}
+
+.button--secondary {
+    @include button-variant($btn-secondary-color, $btn-secondary-bg);
+}
+
+.button--dark {
+    @include button-variant($btn-dark-color, $btn-dark-bg);
+}
+
+
+//
+// Text buttons
+//
+.button--text {
+    color: $link-color;
+
+    &:hover,
+    &:focus {
+        color: darken($link-color, 10%);
+    }
+
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:disabled {
+        background: none;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &:after {
+        content: ' →';
+    }
+}
+
+
+//
+// Button Sizes
+//
+.button--large {
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-base, $line-height, $btn-border-radius);
+
+    .icon {
+        width: $font-size-large;
+        height: $font-size-large;
+    }
+}
+
+.button--small {
+    // line-height: ensure proper height of button next to small input
+    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-mini, $line-height, $btn-border-radius);
+
+    .icon {
+        width: $font-size-small;
+        height: $font-size-small;
+    }
+}

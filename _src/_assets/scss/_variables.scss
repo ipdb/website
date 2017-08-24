@@ -54,3 +54,32 @@ $screen-lg-min:             85em !default;
 $screen-sm:                 'min-width: #{$screen-sm-min}';
 $screen-md:                 'min-width: #{$screen-md-min}';
 $screen-lg:                 'min-width: #{$screen-lg-min}';
+
+
+//
+// Buttons
+//
+$btn-font-family:                inherit;
+$btn-font-weight:                $font-weight-bold !default;
+
+$btn-padding-x:                  2rem !default;
+$btn-padding-y:                  .5rem !default;
+
+$btn-padding-x-sm:               1.5rem !default;
+$btn-padding-y-sm:               .3rem !default;
+
+$btn-padding-x-lg:               3rem !default;
+$btn-padding-y-lg:               .7rem !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-01 !default;
+
+$btn-secondary-color:            #fff !default;
+$btn-secondary-bg:               $brand-04 !default;
+
+$btn-dark-color:                #fff !default;
+$btn-dark-bg:                   $brand-03 !default;
+
+$btn-link-disabled-color:        $brand-05 !default;
+
+$btn-border-radius:              10rem !default;

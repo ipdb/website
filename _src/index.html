@@ -12,7 +12,7 @@ front_page: true
     <div class="hero__content row">
         <hgroup>
             <h1 class="hero__title">{{ content.hero.title }}</h1>
-            <a href="{{ site.signup.link }}" class="hero__action button button--primary">{{ site.signup.button }}</a>
+            <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
         </hgroup>
     </div>
 </header>
@@ -27,8 +27,8 @@ front_page: true
 
         {{ content.intro.text | markdownify }}
 
-        <a href="{{ site.signup.link }}" class="hero__action button button--primary">{{ site.signup.button }}</a>
-        <a href="" class="button button--primary">Read IPDB Documentation</a>
+        <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
+        <a href="" class="button button--text">Read IPDB Documentation</a>
     </div>
 </section>
 
@@ -45,7 +45,7 @@ front_page: true
     </div>
 
     <div class="row">
-        <a href="/foundation/" class="button button--primary">{{ content.foundation.button }}</a>
+        <a href="/foundation/" class="button button--text">{{ content.foundation.button }}</a>
     </div>
 </section>
 
@@ -83,7 +83,7 @@ front_page: true
 
         <div class="connect connect--blog">
             <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
-            <a href="https://blog.ipdb.io" class="button button--primary">IPDB Blog</a>
+            <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
         </div>
 
         <div class="connect connect--newsletter">
