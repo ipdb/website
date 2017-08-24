@@ -39,12 +39,12 @@
     max-width: 55em;
     margin-left: auto;
     margin-right: auto;
-    padding-left: ($spacer / 2);
-    padding-right: ($spacer / 2);
+    padding-left: $spacer;
+    padding-right: $spacer;
 
     @media ($screen-sm) {
-        padding-left: $spacer;
-        padding-right: $spacer;
+        padding-left: $spacer * 2;
+        padding-right: $spacer * 2;
     }
 }
 

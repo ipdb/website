@@ -3,14 +3,23 @@
     padding-top: $spacer;
 }
 
+.menu__items {
+    max-width: 100%;
+}
+
 .menu__link {
     display: inline-block;
     padding: $spacer;
     text-decoration: none;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
-    color: $link-color;
+    color: $brand-04;
     position: relative;
+
+    &,
+    &:after {
+        transition: .25s ease-out;
+    }
 
     // link line
     &:after {
@@ -18,7 +27,7 @@
         position: absolute;
         height: 2px;
         width: 30px;
-        background: $link-color;
+        background: $brand-04;
         display: block;
         left: 50%;
         margin-left: -15px;
@@ -26,14 +35,18 @@
         // hidden by default
         transform: scale(0);
         transform-origin: center;
-        transition: transform .2s ease-out;
     }
 
     &:hover,
     &:focus,
     &.active {
+        color: $brand-03;
+
         // show link line
-        &:after { transform: scale(1); }
+        &:after {
+            transform: scale(1);
+            background: $brand-03;
+        }
     }
 }
 
@@ -43,9 +56,21 @@
     height: 100%;
     display: flex;
     align-items: center;
+    transition: .25s ease-out;
 
     &:after {
         display: none;
+    }
+
+    .logo {
+        transition: .25s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+        .logo {
+            fill: $brand-03;
+        }
     }
 }
 
@@ -54,7 +79,13 @@
 
     .row {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media ($screen-sm) {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
     }
 
     .menu__link {
@@ -72,4 +103,27 @@
 .menu--footer {
     padding-top: $spacer * 2;
     padding-bottom: $spacer * 2;
+}
+
+
+.menu-overflow {
+    // yummy scrolling
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-left: -$spacer;
+    margin-right: -$spacer;
+    padding-left: $spacer;
+    padding-right: $spacer;
+    text-align: center;
+
+    &::-webkit-scrollbar { display: none; }
+
+    @media ($screen-md) {
+        margin: 0;
+        padding: 0;
+        white-space: normal;
+        overflow: visible;
+        text-align: right;
+    }
 }

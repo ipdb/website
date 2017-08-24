@@ -8,17 +8,22 @@
 
         <div class="menu__items">
 
-            {% for link in site.data.menus.main %}
-                {% assign active = nil %}
-                {% if page.url contains link.url %}
-                    {% assign active = 'active' %}
-                {% endif %}
+            <div class="menu-overflow">
 
-                <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
-            {% endfor %}
+                {% for link in site.data.menus.main %}
+                    {% assign active = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign active = 'active' %}
+                    {% endif %}
 
-            <a class="menu__link button button--small button--primary" href="/foundation/">Signup</a>
-            <a class="menu__link button button--small" href="/foundation/">Login</a>
+                    <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+                {% endfor %}
+
+                <a class="menu__link button button--small button--primary" href="/foundation/">Signup</a>
+                <a class="menu__link button button--small" href="/foundation/">Login</a>
+
+            </div>
+
         </div>
     </div>
 </nav>
