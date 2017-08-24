@@ -1,0 +1,28 @@
+.section {
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+
+    // handling long text, like URLs
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-rendering: optimizeLegibility;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.section__header {
+    margin-bottom: $spacer;
+}
+
+.section__title {
+    font-size: $font-size-h2;
+    margin: 0;
+}
+
+.section__description {
+    font-size: $font-size-large;
+    margin-bottom: 0;
+}
