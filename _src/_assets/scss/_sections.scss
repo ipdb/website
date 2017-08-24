@@ -1,7 +1,9 @@
+//
+// All sections
+//
 .section {
     padding-top: $spacer * 2;
     padding-bottom: $spacer * 2;
-    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -38,4 +40,39 @@
 .section__description {
     font-size: $font-size-large;
     margin-bottom: 0;
+}
+
+
+//
+// Section modifiers
+//
+$edge-height: $spacer * 5;
+
+.section--background {
+    background: $brand-05;
+    position: relative;
+    margin-top: $edge-height;
+    margin-bottom: $edge-height;
+
+    &:before,
+    &:after {
+        content: '';
+        width: 100%;
+        height: $edge-height;
+        display: block;
+        position: absolute;
+        left: 0;
+        background: $brand-05;
+    }
+
+    &:before {
+        top: -($edge-height);
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+    &:after {
+        top: auto;
+        bottom: -($edge-height);
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
 }

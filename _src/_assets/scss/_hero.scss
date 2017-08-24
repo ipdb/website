@@ -1,6 +1,7 @@
 .hero {
     background: $brand-02;
-    padding: 2rem;
+    padding: $spacer * 2;
+    min-height: 100vh;
 
     &,
     .hero__title,
