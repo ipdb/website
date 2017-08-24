@@ -43,5 +43,27 @@
 
 .connect__title {
     font-size: $font-size-h3;
-    margin-bottom: $spacer / 2;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.article {
+    @media ($screen-sm) {
+        flex: 0 0 45%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.article__title {
+    font-size: $font-size-h6;
+    margin-top: 0;
 }

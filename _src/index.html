@@ -1,5 +1,6 @@
 ---
 layout: base
+
 front_page: true
 
 css: page-front
@@ -134,6 +135,16 @@ css: page-front
             <div class="grid__col">
                 <div class="connect connect--blog">
                     <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
+
+                    <div class="articles">
+                        {% for article in site.articles | limit: 4 %}
+                        <a class="article" href="{{ article.link }}">
+                            <img src="{{ article.image | escape | strip_html }}" alt="">
+                            <h1 class="article__title">{{ article.title }}</h1>
+                        </a>
+                        {% endfor %}
+                    </div>
+
                     <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
                 </div>
             </div>
