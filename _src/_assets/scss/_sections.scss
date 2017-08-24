@@ -82,6 +82,10 @@ $edge-height:    $spacer * 4;
     &:before {
         top: -($edge-height-sm);
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+        @media ($screen-sm) {
+            top: -($edge-height);
+        }
     }
 
     &:after {
