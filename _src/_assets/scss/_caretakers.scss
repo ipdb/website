@@ -1,0 +1,33 @@
+.caretakers {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+}
+
+.caretaker {
+    text-align: center;
+    display: block;
+    box-shadow: none;
+    max-width: 100px;
+    margin: auto;
+    transition: .25s ease-out;
+
+    &:hover,
+    &:focus {
+        .logo-caretaker {
+            opacity: 1;
+        }
+    }
+}
+
+.logo-caretaker {
+    fill: $brand-04;
+    color: $brand-04;
+    opacity: .6;
+    max-width: 100%;
+    height: 20px; // need to hardcode some size to overwrite browser's default 150px height for SVGs
+    transition: .25s ease-out;
+
+    @media ($screen-sm) {
+        height: 30px;
+    }
+}

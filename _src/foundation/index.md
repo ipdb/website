@@ -13,7 +13,7 @@ IPDB is governed by IPDB Foundation consisting of caretakers and the board of di
 
 IPDB relies on caretakers to run the nodes that store and validate transactions sent to the network. The caretakers are members of the IPDB Foundation.
 
-{% include section-caretakers.html %}
+{% include caretakers.html %}
 
 # Board members
 

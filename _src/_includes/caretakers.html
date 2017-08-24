@@ -1,0 +1,19 @@
+<div class="caretakers grid grid--half grid-medium--fit grid-medium--columns grid--justifycenter grid--gutters">
+
+    {% assign caretakers = (site.data.caretakers | sort: 'date')  %}
+
+    {% for caretaker in caretakers %}
+
+        {% assign slug = (caretaker.name | downcase | replace: ' ', '-')  %}
+
+        <div class="grid__col grid__col--1">
+            <a class="caretaker" href="{{ caretaker.link }}" rel="external">
+                <svg class="logo-caretaker logo-caretaker--{{ slug }}" aria-labelledby="title">
+                    <title>{{ caretaker.name }}</title>
+                    <use xlink:href="/assets/img/sprite.svg#logo-{{ slug }}"></use>
+                </svg>
+            </a>
+        </div>
+
+    {% endfor %}
+</div>
