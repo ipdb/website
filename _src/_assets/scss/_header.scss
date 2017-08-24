@@ -22,7 +22,7 @@ $edge-height: $spacer * 5;
 
 .header__title {
     font-size: $font-size-h1;
-    margin-bottom: 0;
+    margin-bottom: $spacer / 2;
 }
 
 .header__subtitle {

@@ -22,7 +22,7 @@
     transition: .25s ease-out;
 
     // default button
-    @include button-size($btn-padding-y, $btn-padding-x, .9rem, $line-height, $btn-border-radius);
+    @include button-size($btn-padding-y, $btn-padding-x, .8em, $line-height, $btn-border-radius);
     @include button-variant($btn-secondary-color, $btn-secondary-bg);
 
     &:hover,
