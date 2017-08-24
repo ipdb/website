@@ -313,9 +313,9 @@ const buildBanner = (done) => {
 const deployBanner = (done) => {
     let deployTarget
 
-    if ($.util.env.production) {
+    if ($.util.env.live) {
         deployTarget = 'Live'
-    } else if ($.util.env.staging) {
+    } else if ($.util.env.beta) {
         deployTarget = 'Beta'
     } else {
         deployTarget = 'Gamma'
