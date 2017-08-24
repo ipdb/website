@@ -7,7 +7,21 @@
 }
 
 .feature__image {
+    margin: 0;
+    background: $brand-05;
+    padding: $spacer;
+    padding-bottom: 0;
+    border-radius: 1rem;
+    min-height: 9rem;
+    display: flex;
+    align-items: flex-end;
 
+    svg {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
 }
 
 .feature__title {

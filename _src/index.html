@@ -34,7 +34,12 @@ css: page-front
             <div class="feature">
                 <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
                     <div class="grid__col grid__col--2">
-                        <figure class="feature__image"></figure>
+                        <figure class="feature__image">
+                            <svg aria-labelledby="title">
+                                <title>{{ feature.title }}</title>
+                                <use xlink:href="/assets/img/sprite.svg#{{ feature.image }}"></use>
+                            </svg>
+                        </figure>
                     </div>
 
                     <div class="grid__col grid__col--4">

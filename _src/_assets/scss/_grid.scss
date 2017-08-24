@@ -97,10 +97,10 @@
 // Gutters
 //
 @mixin grid-gutters() {
-    margin: -($spacer) 0 $spacer (-($spacer));
+    margin: -($spacer * 2) 0 $spacer * 2 (-($spacer * 2));
 
     > .grid__col {
-        padding: $spacer 0 0 $spacer;
+        padding: $spacer * 2 0 0 $spacer * 2;
     }
 }
 

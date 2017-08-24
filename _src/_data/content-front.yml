@@ -11,6 +11,7 @@ intro:
     features:
         - title: "A single public database"
           text: "IPDB gives you easy access to a single public, decentralized database with added blockchain characteristics—all built on top of open source BigchainDB."
+          image: feature-bigchaindb
         - title: "No installation required—just sign up and go"
           text: "All you have to do is sign up to start using IPDB. IPDB Caretakers will handle running a BigchainDB network for you."
         - title: "Store any data, permanently"
