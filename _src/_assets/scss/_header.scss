@@ -1,0 +1,16 @@
+.header {
+    background: $brand-05;
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+}
+
+.header__title {
+    font-size: $font-size-h1;
+    margin-bottom: $spacer / 4;
+}
+
+.header__subtitle {
+    font-size: $font-size-h3;
+    color: $brand-02;
+    margin: 0;
+}
