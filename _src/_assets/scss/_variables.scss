@@ -11,32 +11,32 @@ $brand-06:                  #444 !default;
 //
 // Typography
 //
-$font-family-base:          'futura-pt', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-base:          'futura-pt', 'Futura PT', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 $font-family-monospace:     Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 
 $font-size-root:            18px !default;
 $font-size-root-lg:         20px !default;
 $line-height:               1.4 !default;
-$spacer:                    2rem !default;
+$spacer:                    1rem !default;
 
 $font-weight-light:         300 !default;
 $font-weight-normal:        400 !default;
-$font-weight-bold:          600 !default;
+$font-weight-bold:          500 !default;
 
 $font-size-base:            1rem !default;
 $font-size-large:           1.2rem !default;
 $font-size-small:           .8rem !default;
 $font-size-mini:            .7rem !default;
 
-$font-size-h1:              2.5rem !default;
-$font-size-h2:              2rem !default;
-$font-size-h3:              1.7rem !default;
-$font-size-h4:              1.4rem !default;
+$font-size-h1:              2rem !default;
+$font-size-h2:              1.7rem !default;
+$font-size-h3:              1.4rem !default;
+$font-size-h4:              1.3rem !default;
 $font-size-h5:              $font-size-large !default;
 $font-size-h6:              $font-size-base !default;
 
 $headings-font-family:      inherit !default;
-$headings-font-weight:      $font-weight-normal !default;
+$headings-font-weight:      $font-weight-bold !default;
 $headings-line-height:      inherit !default;
 $headings-color:            $brand-03 !default;
 
