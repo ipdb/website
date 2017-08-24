@@ -2,6 +2,8 @@
 layout: page
 
 title: Bylaws
+
+narrow: true
 ---
 
 # Definitions

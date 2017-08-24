@@ -1,0 +1,24 @@
+<nav class="menu menu--main">
+    <div class="row">
+        <div class="menu__logo">
+            <a class="menu__link menu__link--logo" href="/">
+                <svg class="logo" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+            </a>
+        </div>
+
+        <div class="menu__items">
+
+            {% for link in site.data.menus.main %}
+                {% assign active = nil %}
+                {% if page.url contains link.url %}
+                    {% assign active = 'active' %}
+                {% endif %}
+
+                <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+
+            <a class="menu__link button button--small button--primary" href="/foundation/">Signup</a>
+            <a class="menu__link button button--small" href="/foundation/">Login</a>
+        </div>
+    </div>
+</nav>

@@ -2,6 +2,8 @@
 layout: page
 
 title: Jobs
+
+narrow: true
 ---
 
 # Internet Policy Intern @ Interplanetary Database Foundation

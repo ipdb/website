@@ -1,0 +1,75 @@
+.menu {
+    width: 100%;
+    padding-top: $spacer;
+}
+
+.menu__link {
+    display: inline-block;
+    padding: $spacer;
+    text-decoration: none;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    color: $link-color;
+    position: relative;
+
+    // link line
+    &:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background: $link-color;
+        display: block;
+        left: 50%;
+        margin-left: -15px;
+        bottom: ($spacer / 2);
+        // hidden by default
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform .2s ease-out;
+    }
+
+    &:hover,
+    &:focus,
+    &.active {
+        // show link line
+        &:after { transform: scale(1); }
+    }
+}
+
+.menu__link--logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:after {
+        display: none;
+    }
+}
+
+.menu--main {
+    background: $brand-05;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__link {
+        &:first-child {
+            margin-left: -($spacer);
+        }
+
+        &:last-child {
+            margin-right: -($spacer);
+        }
+    }
+}
+
+
+.menu--footer {
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+}

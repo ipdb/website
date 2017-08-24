@@ -7,6 +7,7 @@ subtitle: Look sharp and stay consistent
 description: Look sharp and stay consistent
 
 css: page-styleguide
+narrow: true
 ---
 
 # Typography
@@ -33,6 +34,24 @@ css: page-styleguide
 3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
 # Logo
+
+Logo can be used with a base class and modifier classes for size & color:
+
+- `logo`: default logo
+- `logo--sm`: small version
+- `logo--lg`: large version
+- `logo--dark`: dark version
+- `logo--white`: white version
+
+<svg class="logo logo--lg" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+
+<svg class="logo" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+
+<svg class="logo logo--sm" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+
+<svg class="logo logo--dark" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+
+<svg class="logo logo--white" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
 
 
 # Components

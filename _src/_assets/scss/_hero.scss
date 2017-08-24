@@ -1,5 +1,5 @@
 .hero {
-    background: $brand-02;
+    background: $brand-03;
     padding: $spacer * 2;
     min-height: 100vh;
 
@@ -7,5 +7,25 @@
     .hero__title,
     .hero__action {
         color: #fff;
+    }
+
+    .menu--main {
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu__link {
+        color: #fff;
+
+        &:after {
+            background: #fff;
+        }
+    }
+
+    .logo {
+        fill: #fff;
     }
 }

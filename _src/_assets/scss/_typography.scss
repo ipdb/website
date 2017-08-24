@@ -54,7 +54,7 @@ body {
 //
 
 /* stylelint-disable selector-list-comma-newline-after  */
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     color: $headings-color;
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
@@ -68,17 +68,17 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, .h1,
-h2, .h2,
-h3, .h3 {
+h2, .h2 {
     margin-top: ($spacer * 2);
-    margin-bottom: ($spacer * 2);
+    margin-bottom: $spacer;
 }
 
+h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
     margin-top: $spacer;
-    margin-bottom: $spacer;
+    margin-bottom: $spacer / 2;
 }
 
 h1, .h1 { font-size: $font-size-h1; }

@@ -1,0 +1,10 @@
+<footer class="footer">
+    <div class="row">
+
+        <nav class="menu menu--footer">
+            {% for page in site.pages %}
+                <a class="menu__link" href="{{ page.url }}">{{ page.title }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</footer>

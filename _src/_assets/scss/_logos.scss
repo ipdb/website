@@ -1,0 +1,45 @@
+//
+// Logo
+//
+
+// default logo
+.logo {
+    fill: $brand-04;
+    width: 150px;
+    height: 35px;
+    display: block;
+}
+
+
+//
+// Color modifiers
+//
+.logo--white {
+    color: #fff;
+}
+
+.logo--dark {
+    fill: $brand-03;
+}
+
+
+//
+// Size modifiers
+//
+.logo--lg {
+    width: 300px;
+    height: 70px;
+}
+
+.logo--sm {
+    width: 75px;
+    height: 17px;
+}
+
+
+//
+// Caretakers
+//
+.logo-caretaker {
+
+}

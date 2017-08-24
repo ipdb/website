@@ -1,12 +1,28 @@
+$edge-height: $spacer * 5;
+
 .header {
     background: $brand-05;
     padding-top: $spacer * 2;
-    padding-bottom: $spacer * 2;
+    padding-bottom: $spacer;
+    position: relative;
+    margin-bottom: $edge-height;
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: $edge-height;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -($edge-height);
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+        background: $brand-05;
+    }
 }
 
 .header__title {
     font-size: $font-size-h1;
-    margin-bottom: $spacer / 4;
+    margin-bottom: 0;
 }
 
 .header__subtitle {

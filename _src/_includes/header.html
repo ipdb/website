@@ -1,0 +1,10 @@
+{% include menu-main.html %}
+
+<header class="header header--page">
+    <div class="row">
+        <h1 class="header__title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+            <h2 class="header__subtitle">{{ page.subtitle }}</h2>
+        {% endif %}
+    </div>
+</header>
