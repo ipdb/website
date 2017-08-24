@@ -23,11 +23,27 @@ css: page-front
 <section class="section section--intro">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">{{ content.intro.title }}</h1>
-            <p class="section__description">{{ content.intro.description }}</p>
+            <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.intro.title }}</h1>
+                    <p class="section__description">{{ content.intro.description }}</p>
+                </div>
+                <div class="grid__col grid__col--2">
+
+                </div>
+            </div>
         </header>
 
-        {{ content.intro.text | markdownify }}
+        <div class="grid grid--full grid-small--columns grid--center grid--gutters">
+            <div class="grid__col grid__col--4">
+                {{ content.intro.text | markdownify }}
+            </div>
+            <div class="grid__col grid__col--2">
+
+            </div>
+        </div>
+
+
 
         <section class="features">
             {% for feature in content.intro.features %}
@@ -51,8 +67,10 @@ css: page-front
             {% endfor %}
         </section>
 
-        <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
-        <a href="" class="button button--text">Read IPDB Documentation</a>
+        <footer class="actions">
+            <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
+            <a href="" class="button button--text">Read IPDB Documentation</a>
+        </footer>
     </div>
 </section>
 
@@ -60,8 +78,15 @@ css: page-front
 <section class="section section--background section--foundation">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">{{ content.foundation.title }}</h1>
-            <p class="section__description">{{ content.foundation.description }}</p>
+            <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.foundation.title }}</h1>
+                    <p class="section__description">{{ content.foundation.description }}</p>
+                </div>
+                <div class="grid__col grid__col--2">
+
+                </div>
+            </div>
         </header>
     </div>
     <div class="row">
@@ -105,17 +130,23 @@ css: page-front
             <p class="section__description">{{ content.connect.description }}</p>
         </header>
 
-        <div class="connect connect--blog">
-            <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
-            <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
+        <div class="grid grid--full grid-small--half grid--gutters">
+            <div class="grid__col">
+                <div class="connect connect--blog">
+                    <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
+                    <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
+                </div>
+            </div>
+            <div class="grid__col">
+                <div class="connect connect--newsletter">
+                    <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
+                </div>
+
+                <div class="connect connect--social">
+                    <h2 class="connect__title">{{ content.connect.social_title }}</h2>
+                </div>
+            </div>
         </div>
 
-        <div class="connect connect--newsletter">
-            <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
-        </div>
-
-        <div class="connect connect--social">
-            <h2 class="connect__title">{{ content.connect.social_title }}</h2>
-        </div>
     </div>
 </section>

@@ -34,7 +34,11 @@
 
 .section__title {
     font-size: $font-size-h1;
-    margin-bottom: $spacer / 2;
+    margin-bottom: $spacer;
+
+    @media ($screen-sm) {
+        margin-bottom: $spacer / 2;
+    }
 }
 
 .section__description {
@@ -46,33 +50,47 @@
 //
 // Section modifiers
 //
-$edge-height: $spacer * 5;
+$edge-height-sm: $spacer * 2;
+$edge-height:    $spacer * 4;
 
 .section--background {
     background: $brand-05;
     position: relative;
-    margin-top: $edge-height;
-    margin-bottom: $edge-height;
+    margin-top: $edge-height-sm;
+    margin-bottom: $edge-height-sm;
+
+    @media ($screen-sm) {
+        margin-top: $edge-height;
+        margin-bottom: $edge-height;
+    }
 
     &:before,
     &:after {
         content: '';
         width: 100%;
-        height: $edge-height;
+        height: $edge-height-sm;
         display: block;
         position: absolute;
         left: 0;
         background: $brand-05;
+
+        @media ($screen-sm) {
+            height: $edge-height;
+        }
     }
 
     &:before {
-        top: -($edge-height);
+        top: -($edge-height-sm);
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
 
     &:after {
         top: auto;
-        bottom: -($edge-height);
+        bottom: -($edge-height-sm);
         clip-path: polygon(100% 0, 0 0, 0 100%);
+
+        @media ($screen-sm) {
+            bottom: -($edge-height);
+        }
     }
 }

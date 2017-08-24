@@ -1,1 +1,11 @@
 @import 'variables';
+
+.page--styleguide {
+    .logo {
+        margin-bottom: $spacer;
+    }
+
+    .logo--white {
+        background: $brand-03;
+    }
+}

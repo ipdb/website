@@ -1,8 +1,35 @@
+$edge-height-sm: $spacer * 2;
+$edge-height:    $spacer * 4;
+
 .hero {
-    background: $brand-03;
+    background: $brand-07;
     padding-top: $spacer * 2;
     padding-bottom: $spacer * 2;
-    min-height: 100vh;
+    min-height: calc(100vh - #{$edge-height-sm});
+    margin-bottom: $edge-height-sm;
+    position: relative;
+
+    @media ($screen-sm) {
+        min-height: calc(100vh - #{$edge-height});
+        margin-bottom: $edge-height;
+    }
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: $edge-height-sm;
+        display: block;
+        position: absolute;
+        left: 0;
+        background: #b3d0da;
+        bottom: -($edge-height-sm);
+        clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);
+
+        @media ($screen-sm) {
+            height: $edge-height;
+            bottom: -($edge-height);
+        }
+    }
 
     &,
     .hero__title,
@@ -11,11 +38,28 @@
     }
 
     .menu--main {
-        background: transparent;
+        background: $brand-03;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: $edge-height-sm;
+            display: block;
+            position: absolute;
+            left: 0;
+            background: $brand-03;
+            bottom: -($edge-height-sm);
+            clip-path: polygon(100% 0, 0 0, 0 100%);
+
+            @media ($screen-sm) {
+                height: $edge-height;
+                bottom: -($edge-height);
+            }
+        }
     }
 
     .menu__link {

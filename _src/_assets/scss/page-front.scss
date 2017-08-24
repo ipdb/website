@@ -1,9 +1,12 @@
 @import 'variables';
 
 .feature {
-    padding-top: $spacer * 2;
-    padding-bottom: $spacer * 2;
-    min-height: 235px;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+
+    &:first-child {
+        padding-top: $spacer * 2;
+    }
 }
 
 .feature__image {
@@ -25,6 +28,20 @@
 }
 
 .feature__title {
+    font-size: $font-size-h3;
+    margin-bottom: $spacer / 2;
+}
+
+.actions {
+    text-align: center;
+    margin-top: $spacer * 2;
+
+    .button:last-child {
+        margin-left: $spacer * 2;
+    }
+}
+
+.connect__title {
     font-size: $font-size-h3;
     margin-bottom: $spacer / 2;
 }

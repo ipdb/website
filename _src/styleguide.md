@@ -12,6 +12,15 @@ narrow: true
 
 # Typography
 
+IPDB is a planetary-scale blockchain database built on [BigchainDB](https://www.bigchaindb.com). It’s a ready-to-use public network with a focus on **strong governance**. It shares _all the features_ of BigchainDB to make developers’ lives easier.
+
+* Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+* Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+* Maecenas sed diam eget risus varius blandit sit amet non magna.
+
+1. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+2. Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
 # Heading 1
 
@@ -25,13 +34,6 @@ narrow: true
 
 ###### Heading 6
 
-* Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-* Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-* Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-1. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-2. Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
 # Logo
 
@@ -104,9 +106,16 @@ Logo can be used with a base class and modifier classes for size & color:
         <label class="form-label" for="comment">Autogrowing textarea</label>
     </div>
     <p class="form-group text-dimmed mini">
-        Fields marked with an <span class="required">*</span> are required.
+        Fields marked with an <span class="required"></span> are required.
     </p>
     <div class="form-group">
         <input class="btn btn-primary" type="submit" value="Submit">
     </div>
 </form>
+
+## Section header
+
+<header class="section__header">
+    <h1 class="section__title">A planetary-scale blockchain database</h1>
+    <p class="section__description">IPDB relies on caretakers to run the BigchainDB nodes that store and validate transactions. The IPDB Caretakers are the members of the IPDB Foundation.</p>
+</header>
