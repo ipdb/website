@@ -1,6 +1,8 @@
 ---
 layout: base
 front_page: true
+
+css: page-front
 ---
 
 {% assign content = site.data.content-front %}
@@ -26,6 +28,23 @@ front_page: true
         </header>
 
         {{ content.intro.text | markdownify }}
+
+        <section class="features">
+            {% for feature in content.intro.features %}
+            <div class="feature">
+                <div class="grid grid--half grid-medium--columns grid--justifycenter grid--gutters">
+                    <div class="grid__col grid__col--2">
+                        <figure class="feature__image"></figure>
+                    </div>
+
+                    <div class="grid__col grid__col--4">
+                        <h1 class="feature__title">{{ feature.title }}</h1>
+                        <p class="feature__text">{{ feature.text }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
 
         <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
         <a href="" class="button button--text">Read IPDB Documentation</a>

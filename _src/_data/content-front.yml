@@ -8,6 +8,17 @@ intro:
     text: |
         IPDB is a planetary-scale blockchain database built on [BigchainDB](https://www.bigchaindb.com). It’s a ready-to-use public network with a focus on strong governance. It shares all the features of BigchainDB to make developers’ lives easier.
 
+    features:
+        - title: "A single public database"
+          text: "IPDB gives you easy access to a single public, decentralized database with added blockchain characteristics—all built on top of open source BigchainDB."
+        - title: "No installation required—just sign up and go"
+          text: "All you have to do is sign up to start using IPDB. IPDB Caretakers will handle running a BigchainDB network for you."
+        - title: "Store any data, permanently"
+          text: "IPDB allows you to store data indefinitely. It provides blockchain-style tamper-resistance and database-style queryability to give you the best of both worlds."
+        - title: "Governed by Caretakers"
+          text: "The IPDB Foundation is run by its internet-loving Caretakers around the world."
+        - title: "A Dashboard for your IPDB apps"
+          text: "Manage your apps, give users access, and get statistical insights about your app’s API usage."
 
 foundation:
     title: "IPDB Foundation: human-scale governance"
