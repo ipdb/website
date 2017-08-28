@@ -28,23 +28,17 @@ css: page-front
                 <div class="grid__col grid__col--4">
                     <h1 class="section__title">{{ content.intro.title }}</h1>
                     <p class="section__description">{{ content.intro.description }}</p>
-                </div>
-                <div class="grid__col grid__col--2">
 
+                    {{ content.intro.text | markdownify }}
+                </div>
+                <div class="grid__col grid__col--2 grid__col--center">
+                    <svg width="298" height="220" aria-labelledby="title">
+                        <title>IPDB Distributed</title>
+                        <use xlink:href="/assets/img/sprite.svg#distributed"></use>
+                    </svg>
                 </div>
             </div>
         </header>
-
-        <div class="grid grid--full grid-small--columns grid--center grid--gutters">
-            <div class="grid__col grid__col--4">
-                {{ content.intro.text | markdownify }}
-            </div>
-            <div class="grid__col grid__col--2">
-
-            </div>
-        </div>
-
-
 
         <section class="features">
             {% for feature in content.intro.features %}

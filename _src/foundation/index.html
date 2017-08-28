@@ -1,0 +1,106 @@
+---
+layout: page
+
+title: Foundation &amp; governance
+subtitle: Decentralized without dysfunction.
+
+css: page-foundation
+---
+
+{% assign content = site.data.content-foundation %}
+
+<section class="section section--intro">
+    <div class="row">
+        <header class="section__header">
+            <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <div class="section__description">{{ content.intro | markdownify }}</div>
+                </div>
+                <div class="grid__col grid__col--2">
+                    <svg width="559" height="253" aria-labelledby="title">
+                        <title>IPDB Governance</title>
+                        <use xlink:href="/assets/img/sprite.svg#governance"></use>
+                    </svg>
+                </div>
+            </div>
+        </header>
+    </div>
+</section>
+
+<section class="section section--background section--caretakers">
+    <div class="row">
+        <header class="section__header">
+            <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.caretakers.title }}</h1>
+                    <p class="section__description">{{ content.caretakers.description }}</p>
+                </div>
+                <div class="grid__col grid__col--2">
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="row">
+        <div class="grid grid--full grid-small--half grid--gutters">
+        {% for feature in content.caretakers.features %}
+            <div class="grid__col">
+                <div class="feature">
+                    <h3 class="feature__title">{{ feature.title }}</h3>
+                    <p class="feature__description">{{ feature.description }}</p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+    <div class="row">
+        <h2 class="section__title">{{ content.caretakers.members.title }}</h2>
+        <p class="section__description">{{ content.caretakers.members.description }}</p>
+    </div>
+
+    <div class="row">
+        {% include caretakers.html %}
+    </div>
+</section>
+
+<section class="section section--board">
+    <div class="row">
+        <header class="section__header">
+            <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.board.title }}</h1>
+                    <p class="section__description">{{ content.board.description }}</p>
+                </div>
+                <div class="grid__col grid__col--2">
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="row">
+        {% include board.html %}
+    </div>
+</section>
+
+<section class="section section--vision">
+    <div class="row">
+        <header class="section__header">
+            <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.vision.title }}</h1>
+                    <p class="section__description">{{ content.vision.description }}</p>
+                </div>
+                <div class="grid__col grid__col--2">
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="row">
+        {{ content.vision.text | markdownify }}
+    </div>
+</section>

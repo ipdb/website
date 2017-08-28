@@ -1,5 +1,11 @@
 @import 'variables';
 
+.section--intro {
+    .section__description {
+        margin-bottom: $spacer * 2;
+    }
+}
+
 .feature {
     padding-top: $spacer;
     padding-bottom: $spacer;

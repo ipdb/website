@@ -1,0 +1,34 @@
+- name: David Holtzman
+  position: President
+  bio: |
+    David Holtzman is an information technology security expert, educator and activist. He started his career as a cryptographic analyst, military codebreaker, U.S. Naval Security Group submariner, and Soviet Manned Space Program analyst. Holtzman is an early-stage internet pioneer.
+
+    He was the CTO at Network Solutions when it managed the domain name system, where he oversaw the explosive growth of the commercial internet to more than 20 million domain names by the late 1990s. He is the author of Privacy Lost: How Technology is Endangering Your Privacy, and a regular commentator for major news media, including Bloomberg Television, BBC, CNN, The New York Times, Business Week, and The Washington Post.
+
+- name: Constance Choi
+  position: Secretary
+  bio: |
+    Constance Choi is the co-founder and Director of COALA, an international multidisciplinary collaborative research and development initiative on blockchain technologies, smart contracts, and decentralized autonomous applications. Choi co-founded and was General Counsel and Chief Compliance Officer of the Kraken digital asset exchange.
+
+    She holds a J.D. from UC Berkeley School of Law, and undergraduate degrees from Brown University and University of Cambridge. She has practiced at several law firms, including the Electronic Frontier Foundation, focusing on internet and technology law, intellectual property, privacy, data security, and constitutional rights.
+
+- name: Greg McMullen
+  position: Treasurer
+  bio: |
+    Greg McMullen is a lawyer, internet advocate, and Chief Policy Officer at BigchainDB, where he built the framework for the IPDB Foundation and helped bring together its founding caretakers. He is a leading member of the COALA IP working group and co-authored the COALA IP specification and policy paper.
+
+    Before joining BigchainDB and IPDB, he was a litigator at one of Canada’s top class actions law firms, where he worked on class actions involving privacy, copyright, competition law, and price fixing conspiracies. He served on the board of directors the BC Civil Liberties Association, Canada’s largest civil liberties organization, and authored the BCCLA’s guide to privacy and security when crossing borders with electronic devices.
+
+- name: Dr. Nina-Luisa Siedler
+  position: Member-at-Large
+  bio: |
+    Dr. Nina-Luisa Siedler is a lawyer and partner at DWF Berlin with over 15 years of experience. She is interested in FinTech and decentralized technology, and her practice includes blockchain matters. She is an advisor to Blockchain Hub Berlin.
+
+    Dr. Siedler is specialized in structured finance, including credit and capital market instruments, especially acquisition and project financing, real estate transactions, asset-backed securities, structured cover bonds, debt loans, and corporate bonds.
+
+- name: Kaspar Korjus
+  position: Member-at-Large
+  bio: |
+    Kaspar Korjus is the Managing Director of Estonia’s e-Residency program, which offers a fully digital identity for global citizens. e-Residency is built on inclusion, transparency, and legitimacy. It is meant to empower citizens globally and provide world-wide digital and financial inclusion.
+
+    Korjus was chosen by Megan Smith, CTO of the United States, as one of 20 digital leaders for the Global Leaders Digital Exchange (GLDE) program, and is listed in Forbes Estonia’s “30 under 30” as #1 in Technology and Finance.

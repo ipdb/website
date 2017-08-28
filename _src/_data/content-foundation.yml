@@ -1,0 +1,39 @@
+intro: |
+    Building an organization that is both decentralized and stable enough to govern itself is not easy. We’ve worked hard to learn from those who came before us, from the DNS to The DAO.
+
+    IPDB is governed by IPDB Foundation consisting of caretakers and the board of directors these caretakers elect.
+
+caretakers:
+    title: IPDB Caretakers
+    description: "The IPDB Foundation is made up of its member caretakers, who govern the IPDB Foundation by electing its Management Board. The Caretakers also run the nodes that store and validate transactions sent to IPDB."
+    features:
+        - title: "Not-for-profit leadership"
+          description: "To avoid capture by financial conflict of interests, the majority of caretakers have to be non-for-profit organizations or public benefit corporations, who have serving their mission as a priority over profit."
+        - title: "Jurisdictional diversity"
+          description: "To avoid being under the jurisdiction of a single government, no more than half of the caretakers are in one country."
+        - title: "Geographical diversity"
+          description: "Our caretakers are spread around the world to improve latency and to limit disruption from regional events like power outages or natural disasters."
+        - title: "Management Board"
+          description: "Caretakers elect the Management Board, which is responsible for day-to-day decisions on their behalf, and can vote to recall the Management Board if they disagree with the direction the board is taking."
+    members:
+        title: "Current Caretakers"
+        description: "We've assembled a group of caretakers who work together to build a free, open, and decentralized internet—organizations that have a long-standing commitment to the decentralized web."
+
+board:
+    title: Management Board
+    description: "The IPDB Management Board handles the day-to-day management of the IDPB Foundation, including most decisions about the operation of IPDB. IPDB Board Members are elected by the caretakers for a two year term."
+
+vision:
+    title: "Vision & Research"
+    description: ""
+    text: |
+        The early web gave us a utopian vision of a decentralized world. Corporate giants and governments would be replaced. We would live in a society where we deal directly with one another, free of censorship or coercion.
+
+        > Governments of the Industrial World, you weary giants of flesh and steel, I come from Cyberspace, the new home of the Mind. On behalf of the future, I ask you of the past to leave us alone. You are not welcome among us. You have no sovereignty where we gather.
+        - John Perry Barlow, A Declaration of the Independence of Cyberspace, 1996
+
+        The internet has displaced many of the old powers, but new powers dominate the web as we know it. Freedom of expression is often limited. The ironic result of this centralized control is a fragmented internet where the information you have access to is determined by your location and providers, things you have no control over.
+
+        We promote science and research through the development of the IPDB decentralized database platform, on the governance of decentralized systems, and the applications of blockchain technology.
+
+        We will make our work available in many ways: presentations at conferences and workshops, published research results and technical papers, open sourced code, and more. We will make everything available online, so everyone can benefit from our research.

@@ -1,0 +1,18 @@
+<div class="board grid grid--full grid-small--half grid--gutters">
+
+    {% assign board = site.data.board  %}
+
+    {% for member in board %}
+
+        {% assign slug = (member.name | downcase | replace: ' ', '-')  %}
+
+        <div class="grid__col">
+            <div class="boardmember">
+                <h1 class="boardmember__title">{{ member.name }}</h1>
+                <p class="boardmember__position">{{ member.position }}</p>
+                <div class="boardmember__bio">{{ member.bio | markdownify }}</div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>

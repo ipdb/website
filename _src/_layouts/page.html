@@ -4,10 +4,12 @@ layout: base
 
 {% include header.html %}
 
-<main role="main" class="section content content--page {% if page.path contains '.md' %}content--page--markdown{% endif %}">
+<main role="main" class="content content--page {% if page.path contains '.md' %}content--page--markdown{% endif %}">
 
-    <div class="row {% if page.narrow %}row--narrow{% endif%}">
+    {% if page.path contains '.md' %}<div class="row {% if page.narrow %}row--narrow{% endif%}">{% endif %}
+
         {{ content }}
-    </div>
+
+    {% if page.path contains '.md' %}</div>{% endif %}
 
 </main>
