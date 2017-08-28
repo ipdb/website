@@ -7,7 +7,7 @@
     text-align: center;
     display: block;
     box-shadow: none;
-    max-width: 100px;
+    max-width: 130px;
     margin: auto;
     transition: .25s ease-out;
 
@@ -28,6 +28,11 @@
     transition: .25s ease-out;
 
     @media ($screen-sm) {
-        height: 30px;
+        height: auto;
+        max-height: 40px;
     }
+}
+
+.logo-caretaker--internet-archive {
+    transform: scale(1.5);
 }
