@@ -34,17 +34,8 @@
 }
 
 .feature__title {
-    font-size: $font-size-h3;
+    font-size: $font-size-h4;
     margin-bottom: $spacer / 2;
-}
-
-.actions {
-    text-align: center;
-    margin-top: $spacer * 2;
-
-    .button:last-child {
-        margin-left: $spacer * 2;
-    }
 }
 
 .connect__title {

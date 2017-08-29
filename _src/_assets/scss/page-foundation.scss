@@ -1,0 +1,32 @@
+@import 'variables';
+
+.feature {
+    padding-left: 5rem;
+    position: relative;
+}
+
+.feature__image {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 1rem;
+}
+
+.feature__title {
+    font-size: $font-size-h5;
+    margin-bottom: $spacer / 2;
+}
+
+.caretakers-current {
+    margin-top: $spacer * 2;
+
+    .section__title {
+        font-size: $font-size-h2;
+    }
+
+    .logo-caretaker {
+        opacity: 1;
+    }
+}

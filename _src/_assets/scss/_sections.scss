@@ -44,6 +44,16 @@
 .section__description {
     font-size: $font-size-large;
     margin-bottom: 0;
+    color: darken($brand-04, 5%);
+}
+
+.section__actions {
+    text-align: center;
+    margin-top: $spacer * 2;
+
+    .button + .button {
+        margin-left: $spacer * 2;
+    }
 }
 
 

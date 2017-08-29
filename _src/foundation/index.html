@@ -42,11 +42,15 @@ css: page-foundation
         </header>
     </div>
 
-    <div class="row">
+    <div class="row features">
         <div class="grid grid--full grid-small--half grid--gutters">
         {% for feature in content.caretakers.features %}
             <div class="grid__col">
                 <div class="feature">
+                    <svg class="feature__image" width="298" height="220" aria-labelledby="title">
+                        <title>IPDB Governance</title>
+                        <use xlink:href="/assets/img/sprite.svg#distributed"></use>
+                    </svg>
                     <h3 class="feature__title">{{ feature.title }}</h3>
                     <p class="feature__description">{{ feature.description }}</p>
                 </div>
@@ -55,14 +59,22 @@ css: page-foundation
         </div>
     </div>
 
-    <div class="row">
-        <h2 class="section__title">{{ content.caretakers.members.title }}</h2>
-        <p class="section__description">{{ content.caretakers.members.description }}</p>
-    </div>
+    <div class="row caretakers-current">
+        <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
+            <div class="grid__col grid__col--4">
+                <h2 class="section__title">{{ content.caretakers.members.title }}</h2>
+                <p class="section__description">{{ content.caretakers.members.description }}</p>
+            </div>
+        </div>
 
-    <div class="row">
         {% include caretakers.html %}
     </div>
+
+    <footer class="row">
+        <footer class="section__actions">
+            <a href="" class="button button--primary button--small">Become a caretaker</a>
+        </footer>
+    </footer>
 </section>
 
 <section class="section section--board">
