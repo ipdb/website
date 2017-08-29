@@ -30,7 +30,25 @@ foundation:
 roadmap:
     title: "Roadmap"
     description: "The IPDB rollout plan follows six steps. First, a test network for demos, then for invited users, and then for the general public. When the test phase is complete, a production network will be launched in the same sequence."
-
+    steps:
+        - net: Test net
+          target: Demo app
+          status: complete
+        - net: Test net
+          target: Invited users
+          status: complete
+        - net: Test net
+          target: General public
+          status: complete
+        - net: Production net
+          target: Demo app
+          status: progress
+        - net: Production net
+          target: Invited users
+          status: planned
+        - net: Production net
+          target: General public
+          status: planned
 
 getstarted:
     title: "Get started"

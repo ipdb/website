@@ -100,11 +100,25 @@ css: page-front
             <h1 class="section__title">{{ content.roadmap.title }}</h1>
             <p class="section__description">{{ content.roadmap.description }}</p>
         </header>
+    </div>
 
-        <div class="roadmap">
+    <div class="roadmap">
+        <div class="row">
+
+            {% for step in content.roadmap.steps %}
+
+                {% assign status = step.status %}
+
+                <div class="roadmap__step is-{{ status }}">
+                    <p class="roadmap__net">{{ step.net }}</p>
+                    <p class="roadmap__target">{{ step.target }}</p>
+                </div>
+
+            {% endfor %}
 
         </div>
     </div>
+
 </section>
 
 
