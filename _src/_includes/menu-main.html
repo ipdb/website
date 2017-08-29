@@ -19,8 +19,8 @@
                     <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
                 {% endfor %}
 
-                <a class="button button--small button--primary" href="/foundation/">Signup</a>
-                <a class="button button--small" href="/foundation/">Login</a>
+                <a class="button button--small button--primary" href="{{ site.signup.link }}">{{ site.signup.button_short }}</a>
+                <a class="button button--small" href="{{ site.login.link }}">{{ site.login.button }}</a>
 
             </div>
 
