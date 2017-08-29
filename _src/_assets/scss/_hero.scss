@@ -38,6 +38,7 @@ $edge-height:    $spacer * 4;
         left: 0;
         top: 0;
         width: 100%;
+        z-index: 0;
 
         &:after {
             content: '';
@@ -84,18 +85,31 @@ $edge-height:    $spacer * 4;
     }
 }
 
+.hero__content {
+    position: relative;
+    z-index: 1;
+}
+
 .hero__title {
     color: $brand-05;
-    font-size: $font-size-h1 * 1.2;
+    font-size: $font-size-h2;
     margin-bottom: $spacer;
+
+    @media ($screen-sm) {
+        font-size: $font-size-h1 * 1.1;
+    }
 }
 
 .hero__description {
-    font-size: $font-size-large;
+    font-size: $font-size-base;
     margin-top: 0;
     margin-bottom: $spacer * 2;
     color: $brand-02;
     line-height: $line-height;
+
+    @media ($screen-sm) {
+        font-size: $font-size-large;
+    }
 }
 
 
@@ -108,6 +122,7 @@ $edge-height:    $spacer * 4;
     width: 100%;
     border-bottom: 4.5rem solid $brand-02;
     align-self: flex-end;
+    z-index: 1;
 
     .row {
         display: flex;
@@ -116,14 +131,54 @@ $edge-height:    $spacer * 4;
     }
 }
 
+.starbase__item {
+    position: relative;
+}
+
 .starbase__item--stones {
     margin-bottom: -1rem;
 }
 
 .starbase__item--bicycle {
-    margin-bottom: -3rem;
+    margin-bottom: -4.5rem;
+    animation: bicycle 10s forwards;
+}
+
+@keyframes bicycle {
+    0% {
+        transform: translate3d(60vw, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100vw, 0, 0);
+    }
 }
 
 .starbase__item--towers {
     margin-bottom: -4.5rem;
+}
+
+.starbase-rocket {
+    position: absolute;
+    bottom: -4.5rem;
+    right: 20%;
+    z-index: 0;
+    animation: rocketStart 8s ease-in infinite forwards;
+
+    + .starbase-rocket {
+        animation-delay: .8s;
+        right: 35%;
+        width: 30px;
+    }
+}
+
+@keyframes rocketStart {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    30%,
+    100% {
+        transform: translate3d(0, -110vh, 0);
+    }
 }
