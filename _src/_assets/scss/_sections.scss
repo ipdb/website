@@ -37,7 +37,7 @@
     margin-bottom: $spacer;
 
     @media ($screen-sm) {
-        margin-bottom: $spacer / 2;
+        margin-bottom: $spacer / $line-height;
     }
 }
 

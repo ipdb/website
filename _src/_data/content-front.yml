@@ -17,7 +17,7 @@ intro:
         - title: "Store any data, permanently"
           text: "IPDB allows you to store data indefinitely. It provides blockchain-style tamper-resistance and database-style queryability to give you the best of both worlds."
         - title: "Governed by Caretakers"
-          text: "The IPDB Foundation is run by its internet-loving Caretakers around the world."
+          text: "The IPDB Foundation is run by its internet-loving [Caretakers](/foundation/) around the world."
         - title: "A Dashboard for your IPDB apps"
           text: "Manage your apps, give users access, and get statistical insights about your app’s API usage."
 

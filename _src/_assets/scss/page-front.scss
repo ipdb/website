@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'hero';
 
 .section--intro {
     .section__description {
@@ -35,7 +36,7 @@
 
 .feature__title {
     font-size: $font-size-h4;
-    margin-bottom: $spacer / 2;
+    margin-bottom: $spacer / $line-height;
 }
 
 .connect__title {

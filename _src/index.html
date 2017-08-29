@@ -25,18 +25,20 @@ css: page-front
     </div>
 
     <div class="starbase">
-        <div class="row">
-            <svg class="starbase__item starbase__item--stones" width="234" height="80">
-                <use xlink:href="/assets/img/sprite.svg#starbase-stones"></use>
-            </svg>
+        <div class="starbase-wrap">
+            <div class="row">
+                <svg class="starbase__item starbase__item--stones" width="234" height="80">
+                    <use xlink:href="/assets/img/sprite.svg#starbase-stones"></use>
+                </svg>
 
-            <svg class="starbase__item starbase__item--bicycle" width="59" height="31">
-                <use xlink:href="/assets/img/sprite.svg#starbase-bicycle"></use>
-            </svg>
+                <svg class="starbase__item starbase__item--mooncycle" width="59" height="31">
+                    <use xlink:href="/assets/img/sprite.svg#starbase-mooncycle"></use>
+                </svg>
 
-            <svg class="starbase__item starbase__item--towers" width="673" height="389">
-                <use xlink:href="/assets/img/sprite.svg#starbase-towers"></use>
-            </svg>
+                <svg class="starbase__item starbase__item--towers" width="673" height="389">
+                    <use xlink:href="/assets/img/sprite.svg#starbase-towers"></use>
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -83,7 +85,7 @@ css: page-front
 
                     <div class="grid__col grid__col--4">
                         <h1 class="feature__title">{{ feature.title }}</h1>
-                        <p class="feature__text">{{ feature.text }}</p>
+                        <div class="feature__text">{{ feature.text | markdownify }}</div>
                     </div>
                 </div>
             </div>

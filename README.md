@@ -63,10 +63,8 @@ You can make text **bold like so**
 
 Some pages like front page source their content dynamically during site build. This is so we have a single source of truth for content used in multiple places on the site.
 
-### Front page
-
-Content for all sections on front page is coming from a data file:
 - [`_src/_data/content-front.yml`](_src/_data/content-front.yml)
+- [`_src/_data/content-foundation.yml`](_src/_data/content-foundation.yml)
 
 
 # Development

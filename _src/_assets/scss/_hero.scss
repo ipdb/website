@@ -93,7 +93,7 @@ $edge-height:    $spacer * 4;
 .hero__title {
     color: $brand-05;
     font-size: $font-size-h2;
-    margin-bottom: $spacer;
+    margin-bottom: $spacer / $line-height;
 
     @media ($screen-sm) {
         font-size: $font-size-h1 * 1.1;
@@ -139,14 +139,19 @@ $edge-height:    $spacer * 4;
     margin-bottom: -1rem;
 }
 
-.starbase__item--bicycle {
-    margin-bottom: -4.5rem;
-    animation: bicycle 10s forwards;
+.starbase__item--mooncycle {
+    margin-bottom: -4rem;
+    animation: bicycle 8s both 1s;
 }
 
 @keyframes bicycle {
     0% {
         transform: translate3d(60vw, 0, 0);
+    }
+
+    35%,
+    60% {
+        transform: translate3d(0, 0, 0);
     }
 
     100% {
