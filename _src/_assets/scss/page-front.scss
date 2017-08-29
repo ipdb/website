@@ -84,28 +84,29 @@
         color: transparent;
         text-align: center;
         font-size: $font-size-mini;
-        line-height: 1.8;
-        width: 1.5rem;
-        height: 1.5rem;
+        line-height: 2;
+        width: 1.75rem;
+        height: 1.75rem;
         border-radius: 50%;
         display: inline-block;
         background: $brand-05;
-        border: .15rem solid $brand-02;
+        border: .2rem solid #fff;
         position: absolute;
-        left: -2.85rem;
+        left: -2.95rem;
         top: 0;
 
         @media ($screen-md) {
             position: relative;
             left: auto;
             top: auto;
-            bottom: -.85rem;
+            bottom: -.95rem;
         }
     }
 
     &.is-complete {
         &:after {
-            color: #fff;
+            content: '\2714';
+            color: $brand-03;
             background: adjust-hue($brand-01, 170%);
         }
     }
