@@ -138,17 +138,39 @@
 }
 
 .article {
-    @media ($screen-sm) {
-        flex: 0 0 45%;
+    margin-bottom: 6%;
+
+    @media ($screen-md) {
+        flex: 0 0 47%;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+    &:hover,
+    &:focus {
+        .article__title {
+            color: $link-color;
+        }
+
+        .article__image {
+            background-color: $link-color;
+        }
     }
 }
 
+.article__image {
+    width: 100%;
+    min-height: 5rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: $spacer / 3;
+    border: 1px solid $brand-05;
+    border-radius: 1rem;
+}
+
 .article__title {
-    font-size: $font-size-h6;
-    margin-top: 0;
+    font-size: $font-size-small;
+    color: $text-color;
+    margin: 0;
+    align-self: flex-end;
+    transition: .15s ease-out;
 }

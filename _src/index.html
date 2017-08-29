@@ -148,9 +148,9 @@ css: page-front
                     <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
 
                     <div class="articles">
-                        {% for article in site.articles | limit: 4 %}
+                        {% for article in site.articles limit: 4 %}
                         <a class="article" href="{{ article.link }}">
-                            <img src="{{ article.image | escape | strip_html }}" alt="">
+                            <figure class="article__image" style="background-image: url('{{ article.image | escape | strip_html }}')"></figure>
                             <h1 class="article__title">{{ article.title }}</h1>
                         </a>
                         {% endfor %}
