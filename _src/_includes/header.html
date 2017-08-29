@@ -7,4 +7,8 @@
             <h2 class="header__subtitle">{{ page.subtitle }}</h2>
         {% endif %}
     </div>
+
+    {% if page.path contains 'foundation' %}
+        {% include menu-foundation.html %}
+    {% endif%}
 </header>

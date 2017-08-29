@@ -73,6 +73,28 @@
     }
 }
 
+.menu-overflow {
+    // yummy scrolling
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-left: -$spacer;
+    margin-right: -$spacer;
+    padding-left: $spacer;
+    padding-right: $spacer;
+    text-align: center;
+
+    &::-webkit-scrollbar { display: none; }
+
+    @media ($screen-md) {
+        margin: 0;
+        padding: 0;
+        white-space: normal;
+        overflow: visible;
+        text-align: left;
+    }
+}
+
 .menu--main {
     background: $brand-05;
 
@@ -100,6 +122,12 @@
     .button {
         margin-left: $spacer;
     }
+
+    .menu-overflow {
+        @media ($screen-md) {
+            text-align: right;
+        }
+    }
 }
 
 
@@ -108,25 +136,25 @@
     padding-bottom: $spacer * 2;
 }
 
+.menu--sub {
+    padding: 0;
+}
 
-.menu-overflow {
-    // yummy scrolling
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin-left: -$spacer;
-    margin-right: -$spacer;
-    padding-left: $spacer;
-    padding-right: $spacer;
-    text-align: center;
+.menu--foundation {
+    margin-top: $spacer * 2;
+    margin-bottom: 0;
 
-    &::-webkit-scrollbar { display: none; }
+    &:before {
+        display: none;
+    }
 
-    @media ($screen-md) {
-        margin: 0;
-        padding: 0;
-        white-space: normal;
-        overflow: visible;
-        text-align: right;
+    .menu__link {
+        &:first-child {
+            margin-left: -$spacer;
+        }
+
+        &:last-child {
+            margin-right: -$spacer;
+        }
     }
 }

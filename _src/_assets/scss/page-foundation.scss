@@ -1,5 +1,12 @@
 @import 'variables';
 
+.section--intro {
+    .section__header,
+    .grid {
+        margin-bottom: 0;
+    }
+}
+
 .feature {
     padding-left: 5rem;
     position: relative;

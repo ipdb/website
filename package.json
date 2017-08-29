@@ -26,7 +26,9 @@
     "Android >= 4",
     "ie >= 10"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "smooth-scroll": "^12.1.4"
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",

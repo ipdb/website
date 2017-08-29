@@ -6,7 +6,9 @@ layout: base
 
 <main role="main" class="content content--page {% if page.path contains '.md' %}content--page--markdown{% endif %}">
 
-    {% if page.path contains '.md' %}<div class="row {% if page.narrow %}row--narrow{% endif%}">{% endif %}
+    {% if page.path contains '.md' %}
+        <div class="row {% if page.narrow %}row--narrow{% endif%}">
+    {% endif %}
 
         {{ content }}
 
