@@ -4,13 +4,14 @@ $edge-height:    $spacer * 4;
 .hero {
     background: $brand-07;
     padding-top: $spacer * 2;
-    padding-bottom: $spacer * 2;
-    min-height: calc(100vh - #{$edge-height-sm});
+    padding-bottom: 0;
+    height: calc(100vh - #{$edge-height-sm});
+    min-height: 580px;
     margin-bottom: $edge-height-sm;
     position: relative;
 
     @media ($screen-sm) {
-        min-height: calc(100vh - #{$edge-height});
+        height: calc(100vh - #{$edge-height});
         margin-bottom: $edge-height;
     }
 
@@ -29,12 +30,6 @@ $edge-height:    $spacer * 4;
             height: $edge-height;
             bottom: -($edge-height);
         }
-    }
-
-    &,
-    .hero__title,
-    .hero__action {
-        color: #fff;
     }
 
     .menu--main {
@@ -63,28 +58,72 @@ $edge-height:    $spacer * 4;
     }
 
     .menu__link {
-        color: rgba(#fff, .8);
+        color: rgba($brand-05, .8);
 
         &:after {
-            background: rgba(#fff, .8);
+            background: rgba($brand-05, .8);
         }
 
         &:hover,
         &:focus,
         &.active {
-            color: #fff;
+            color: $brand-05;
 
             &:after {
-                background: #fff;
+                background: $brand-05;
             }
 
             .logo {
-                fill: #fff;
+                fill: $brand-05;
             }
         }
     }
 
     .logo {
-        fill: rgba(#fff, .95);
+        fill: rgba($brand-05, .95);
     }
+}
+
+.hero__title {
+    color: $brand-05;
+    font-size: $font-size-h1 * 1.2;
+    margin-bottom: $spacer;
+}
+
+.hero__description {
+    font-size: $font-size-large;
+    margin-top: 0;
+    margin-bottom: $spacer * 2;
+    color: $brand-02;
+    line-height: $line-height;
+}
+
+
+//
+// Le star base
+//
+.starbase {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 4.5rem solid $brand-02;
+    align-self: flex-end;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.starbase__item--stones {
+    margin-bottom: -1rem;
+}
+
+.starbase__item--bicycle {
+    margin-bottom: -3rem;
+}
+
+.starbase__item--towers {
+    margin-bottom: -4.5rem;
 }

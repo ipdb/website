@@ -14,9 +14,30 @@ css: page-front
 
     <div class="hero__content row">
         <hgroup>
-            <h1 class="hero__title">{{ content.hero.title }}</h1>
-            <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
+            <div class="grid grid--full grid-medium--columns grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="hero__title">{{ content.hero.title }}</h1>
+                    <h2 class="hero__description">{{ content.hero.description }}</h2>
+                    <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
+                </div>
+            </div>
         </hgroup>
+    </div>
+
+    <div class="starbase">
+        <div class="row">
+            <svg class="starbase__item starbase__item--stones" width="234" height="80">
+                <use xlink:href="/assets/img/sprite.svg#starbase-stones"></use>
+            </svg>
+
+            <svg class="starbase__item starbase__item--bicycle" width="59" height="31">
+                <use xlink:href="/assets/img/sprite.svg#starbase-bicycle"></use>
+            </svg>
+
+            <svg class="starbase__item starbase__item--towers" width="598" height="344">
+                <use xlink:href="/assets/img/sprite.svg#starbase-towers"></use>
+            </svg>
+        </div>
     </div>
 </header>
 
@@ -24,7 +45,7 @@ css: page-front
 <section class="section section--intro">
     <div class="row">
         <header class="section__header">
-            <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
+            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
                 <div class="grid__col grid__col--4">
                     <h1 class="section__title">{{ content.intro.title }}</h1>
                     <p class="section__description">{{ content.intro.description }}</p>
@@ -73,7 +94,7 @@ css: page-front
 <section class="section section--background section--foundation">
     <div class="row">
         <header class="section__header">
-            <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
+            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
                 <div class="grid__col grid__col--4">
                     <h1 class="section__title">{{ content.foundation.title }}</h1>
                     <p class="section__description">{{ content.foundation.description }}</p>
