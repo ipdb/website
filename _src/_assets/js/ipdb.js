@@ -1,3 +1,5 @@
+/* global SmoothScroll */
+
 // =include _dnt.js
 // =include smooth-scroll/dist/js/smooth-scroll.js
 

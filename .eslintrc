@@ -1,3 +1,6 @@
 {
-      "extends": "ascribe"
+      "extends": "ascribe",
+      "rules": {
+          "no-unused-vars": 0
+      }
 }
