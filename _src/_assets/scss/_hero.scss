@@ -56,6 +56,17 @@ $edge-height:    $spacer * 4;
                 bottom: -($edge-height);
             }
         }
+
+        .button {
+            background: none;
+            border: 1.5px solid rgba($brand-05, .2);
+            color: rgba($brand-05, .8);
+
+            &:hover,
+            &:focus {
+                color: $brand-05;
+            }
+        }
     }
 
     .menu__link {
@@ -141,7 +152,7 @@ $edge-height:    $spacer * 4;
 
 .starbase__item--mooncycle {
     margin-bottom: -4rem;
-    animation: bicycle 8s both 1s;
+    animation: bicycle 8s both 2s;
 }
 
 @keyframes bicycle {
