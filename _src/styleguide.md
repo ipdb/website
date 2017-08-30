@@ -10,9 +10,26 @@ css: page-styleguide
 narrow: true
 ---
 
+# Colors
+
+<div class="colors">
+{% for color in site.data.colors %}
+<div class="color color--{{ color.name }}" style="background-color: #{{ color.hex }}">
+    <span class="color__meta color-name">${{ color.name }}</span>
+    <span class="color__meta color-hex">#{{ color.hex }}</span>
+</div>
+{% endfor %}
+</div>
+
 # Typography
 
+## The blockchain database network for the decentralized stack
+
 IPDB is a planetary-scale blockchain database built on [BigchainDB](https://www.bigchaindb.com). It’s a ready-to-use public network with a focus on **strong governance**. It shares _all the features_ of BigchainDB to make developers’ lives easier.
+
+### Maecenas sed diam eget risus
+
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
 * Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 * Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -32,28 +49,25 @@ IPDB is a planetary-scale blockchain database built on [BigchainDB](https://www.
 
 ##### Heading 5
 
-###### Heading 6
-
 
 # Logo
 
 Logo can be used with a base class and modifier classes for size & color:
 
-- `logo`: default logo
-- `logo--sm`: small version
-- `logo--lg`: large version
-- `logo--dark`: dark version
-- `logo--white`: white version
-
 <svg class="logo logo--lg" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+`logo--lg`: large version
 
 <svg class="logo" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+`logo`: default logo
 
 <svg class="logo logo--sm" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+`logo--sm`: small version
 
 <svg class="logo logo--dark" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+`logo--dark`: dark version
 
 <svg class="logo logo--white" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+`logo--white`: white version
 
 
 # Components

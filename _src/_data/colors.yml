@@ -1,0 +1,20 @@
+- name: "brand-01"
+  hex: "cc6bb3"
+
+- name: "brand-02"
+  hex: "7dacbc"
+
+- name: "brand-03"
+  hex: "093749"
+
+- name: "brand-04"
+  hex: "557f8d"
+
+- name: "brand-05"
+  hex: "eaf3f5"
+
+- name: "brand-06"
+  hex: "444"
+
+- name: "brand-07"
+  hex: "0e475d"

@@ -19,6 +19,7 @@ $font-size-root:            20px !default;
 $font-size-root-lg:         22px !default;
 $line-height:               1.33333 !default;
 $spacer:                    1rem !default;
+$border-radius:             1rem !default;
 
 $font-weight-light:         300 !default;
 $font-weight-normal:        400 !default;
@@ -31,10 +32,9 @@ $font-size-mini:            .7rem !default;
 
 $font-size-h1:              2rem !default;
 $font-size-h2:              1.7rem !default;
-$font-size-h3:              1.4rem !default;
-$font-size-h4:              1.3rem !default;
-$font-size-h5:              $font-size-large !default;
-$font-size-h6:              $font-size-base !default;
+$font-size-h3:              1.33333rem !default;
+$font-size-h4:              $font-size-large !default;
+$font-size-h5:              $font-size-base !default;
 
 $headings-font-family:      inherit !default;
 $headings-font-weight:      $font-weight-normal !default;

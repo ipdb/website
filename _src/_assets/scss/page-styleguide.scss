@@ -1,6 +1,6 @@
 @import 'variables';
 
-.page--styleguide {
+.page--styleguide .content {
     .logo {
         margin-bottom: $spacer;
     }
@@ -8,4 +8,31 @@
     .logo--white {
         background: $brand-03;
     }
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$spacer;
+    width: calc(100% + $spacer);
+}
+
+.color {
+    flex: 0 1 29.5%;
+    margin-left: $spacer;
+    margin-bottom: $spacer;
+    padding: $spacer;
+    color: $brand-05;
+    border-radius: $border-radius;
+    font-size: $font-size-mini;
+    font-family: $font-family-monospace;
+    line-height: 1.5;
+
+    &.color--brand-05 {
+        color: $brand-04;
+    }
+}
+
+.color__meta {
+    display: block;
 }

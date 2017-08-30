@@ -21,7 +21,7 @@
     background: $brand-05;
     padding: $spacer;
     padding-bottom: 0;
-    border-radius: 1rem;
+    border-radius: $border-radius;
     min-height: 9rem;
     display: flex;
     align-items: flex-end;
@@ -177,7 +177,7 @@
     background-repeat: no-repeat;
     margin-bottom: $spacer / 3;
     border: 1px solid $brand-05;
-    border-radius: 1rem;
+    border-radius: $border-radius;
 }
 
 .article__title {
