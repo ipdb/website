@@ -96,7 +96,7 @@ All `form__control` elements require an empty placeholder to make browser valida
     </div>
     <div class="form__group">
         <label class="form__label" for="email">Your Email</label>
-        <input class="form__control" type="email" id="email" name="email" placeholder=" ">
+        <input class="form__control" type="email" id="email" name="email" placeholder="hello@whatever.com">
     </div>
     <div class="form__group">
         <label class="form__label" for="phone">Your Phone</label>

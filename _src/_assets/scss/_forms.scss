@@ -8,6 +8,10 @@
 
 .form {
     margin-bottom: $spacer;
+
+    @media ($screen-sm) {
+        max-width: 25rem;
+    }
 }
 
 .form__group {
@@ -17,9 +21,10 @@
 .form__label {
     user-select: none;
     display: block;
-    font-size: $font-size-small;
+    font-size: $font-size-mini;
+    font-weight: $font-weight-bold;
     text-transform: uppercase;
-    color: $brand-04;
+    color: $brand-02;
     margin-bottom: $spacer / 4;
 
     .required & {
@@ -38,6 +43,7 @@
     max-width: 100%;
     appearance: none;
     padding: $spacer / 3 $spacer / 2;
+    margin: 0;
     font-family: $font-family-base;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
@@ -48,10 +54,6 @@
     background: lighten($brand-05, 4%);
     transition: .15s ease-out;
 
-    @media ($screen-sm) {
-        max-width: 30rem;
-    }
-
     &:focus {
         outline: 0;
         border-color: $brand-02;
@@ -60,10 +62,9 @@
 
     // Placeholder
     &::placeholder {
-        color: $brand-02;
-
-        // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
-        opacity: 1;
+        color: $text-color;
+        opacity: .4;
+        font-weight: $font-weight-normal;
     }
 
     &:disabled,
@@ -103,10 +104,23 @@ textarea {
 .form__help {
     font-size: $font-size-small;
     color: $brand-02;
+    line-height: 1.2;
+    display: inline-block;
+    margin-top: $spacer / 4;
 
     input + & {
-        margin-left: $spacer / 2;
+        padding-left: $spacer / 2;
+        padding-right: $spacer / 2;
     }
+}
+
+//
+// Size modifiers
+//
+.form__control--small {
+    font-size: $font-size-small;
+    padding-top: $spacer / 5;
+    padding-bottom: $spacer / 5;
 }
 
 

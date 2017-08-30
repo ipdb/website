@@ -1,5 +1,7 @@
 main:
     - title: Foundation
       url: /foundation/
+    - title: Contact
+      url: /contact/
     - title: Style guide
       url: /styleguide/

@@ -21,6 +21,11 @@ login:
     button: Log in
     link: https://developers.ipdb.io/login
 
+# Form actions
+forms:
+    contact: '#'
+    newsletter: '#'
+
 # Urls
 # --------------------
 permalink:      /:title/

@@ -151,6 +151,10 @@
     > .grid__col { flex: 0 0 100%; }
 }
 
+.grid--fourth {
+    > .grid__col { flex: 0 0 25%; }
+}
+
 .grid--third {
     > .grid__col { flex: 0 0 33.3%; }
 }
@@ -179,6 +183,10 @@
         > .grid__col { flex: 0 0 100%; }
     }
 
+    .grid-small--fourth {
+        > .grid__col { flex: 0 0 25%; }
+    }
+
     .grid-small--third {
         > .grid__col { flex: 0 0 33.3%; }
     }
@@ -204,6 +212,10 @@
         > .grid__col { flex: 0 0 100%; }
     }
 
+    .grid-medium--fourth {
+        > .grid__col { flex: 0 0 25%; }
+    }
+
     .grid-medium--third {
         > .grid__col { flex: 0 0 33.3%; }
     }
@@ -227,6 +239,10 @@
 
     .grid-large--full {
         > .grid__col { flex: 0 0 100%; }
+    }
+
+    .grid-large--fourth {
+        > .grid__col { flex: 0 0 25%; }
     }
 
     .grid-large--third {

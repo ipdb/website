@@ -123,13 +123,12 @@ css: page-front
                 </div>
             </div>
         </header>
-    </div>
-    <div class="row">
-        {% include caretakers.html %}
-    </div>
 
-    <div class="row">
-        <a href="/foundation/" class="button button--text">{{ content.foundation.button }}</a>
+        {% include caretakers.html %}
+
+        <footer class="section__actions">
+            <a href="/foundation/" class="button button--text">{{ content.foundation.button }}</a>
+        </footer>
     </div>
 </section>
 
@@ -180,28 +179,37 @@ css: page-front
             <p class="section__description">{{ content.connect.description }}</p>
         </header>
 
-        <div class="grid grid--full grid-small--half grid--gutters">
-            <div class="grid__col">
-                <div class="connect connect--blog">
-                    <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
+        <div class="connect connect--blog">
+            <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
 
-                    <div class="articles">
-                        {% for article in site.articles limit: 4 %}
-                        <a class="article" href="{{ article.link }}">
-                            <figure class="article__image" style="background-image: url('{{ article.image | escape | strip_html }}')"></figure>
-                            <h1 class="article__title">{{ article.title }}</h1>
-                        </a>
-                        {% endfor %}
-                    </div>
-
-                    <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
+            <div class="articles">
+                <div class="grid grid--full grid-small--half grid-medium--fourth grid--gutters">
+                    {% for article in site.articles limit: 4 %}
+                        <div class="grid__col">
+                            <a class="article" href="{{ article.link }}">
+                                <figure class="article__image" style="background-image: url('{{ article.image | escape | strip_html }}')"></figure>
+                                <h1 class="article__title">{{ article.title }}</h1>
+                            </a>
+                        </div>
+                    {% endfor %}
                 </div>
+
+                <footer class="section__actions">
+                    <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
+                </footer>
             </div>
+        </div>
+
+        <div class="grid grid--full grid-small--half grid--gutters">
             <div class="grid__col">
                 <div class="connect connect--newsletter">
                     <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
-                </div>
+                    <p>{{ content.connect.newsletter_text }}</p>
 
+                    {% include form-newsletter.html %}
+                </div>
+            </div>
+            <div class="grid__col">
                 <div class="connect connect--social">
                     <h2 class="connect__title">{{ content.connect.social_title }}</h2>
                 </div>
