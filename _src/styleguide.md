@@ -132,6 +132,19 @@ All `form__control` elements require an empty placeholder to make browser valida
     </div>
 </form>
 
+<br>
+
+<form class="form" action="#">
+    <p>Combined form control & button input group.</p>
+    <div class="form__group required">
+        <label class="form__label" for="email2">Your Email</label>
+        <div class="input-group">
+            <input class="form__control" type="email" id="email2" name="email2" required placeholder=" ">
+            <input class="button button-primary button--small" type="submit" value="Subscribe">
+        </div>
+    </div>
+</form>
+
 ## Section header
 
 <header class="section__header">

@@ -110,8 +110,22 @@
     margin-top: $spacer / 4;
 
     input + & {
-        padding-left: $spacer / 2;
         padding-right: $spacer / 2;
+    }
+}
+
+.input-group {
+    display: flex;
+
+    .form__control {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+
+    .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 }
 
