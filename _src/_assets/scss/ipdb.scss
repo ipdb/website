@@ -12,3 +12,11 @@
 @import 'logo';
 @import 'caretakers';
 @import 'board';
+
+.content--page--markdown {
+    padding-top: $spacer * 2;
+
+    @media ($screen-sm) {
+        padding-top: $spacer * 4;
+    }
+}
