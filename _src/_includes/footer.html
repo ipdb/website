@@ -1,10 +1,26 @@
 <footer class="footer">
     <div class="row">
 
-        <nav class="menu menu--footer">
-            {% for page in site.pages %}
-                <a class="menu__link" href="{{ page.url }}">{{ page.title }}</a>
-            {% endfor %}
-        </nav>
+        {% include menu-footer.html %}
+
+    </div>
+
+    <div class="footer__copyright">
+        <div class="row">
+            <div class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.data.contact.company }}</div>
+
+            <nav class="menu--legal">
+                {% for link in site.data.menus.legal %}
+
+                    {% assign active = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign active = 'active' %}
+                    {% endif %}
+
+                    <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+
+                {% endfor %}
+            </nav>
+        </div>
     </div>
 </footer>

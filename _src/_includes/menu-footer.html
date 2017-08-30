@@ -1,0 +1,49 @@
+<nav class="menu menu--footer">
+    <div class="grid grid--full grid-small--fit grid--gutters">
+
+        <div class="grid__col">
+            <a class="menu__logo" href="/">
+                <svg class="logo" aria-labelledby="title">
+                    <title>Logo</title>
+                    <use xlink:href="/assets/img/sprite.svg#logo"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="grid__col">
+            {% for link in site.data.menus.main %}
+                {% assign active = nil %}
+                {% if page.url contains link.url %}
+                    {% assign active = 'active' %}
+                {% endif %}
+
+                <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+        </div>
+
+        <div class="grid__col">
+            {% for link in site.data.menus.footer %}
+                {% assign active = nil %}
+                {% if page.url contains link.url %}
+                    {% assign active = 'active' %}
+                {% endif %}
+
+                <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+        </div>
+
+        <div class="grid__col">
+            <h2 class="footer__title">Follow us</h2>
+            <div class="social">
+                {% for item in site.data.contact.social %}
+                    <a class="social-link" href="{{ item.link }}" title="{{ item.name }}">
+                        <svg class="icon" aria-labelledby="title">
+                            <title>{{ item.name }}</title>
+                            <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                        </svg>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>

@@ -133,7 +133,52 @@
 
 .menu--footer {
     padding-top: $spacer * 2;
+
+    .logo {
+        fill: $brand-05;
+    }
+
+    .menu__link {
+        color: $brand-05;
+        display: block;
+        padding-top: $spacer / 4;
+        padding-bottom: $spacer / 4;
+
+        &:after { display: none; }
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        margin-top: $spacer;
+    }
+
+    .social-link {
+        display: block;
+        border: 1.5px solid $brand-02;
+        border-radius: $border-radius;
+        padding: $spacer / 2;
+        width: 2rem;
+        height: 2rem;
+        line-height: 1;
+
+        svg {
+            fill: $brand-05;
+
+        }
+    }
+}
+
+
+.menu--legal {
     padding-bottom: $spacer * 2;
+
+    .menu__link {
+        color: $brand-05;
+        font-size: $font-size-mini;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .menu--sub {

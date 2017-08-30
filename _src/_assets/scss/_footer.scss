@@ -1,0 +1,44 @@
+.footer {
+    color: $brand-05;
+    position: relative;
+    background: $brand-04;
+    padding-top: $spacer * 2;
+    margin-top: $edge-height-sm;
+
+    @media ($screen-sm) {
+        margin-top: $edge-height;
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: $edge-height-sm;
+        display: block;
+        position: absolute;
+        left: 0;
+        background: $brand-04;
+        top: -($edge-height-sm);
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+        @media ($screen-sm) {
+            height: $edge-height;
+            top: -($edge-height);
+        }
+    }
+}
+
+.footer__copyright {
+    font-size: $font-size-mini;
+    width: 100%;
+    opacity: .8;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__title {
+    font-size: $font-size-base;
+    color: $brand-02;
+}

@@ -179,10 +179,22 @@ css: page-front
 
 <section class="section section--connect">
     <div class="row">
-        <header class="section__header">
-            <h1 class="section__title">{{ content.connect.title }}</h1>
-            <p class="section__description">{{ content.connect.description }}</p>
-        </header>
+        <div class="grid grid--full grid-small--half grid--gutters">
+            <div class="grid__col">
+                <header class="section__header">
+                    <h1 class="section__title">{{ content.connect.title }}</h1>
+                    <p class="section__description">{{ content.connect.description }}</p>
+                </header>
+            </div>
+            <div class="grid__col">
+                <div class="connect connect--newsletter">
+                    <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
+                    <p>{{ content.connect.newsletter_text }}</p>
+
+                    {% include form-newsletter.html %}
+                </div>
+            </div>
+        </div>
 
         <div class="connect connect--blog">
             <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
@@ -202,35 +214,6 @@ css: page-front
                 <footer class="section__actions">
                     <a href="https://blog.ipdb.io" class="button button--text">IPDB Blog</a>
                 </footer>
-            </div>
-        </div>
-
-        <div class="grid grid--full grid-small--half grid--gutters">
-            <div class="grid__col">
-                <div class="connect connect--newsletter">
-                    <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
-                    <p>{{ content.connect.newsletter_text }}</p>
-
-                    {% include form-newsletter.html %}
-                </div>
-            </div>
-            <div class="grid__col">
-                <div class="connect connect--social">
-                    <h2 class="connect__title">{{ content.connect.social_title }}</h2>
-
-                    <ul class="social-list">
-                        {% for item in site.data.contact.social %}
-                            <li>
-                                <a href="{{ item.link }}" title="{{ item.name }}">
-                                    <svg class="icon" aria-labelledby="title">
-                                        <title>{{ item.name }}</title>
-                                        <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
             </div>
         </div>
 

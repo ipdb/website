@@ -3,5 +3,15 @@ main:
       url: /foundation/
     - title: Contact
       url: /contact/
+
+footer:
     - title: Style guide
       url: /styleguide/
+
+legal:
+    - title: Terms
+      url: /terms/
+    - title: Privacy
+      url: /privacy/
+    - title: Imprint
+      url: /imprint/
