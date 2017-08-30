@@ -23,7 +23,7 @@ intro:
 
 foundation:
     title: "IPDB Foundation: human-scale governance"
-    description: "IPDB relies on caretakers to run the BigchainDB nodes that store and validate transactions. The IPDB Caretakers are the members of the IPDB Foundation and … summarize Jurisdictional diversity & Not for profit"
+    description: "IPDB relies on caretakers to run the BigchainDB nodes that store and validate transactions. The IPDB Caretakers are the members of the IPDB Foundation."
     button: "Learn about IPDB Foundation"
 
 
@@ -34,15 +34,19 @@ roadmap:
         - net: Test net
           target: Demo app
           status: complete
+          time: Q4 2016
         - net: Test net
           target: Invited users
           status: complete
+          time: Q1 2017
         - net: Test net
           target: General public
           status: complete
+          time: Q2 2017
         - net: Production net
           target: Demo app
           status: progress
+          time: In progress
         - net: Production net
           target: Invited users
           status: planned

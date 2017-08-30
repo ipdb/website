@@ -69,7 +69,6 @@
 }
 
 .roadmap__step {
-    font-size: $font-size-small;
     position: relative;
     margin-bottom: $spacer * 2;
 
@@ -94,7 +93,7 @@
         border: .2rem solid #fff;
         position: absolute;
         left: -2.95rem;
-        top: 0;
+        top: -.25rem;
 
         @media ($screen-md) {
             position: relative;
@@ -119,12 +118,25 @@
     }
 }
 
-.roadmap__net {
+.roadmap__net,
+.roadmap__target {
     margin-bottom: 0;
 }
 
 .roadmap__target {
     color: $brand-07;
+}
+
+.roadmap__time {
+    color: $brand-02;
+    font-size: $font-size-small;
+
+    @media ($screen-md) {
+        position: absolute;
+        left: 0;
+        bottom: -70%;
+        width: 100%;
+    }
 }
 
 

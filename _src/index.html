@@ -145,6 +145,7 @@ css: page-front
                 <div class="roadmap__step is-{{ status }}">
                     <p class="roadmap__net">{{ step.net }}</p>
                     <p class="roadmap__target">{{ step.target }}</p>
+                    {% if step.time %}<p class="roadmap__time">{{ step.time }}</p>{% endif %}
                 </div>
 
             {% endfor %}
