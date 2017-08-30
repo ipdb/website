@@ -49,10 +49,12 @@ $link-color:                $brand-01 !default;
 //
 // Responsive breakpoints
 //
+$screen-xs-min:             30em !default;
 $screen-sm-min:             40em !default;
 $screen-md-min:             58em !default;
 $screen-lg-min:             85em !default;
 
+$screen-xs:                 'min-width: #{$screen-xs-min}';
 $screen-sm:                 'min-width: #{$screen-sm-min}';
 $screen-md:                 'min-width: #{$screen-md-min}';
 $screen-lg:                 'min-width: #{$screen-lg-min}';

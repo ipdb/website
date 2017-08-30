@@ -8,8 +8,26 @@
 
         <div class="grid__col">
             <div class="boardmember">
-                <h1 class="boardmember__title">{{ member.name }}</h1>
-                <p class="boardmember__position">{{ member.position }}</p>
+                <div class="boardmember__info">
+                    <img class="boardmember__avatar" src="/assets/img/board/{{ slug }}.jpg">
+
+                    <div class="boardmember__meta">
+                        <h1 class="boardmember__name">
+                            {% if member.prefix %}{{ member.prefix }} {% endif %}
+                            {{ member.name }}
+                        </h1>
+                        <p class="boardmember__position">{{ member.position }}</p>
+
+                        {% if member.social %}
+                        <p class="boardmember__social">
+                            {% for item in member.social %}
+                                <a href="{{ item.link }}">{{ item.name }}</a>
+                            {% endfor %}
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+
                 <div class="boardmember__bio">{{ member.bio | markdownify }}</div>
             </div>
         </div>

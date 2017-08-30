@@ -1,8 +1,66 @@
-.boardmember__title {
+.boardmember {
+    margin-top: $spacer * $line-height;
+}
+
+.boardmember__name,
+.boardmember__position,
+.boardmember__social {
+    margin: 0;
+}
+
+.boardmember__name {
     font-size: $font-size-h3;
-    margin-bottom: 0;
+}
+
+.boardmember__info {
+    margin-bottom: $spacer;
+    position: relative;
+
+    @media ($screen-xs) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+$avatar-size: 100px;
+
+.boardmember__avatar {
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: $border-radius;
+    margin-right: $spacer;
+    border: 3px solid $brand-02;
+    background: $brand-02;
+}
+
+.boardmember__social {
+    font-size: $font-size-small;
+
+    @media ($screen-md) {
+        position: absolute;
+        top: calc(#{$avatar-size} + #{$spacer});
+        left: 0;
+        width: $avatar-size;
+        text-align: center;
+
+        a {
+            display: block;
+        }
+    }
 }
 
 .boardmember__bio {
+    p {
+        opacity: .75;
+        font-size: $font-size-small;
 
+        &:first-child {
+            opacity: 1;
+            font-size: $font-size-base;
+        }
+    }
+
+    @media ($screen-md) {
+        padding-left: calc(#{$avatar-size} + #{$spacer});
+    }
 }
