@@ -21,3 +21,6 @@
 
 - name: "brand-success"
   hex: "6bcc74"
+
+- name: "brand-failure"
+  hex: "cc6b72"

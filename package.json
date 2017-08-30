@@ -27,7 +27,8 @@
     "ie >= 10"
   ],
   "dependencies": {
-    "smooth-scroll": "^12.1.4"
+    "smooth-scroll": "^12.1.4",
+    "textarea-autogrow": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

@@ -84,21 +84,27 @@ Logo can be used with a base class and modifier classes for size & color:
 
 ## Forms
 
-<form class="form js-parsley" action="#">
-    <div class="form-group">
-        <input class="form-control" type="text" id="name" name="name" required>
-        <label class="form-label" for="name">Your Name</label>
+All `form__control` elements require an empty placeholder to make browser validation look properly.
+
+<form class="form" action="#">
+    <div class="form__group required">
+        <label class="form__label" for="name">Your Name</label>
+        <input class="form__control" type="text" id="name" name="name" required placeholder=" ">
+        <span class="form__help">
+            You know your name, I suppose.
+        </span>
     </div>
-    <div class="form-group">
-        <input class="form-control" type="email" id="email" name="email">
-        <label class="form-label" for="email">Your Email</label>
+    <div class="form__group">
+        <label class="form__label" for="email">Your Email</label>
+        <input class="form__control" type="email" id="email" name="email" placeholder=" ">
     </div>
-    <div class="form-group">
-        <input class="form-control" type="tel" id="phone" name="phone">
-        <label class="form-label" for="phone">Your Phone</label>
+    <div class="form__group">
+        <label class="form__label" for="phone">Your Phone</label>
+        <input class="form__control" type="tel" id="phone" name="phone" placeholder=" ">
     </div>
-    <div class="form-group">
-        <select class="form-control" id="select" name="select" required data-required="true">
+    <div class="form__group required">
+        <label class="form__label" for="industry">Industry</label>
+        <select class="form__control" id="select" name="select" required data-required="true">
             <option value="">&nbsp;</option>
             <option value="Automotive">Automotive</option>
             <option value="Banking">Banking</option>
@@ -113,17 +119,16 @@ Logo can be used with a base class and modifier classes for size & color:
             <option value="Consulting">Consulting</option>
             <option value="Data">Data</option>
         </select>
-        <label class="form-label" for="industry">Industry</label>
     </div>
-    <div class="form-group">
-        <textarea class="form-control" id="comment" name="comment" rows="1"></textarea>
-        <label class="form-label" for="comment">Autogrowing textarea</label>
+    <div class="form__group">
+        <label class="form__label" for="comment">Autogrowing textarea</label>
+        <textarea class="form__control" id="comment" name="comment" rows="1" placeholder=" "></textarea>
     </div>
-    <p class="form-group text-dimmed mini">
-        Fields marked with an <span class="required"></span> are required.
+    <p class="form__group form__help">
+        Fields marked with an <span class="required">*</span> are required.
     </p>
-    <div class="form-group">
-        <input class="btn btn-primary" type="submit" value="Submit">
+    <div class="form__group">
+        <input class="button button-primary" type="submit" value="Submit">
     </div>
 </form>
 

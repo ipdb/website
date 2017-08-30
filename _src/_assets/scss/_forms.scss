@@ -1,0 +1,120 @@
+//
+// Forms
+// ---
+// ipdb.io
+//
+
+@import 'variables';
+
+.form {
+    margin-bottom: $spacer;
+}
+
+.form__group {
+    margin-bottom: $spacer / $line-height;
+}
+
+.form__label {
+    user-select: none;
+    display: block;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    color: $brand-04;
+    margin-bottom: $spacer / 4;
+
+    .required & {
+        &:after {
+            content: '*';
+            color: $brand-01;
+            padding-left: .1rem;
+            padding-right: .1rem;
+        }
+    }
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    appearance: none;
+    padding: $spacer / 3 $spacer / 2;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    box-shadow: none;
+    border: 1.5px solid darken($brand-05, 10%);
+    border-radius: $border-radius / 2;
+    color: $brand-03;
+    background: lighten($brand-05, 4%);
+    transition: .15s ease-out;
+
+    @media ($screen-sm) {
+        max-width: 30rem;
+    }
+
+    &:focus {
+        outline: 0;
+        border-color: $brand-02;
+        background: $brand-05;
+    }
+
+    // Placeholder
+    &::placeholder {
+        color: $brand-02;
+
+        // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+        opacity: 1;
+    }
+
+    &:disabled,
+    &[readonly] {
+        cursor: disabled;
+
+        // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+        opacity: 1;
+    }
+
+    //
+    // Form Validation States
+    //
+    // Success style
+    &:valid:not(:focus):not(:placeholder-shown) {
+        &,
+        &:focus {
+            border-color: $brand-success;
+        }
+    }
+
+    // Error style
+    &:invalid:not(:focus):not(:placeholder-shown):not(select) {
+        &,
+        &:focus {
+            border-color: $brand-failure;
+        }
+    }
+}
+
+textarea {
+    // for textarea-autogrow
+    resize: none;
+    box-sizing: content-box;
+}
+
+.form__help {
+    font-size: $font-size-small;
+    color: $brand-02;
+
+    input + & {
+        margin-left: $spacer / 2;
+    }
+}
+
+
+//
+// required indicator
+//
+.required {
+    color: $brand-01;
+    padding-left: .1rem;
+    padding-right: .1rem;
+}
