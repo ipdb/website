@@ -136,8 +136,13 @@ css: page-front
 <section class="section section--roadmap">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">{{ content.roadmap.title }}</h1>
-            <p class="section__description">{{ content.roadmap.description }}</p>
+            <div class="grid grid--full grid-medium--columns grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.roadmap.title }}</h1>
+                    <p class="section__description">{{ content.roadmap.description }}</p>
+                </div>
+            </div>
+
         </header>
     </div>
 
@@ -212,6 +217,19 @@ css: page-front
             <div class="grid__col">
                 <div class="connect connect--social">
                     <h2 class="connect__title">{{ content.connect.social_title }}</h2>
+
+                    <ul class="social-list">
+                        {% for item in site.data.contact.social %}
+                            <li>
+                                <a href="{{ item.link }}" title="{{ item.name }}">
+                                    <svg class="icon" aria-labelledby="title">
+                                        <title>{{ item.name }}</title>
+                                        <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>

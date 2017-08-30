@@ -1,0 +1,20 @@
+name: "IPDB Foundation e.V."
+address:
+    street: "Wichertstraße 14a"
+    zip: "10439"
+    city: "Berlin"
+    country: "Germany"
+email: "contact@ipdb.io"
+
+# All the social links
+social:
+    - name: "Twitter"
+      link: "https://twitter.com/ipdbfoundation"
+    - name: "Facebook"
+      link: "https://facebook.com/ipdbfoundation"
+    - name: "LinkedIn"
+      link: "https://www.linkedin.com/company/7963161"
+    - name: "GitHub"
+      link: "https://github.com/ipdb"
+      org:  "ipdb"
+      repo: "site"

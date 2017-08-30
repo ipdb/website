@@ -3,23 +3,18 @@
 title:          "IPDB"
 description:    "The Interplanetary Database."
 url:            "https://ipdb.io"
-email:          "contact@ipdb.io"
-
-github:
-    org:        "ipdb"
-    repo:       "site"
 
 analyticsID:    ""
 typekitID:      "bko7hwo"
 
 signup:
-    button: Sign up for free (testnet)
-    button_short: Sign up
-    link: https://developers.ipdb.io/signup?plan_ids[]=2357355879577
+    button: "Sign up for free (testnet)"
+    button_short: "Sign up"
+    link: "https://developers.ipdb.io/signup?plan_ids[]=2357355879577"
 
 login:
-    button: Log in
-    link: https://developers.ipdb.io/login
+    button: "Log in"
+    link: "https://developers.ipdb.io/login"
 
 # Form actions
 forms:

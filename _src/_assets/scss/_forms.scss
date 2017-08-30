@@ -93,12 +93,13 @@
             border-color: $brand-failure;
         }
     }
-}
 
-textarea {
-    // for textarea-autogrow
-    resize: none;
-    box-sizing: content-box;
+    &textarea {
+        // for textarea-autogrow
+        resize: none;
+        box-sizing: content-box;
+        max-width: 95%;
+    }
 }
 
 .form__help {

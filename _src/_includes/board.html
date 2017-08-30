@@ -21,7 +21,12 @@
                         {% if member.social %}
                         <p class="boardmember__social">
                             {% for item in member.social %}
-                                <a href="{{ item.link }}">{{ item.name }}</a>
+                                <a href="{{ item.link }}" title="{{ item.name }}">
+                                    <svg class="icon" aria-labelledby="title">
+                                        <title>{{ item.name }}</title>
+                                        <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                                    </svg>
+                                </a>
                             {% endfor %}
                         </p>
                         {% endif %}

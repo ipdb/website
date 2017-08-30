@@ -107,6 +107,7 @@ strong {
 a {
     color: $link-color;
     text-decoration: none;
+    transition: .15s ease-out;
 
     &:hover,
     &:focus {

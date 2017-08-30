@@ -1,20 +1,56 @@
-<form class="form" action="{{ config.site.forms.contact }}">
-    <div class="form__group required">
-        <label class="form__label" for="name">Your Name</label>
-        <input class="form__control" type="text" id="name" name="name" required placeholder=" ">
+<div class="grid grid--full grid-medium--columns grid--gutters">
+    <div class="grid__col grid__col--4">
+
+        <form class="form" action="{{ config.site.forms.contact }}">
+            <div class="form__group required">
+                <label class="form__label" for="name">Your Name</label>
+                <input class="form__control" type="text" id="name" name="name" required placeholder=" ">
+            </div>
+            <div class="form__group required">
+                <label class="form__label" for="email">Your Email</label>
+                <input class="form__control" type="email" id="email" name="email" required placeholder=" ">
+            </div>
+            <div class="form__group required">
+                <label class="form__label" for="comment">Your message</label>
+                <textarea class="form__control" id="comment" name="comment" rows="2" required placeholder=" "></textarea>
+            </div>
+            <p class="form__group form__help">
+                Fields marked with an <span class="required">*</span> are required.
+            </p>
+            <div class="form__group">
+                <input class="button button-primary" type="submit" value="Submit">
+            </div>
+        </form>
+
     </div>
-    <div class="form__group required">
-        <label class="form__label" for="email">Your Email</label>
-        <input class="form__control" type="email" id="email" name="email" required placeholder=" ">
+    <div class="grid__col grid__col--2">
+        <h3></h3>
+
+        {% assign contact = site.data.contact %}
+
+        <div class="company">
+            <h4 class="company__name">{{ contact.name }}</h4>
+            <p>
+                <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            </p>
+            <p>
+                {{ contact.address.street }}<br />
+                {{ contact.address.zip }} {{ contact.address.city }}<br />
+                {{ contact.address.country }}
+            </p>
+        </div>
+
+        <ul class="social-list">
+            {% for item in contact.social %}
+                <li>
+                    <a href="{{ item.link }}" title="{{ item.name }}">
+                        <svg class="icon" aria-labelledby="title">
+                            <title>{{ item.name }}</title>
+                            <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                        </svg>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
-    <div class="form__group required">
-        <label class="form__label" for="comment">Your message</label>
-        <textarea class="form__control" id="comment" name="comment" rows="2" required placeholder=" "></textarea>
-    </div>
-    <p class="form__group form__help">
-        Fields marked with an <span class="required">*</span> are required.
-    </p>
-    <div class="form__group">
-        <input class="button button-primary" type="submit" value="Submit">
-    </div>
-</form>
+</div>

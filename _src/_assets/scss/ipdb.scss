@@ -8,6 +8,7 @@
 @import 'forms';
 @import 'code';
 @import 'media';
+@import 'icons';
 @import 'sections';
 @import 'header';
 @import 'menus';
@@ -17,4 +18,31 @@
 
 .content--page--markdown {
     padding-top: $spacer * 2;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+
+    li { display: inline; }
+
+    a {
+        display: inline-block;
+        padding: $spacer / 4 0;
+        margin: 0 $spacer / 2;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-1px);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .icon {
+        width: $font-size-base;
+        height: $font-size-base;
+    }
 }
