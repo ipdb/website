@@ -179,6 +179,7 @@
 
 .article {
     margin-bottom: 6%;
+    transition: .15s ease-out;
 
     @media ($screen-md) {
         flex: 0 0 47%;
@@ -186,6 +187,8 @@
 
     &:hover,
     &:focus {
+        transform: translateY(-1px);
+
         .article__title {
             color: $link-color;
         }
@@ -193,6 +196,11 @@
         .article__image {
             background-color: $link-color;
         }
+    }
+
+    &:active {
+        transition: none;
+        transform: translateY(0);
     }
 }
 
@@ -208,7 +216,7 @@
 }
 
 .article__title {
-    font-size: $font-size-small;
+    font-size: $font-size-base;
     color: $text-color;
     margin: 0;
     align-self: flex-end;
