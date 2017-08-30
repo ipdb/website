@@ -22,6 +22,10 @@ intro:
           text: "The IPDB Foundation is run by its internet-loving Caretakers around the world."
         - title: "A Dashboard for your IPDB apps"
           text: "Manage your apps, give users access, and get statistical insights about your app’s API usage."
+          list:
+              - API usage statistics
+              - Access control
+              - User management
 
 foundation:
     title: "IPDB Foundation: human-scale governance"

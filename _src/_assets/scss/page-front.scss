@@ -39,6 +39,33 @@
     margin-bottom: $spacer / $line-height;
 }
 
+.feature__list {
+    margin: 0;
+    padding: 0;
+    margin-top: $spacer;
+
+    li {
+        display: block;
+        color: $brand-02;
+
+        @media ($screen-sm) {
+            display: inline-block;
+            margin-left: $spacer * 2;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &:before {
+            content: '\2714';
+            font-size: $font-size-small;
+            color: $brand-success;
+            margin-right: $spacer / 4;
+        }
+    }
+}
+
 .connect__title {
     font-size: $font-size-h3;
 }
@@ -107,7 +134,7 @@
         &:after {
             content: '\2714';
             color: $brand-03;
-            background: adjust-hue($brand-01, 170%);
+            background: $brand-success;
         }
     }
 

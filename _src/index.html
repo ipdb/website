@@ -86,6 +86,13 @@ css: page-front
                     <div class="grid__col grid__col--4">
                         <h1 class="feature__title">{{ feature.title }}</h1>
                         <div class="feature__text">{{ feature.text | markdownify }}</div>
+                        {% if feature.list %}
+                            <ul class="feature__list">
+                                {% for item in feature.list %}
+                                    <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
                     </div>
                 </div>
             </div>
