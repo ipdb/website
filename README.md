@@ -30,7 +30,7 @@
   - [Prerequisite: authentication](#prerequisite-authentication)
   - [Staging build & beta deployment](#staging-build--beta-deployment)
   - [Production build & live deployment](#production-build--live-deployment)
-- [Coding conventions](#coding-conventions)
+- [Coding conventions](#coding-conventions--browser-support)
   - [(S)CSS](#scss)
   - [js](#js)
 - [Authors & Contributors](#authors--contributors)
@@ -165,7 +165,7 @@ gulp build --production
 gulp deploy --live
 ```
 
-# Coding conventions
+# Coding conventions & Browser support
 
 Lint with ESLint & [stylelint](https://stylelint.io) in your editor or run:
 
@@ -173,13 +173,19 @@ Lint with ESLint & [stylelint](https://stylelint.io) in your editor or run:
 npm test
 ```
 
+As a rule of thumb, make your CSS & JavaScript work in the last 2 versions of modern browsers, and ideally in IE 11. Adapt the `browserslist` key values in the [`package.json`](package.json) when a change in visitor statistics allows that.
+
 ## (S)CSS
 
 Follows [stylelint-config-bigchaindb](https://github.com/bigchaindb/stylelint-config-bigchaindb) which itself extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard).
 
-# js
+## js
 
 Follows [ascribe/javascript](https://github.com/ascribe/javascript) which itself extends [airbnb/javascript](https://github.com/airbnb/javascript).
+
+Try to not use any jQuery, always prefer vanilla JavaScript. 
+
+At the moment, jQuery is only used for the newsletter subscription for its simple `$.ajax` functionality, and neither `XMLHttpRequest` or `fetch` seem to work with MailChimp.
 
 # Authors & Contributors
 
