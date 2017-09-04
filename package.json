@@ -18,13 +18,14 @@
   },
   "browserslist": [
     "last 2 versions",
-    "Chrome >= 30",
-    "Safari >= 6.1",
-    "Firefox >= 35",
-    "Opera >= 32",
-    "iOS >= 8",
-    "Android >= 4",
-    "ie >= 10"
+    "Chrome >= 50",
+    "Safari >= 9",
+    "Firefox >= 40",
+    "Opera >= 37",
+    "iOS >= 9",
+    "Android >= 50",
+    "Edge >= 12",
+    "ie >= 11"
   ],
   "dependencies": {
     "ajaxchimp": "^1.3.0",
