@@ -170,9 +170,59 @@ css: page-front
 <section class="section section--background section--getstarted">
     <div class="row">
         <header class="section__header">
-            <h1 class="section__title">{{ content.getstarted.title }}</h1>
-            <p class="section__description">{{ content.getstarted.description }}</p>
+            <div class="grid grid--full grid-medium--columns grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.getstarted.title }}</h1>
+                    <p class="section__description">{{ content.getstarted.description }}</p>
+                </div>
+            </div>
         </header>
+
+        <h2>TL;DR</h2>
+
+        <div class="grid grid--full grid-medium--third">
+            <div class="grid__col">
+                <a class="getstarted" href="{{ site.signup.link }}">
+                    <h2 class="getstarted__title">Create account</h2>
+                    <p class="getstarted__text">Creating an account is free and takes just a second.</p>
+                </a>
+            </div>
+            <div class="grid__col">
+                <a class="getstarted" href="">
+                    <h2 class="getstarted__title">Add your app</h2>
+                    <p class="getstarted__text">Add your app and receive your <code>app_id</code> &amp; <code>app_key</code>.</p>
+                </a>
+            </div>
+            <div class="grid__col">
+                <a class="getstarted" href="https://www.bigchaindb.com/getstarted/#drivers">
+                    <h2 class="getstarted__title">Get drivers &amp; tools</h2>
+                    <p class="getstarted__text">Point your apps to <code>test.ipdb.io</code> and code along.</p>
+                </a>
+            </div>
+        </div>
+
+        <footer class="section__actions">
+            <a href="/docs/" class="button button--text">IPDB Documentation</a>
+        </footer>
+
+        <div class="getstarted-bigchaindb">
+            <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--2">
+                    <figure class="feature__image">
+                        <svg aria-labelledby="title">
+                            <title>BigchainDB</title>
+                            <use xlink:href="/assets/img/sprite.svg#feature-bigchaindb"></use>
+                        </svg>
+                    </figure>
+                </div>
+
+                <div class="grid__col grid__col--4">
+                    <h1 class="feature__title">Just want to have a quick look into a transaction?</h1>
+                    <p class="feature__text">Over on the BigchainDB site you can quickly create your first transaction, and learn how to craft a proper one.</p>
+                    <a class="button button--text" href="https://www.bigchaindb.com/getstarted/">Send your first transaction</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

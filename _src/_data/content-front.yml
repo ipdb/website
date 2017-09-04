@@ -61,8 +61,8 @@ roadmap:
           status: planned
 
 getstarted:
-    title: "Get started"
-    description: "GET https://test.ipdb.io/api/"
+    title: "Get started with IPDB"
+    description: "Since you don’t need to setup and maintain your own BigchainDB node, you can get started with IPDB in no time."
 
 
 connect:
