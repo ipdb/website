@@ -4,9 +4,9 @@
     <!-- Dynamic meta title -->
     <title>
     {% if page.title %}
-        {{ page.title }}  {{ site.title }}
+        {{ page.title }} · {{ site.title }}
     {% else %}
-        {{ site.title }}  {{ site.description }}
+        {{ site.title }} · {{ site.description }}
     {% endif %}
     </title>
 
@@ -14,7 +14,7 @@
     {% if page.description %}
         <meta name="description" content="{{ page.description }}">
     {% elsif page.front_page %}
-        <meta name="description" content="{{ site.description }}">
+        <meta name="description" content="{{ site.data.content-front.hero.description | strip_html | strip_newlines }}">
     {% else %}
         <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
     {% endif %}
@@ -56,19 +56,21 @@
     <link rel="icon" type="image/png" href="/assets/img/touch-icon.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="16x16">
-    <link rel="mask-icon" href="/assets/img/favicon-glyph.svg" color="#ec008c">
+    <link rel="mask-icon" href="/assets/img/favicon-glyph.svg" color="#093749">
 
     <!-- Win 8/8.1  -->
     <meta name="msapplication-TileImage" content="{{ site.url }}/assets/img/touch-icon.png"/>
-    <meta name="msapplication-TileColor" content="#161d21"/>
+    <meta name="msapplication-TileColor" content="#093749"/>
 
     <!-- Android Lollipop theme color -->
-    <meta name="theme-color" content="#ec008c">
+    <meta name="theme-color" content="#093749">
 
     <!-- Prevent search indexing for some pages or non-production builds -->
     {% if jekyll.environment != 'production' or page.sitemap == false  %}
     <meta name="robots" content="noindex, nofollow">
     {% endif %}
     <meta name="robots" content="noindex, nofollow">
+
+    {% include sharing.html %}
 
 </head>
