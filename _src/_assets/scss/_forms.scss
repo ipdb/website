@@ -35,6 +35,22 @@
             padding-right: .1rem;
         }
     }
+
+    &.valid {
+        color: $brand-success;
+
+        &:after { display: none; }
+    }
+
+    &.error {
+        color: $brand-failure;
+
+        &:after { display: none; }
+
+        a {
+            text-decoration: underline;
+        }
+    }
 }
 
 .form__control {

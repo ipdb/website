@@ -1,9 +1,12 @@
 /* global SmoothScroll */
 /* global Autogrow */
 
-// =include _dnt.js
-// =include smooth-scroll/dist/js/smooth-scroll.js
-// =include textarea-autogrow/textarea-autogrow.js
+/* eslint-disable spaced-comment */
+//=include _dnt.js
+//=include _newsletter.js
+//=include smooth-scroll/dist/js/smooth-scroll.js
+//=include textarea-autogrow/textarea-autogrow.js
+/* eslint-enable spaced-comment */
 
 document.addEventListener('DOMContentLoaded', () => {
     //

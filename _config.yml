@@ -19,7 +19,7 @@ login:
 # Form actions
 forms:
     contact: '#'
-    newsletter: '#'
+    newsletter: "//foundation.us15.list-manage.com/subscribe/post?u=036bac2d4e3a3ea3de876a8dd&amp;id=8a21e3e9ca"
 
 # Urls
 # --------------------
