@@ -1,0 +1,15 @@
+// Mostly styled with options in js, the rest here
+
+.cookiebanner {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    @media ($screen-sm) {
+        // stylelint-disable declaration-no-important
+        left: 30% !important;
+        right: 30% !important;
+        line-height: 18px !important;
+        // stylelint-enable declaration-no-important
+        max-width: 25rem;
+    }
+}

@@ -29,6 +29,7 @@
   ],
   "dependencies": {
     "ajaxchimp": "^1.3.0",
+    "cookie-banner": "github:dobarkod/cookie-banner",
     "jquery": "^3.2.1",
     "smooth-scroll": "^12.1.4",
     "textarea-autogrow": "^1.0.0"
