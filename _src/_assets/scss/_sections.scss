@@ -51,7 +51,7 @@
     text-align: center;
     margin-top: $spacer * 3;
     padding-top: $spacer * 2;
-    border-top: 1px solid darken($brand-05, 8%);
+    border-top: .1rem solid darken($brand-05, 8%);
 
     .button + .button {
         margin-left: $spacer * 2;

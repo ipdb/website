@@ -186,7 +186,11 @@
 .getstarted-bigchaindb {
     padding-top: $spacer * 3;
     margin-top: $spacer * 3;
-    border-top: 1px solid darken($brand-05, 8%);
+    border-top: .1rem solid darken($brand-05, 8%);
+
+    .grid {
+        margin-bottom: 0;
+    }
 }
 
 .getstarted {
@@ -194,44 +198,38 @@
     flex-wrap: wrap;
     align-items: flex-start;
     height: 100%;
-    padding: $spacer;
-    color: $brand-05;
-    background: $link-color;
-    cursor: pointer;
+    color: $text-color;
     counter-increment: getstarted-steps;
+    padding-left: $spacer * 2;
+    padding-right: $spacer * 2;
 
     .grid__col:first-child & {
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-        border-right: .2rem solid $brand-05;
+        border-right: .1rem solid darken($brand-05, 8%);
+        padding-left: 0;
     }
 
     .grid__col:last-child & {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-        border-left: .2rem solid $brand-05;
-    }
-
-    &:hover,
-    &:focus {
-        background: darken($link-color, 10%);
-        color: $brand-05;
-    }
-
-    code {
-        color: inherit;
+        border-left: .1rem solid darken($brand-05, 8%);
+        padding-right: 0;
     }
 }
 
 .getstarted__title {
-    font-size: $font-size-h3;
-    color: #fff;
-    margin-bottom: $spacer / 3;
+    font-size: $font-size-h4;
+    margin-bottom: $spacer / 4;
+
+    a & {
+        color: $link-color;
+
+        &:after {
+            content: ' →';
+        }
+    }
 
     &:before {
         content: counter(getstarted-steps);
         display: block;
-        background: rgba($brand-05, .3);
+        background: rgba($brand-02, .3);
         width: 1.75rem;
         height: 1.75rem;
         border-radius: 50%;
@@ -240,6 +238,7 @@
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
         margin-bottom: $spacer / 1.5;
+        color: $text-color;
     }
 }
 
