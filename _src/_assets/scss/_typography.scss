@@ -131,3 +131,19 @@ ol {
     color: $brand-03;
     font-size: $font-size-large;
 }
+
+
+//
+// Blockquotes
+//
+blockquote {
+    margin: $spacer * $line-height;
+    margin-left: $spacer * 3;
+    color: $brand-02;
+
+    cite {
+        display: block;
+        margin-top: $spacer / 2;
+        font-style: italic;
+    }
+}
