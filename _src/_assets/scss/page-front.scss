@@ -194,23 +194,28 @@
 }
 
 .getstarted {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    height: 100%;
     color: $text-color;
     counter-increment: getstarted-steps;
-    padding-left: $spacer * 2;
-    padding-right: $spacer * 2;
+    margin-top: $spacer * 2;
+    display: block;
 
-    .grid__col:first-child & {
-        border-right: .1rem solid darken($brand-05, 8%);
-        padding-left: 0;
-    }
+    @media ($screen-sm) {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        margin-top: 0;
+        padding-left: $spacer * 2;
+        padding-right: $spacer * 2;
 
-    .grid__col:last-child & {
-        border-left: .1rem solid darken($brand-05, 8%);
-        padding-right: 0;
+        .grid__col:first-child & {
+            border-right: .1rem solid darken($brand-05, 8%);
+            padding-left: 0;
+        }
+
+        .grid__col:last-child & {
+            border-left: .1rem solid darken($brand-05, 8%);
+            padding-right: 0;
+        }
     }
 }
 
