@@ -1,0 +1,26 @@
+@import 'variables';
+
+.faq {
+    padding-top: $spacer * 3;
+}
+
+.faq__question {
+    font-size: $font-size-h3;
+
+    .header-link {
+        margin-left: -$font-size-h3;
+        font-size: $font-size-large;
+        color: $brand-02;
+        font-weight: $font-weight-normal;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+}
+
+.faq-contents__title {
+    font-size: $font-size-h3;
+    margin-top: $spacer / 2;
+    margin-bottom: $spacer / 2;
+}

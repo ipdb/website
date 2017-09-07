@@ -1,10 +1,15 @@
 main:
     - title: Foundation
       url: /foundation/
+    - title: Docs
     - title: Contact
       url: /contact/
 
 footer:
+    - title: Blog
+      url: https://blog.ipdb.io
+    - title: Jobs
+      url: /jobs/
     - title: Style guide
       url: /styleguide/
 
