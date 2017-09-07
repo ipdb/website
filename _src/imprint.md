@@ -5,3 +5,5 @@ title: Imprint
 
 narrow: true
 ---
+
+{% include contact.html %}

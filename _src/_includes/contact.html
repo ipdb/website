@@ -1,0 +1,26 @@
+{% assign contact = site.data.contact %}
+
+<div class="company">
+    <h4 class="company__name">{{ contact.company }}</h4>
+    <p>
+        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+    </p>
+    <p>
+        {{ contact.address.street }}<br />
+        {{ contact.address.zip }} {{ contact.address.city }}<br />
+        {{ contact.address.country }}
+    </p>
+</div>
+
+<ul class="social-list">
+    {% for item in contact.social %}
+        <li>
+            <a href="{{ item.link }}" title="{{ item.name }}">
+                <svg class="icon" aria-labelledby="title">
+                    <title>{{ item.name }}</title>
+                    <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                </svg>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
