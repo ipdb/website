@@ -9,8 +9,8 @@
     align-items: center;
 
     @media ($screen-sm) {
-        padding-top: $spacer * 4;
-        padding-bottom: $spacer * 4;
+        padding-top: $spacer * 5;
+        padding-bottom: $spacer * 5;
     }
 
     // handling long text, like URLs
@@ -105,5 +105,21 @@
         @media ($screen-sm) {
             bottom: -($edge-height);
         }
+    }
+}
+
+.section--border {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -.1rem;
+        display: block;
+        height: .1rem;
+        background: darken($brand-05, 8%);
+        transform: rotate(-4deg);
     }
 }

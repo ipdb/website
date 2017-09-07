@@ -91,22 +91,30 @@ css: page-foundation
     </div>
 </section>
 
-<section class="section section--vision" id="vision">
+<section class="section section--vision section--border" id="vision">
     <div class="row">
-        <header class="section__header">
-            <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
-                <div class="grid__col grid__col--4">
+        <div class="grid grid--full grid-medium--columns grid--center grid--gutters">
+            <div class="grid__col grid__col--4">
+                <header class="section__header">
                     <h1 class="section__title">{{ content.vision.title }}</h1>
                     <p class="section__description">{{ content.vision.description }}</p>
-                </div>
-                <div class="grid__col grid__col--2">
-
-                </div>
+                </header>
             </div>
-        </header>
+        </div>
     </div>
 
     <div class="row">
-        {{ content.vision.text | markdownify }}
+        <div class="grid grid--full grid-medium--columns grid--gutters">
+            <div class="grid__col grid__col--2">
+                <figure class="feature__image">
+                    <svg>
+                        <use xlink:href="/assets/img/sprite.svg#starbase-towers"></use>
+                    </svg>
+                </figure>
+            </div>
+            <div class="grid__col grid__col--4">
+                {{ content.vision.text | markdownify }}
+            </div>
+        </div>
     </div>
 </section>
