@@ -32,6 +32,13 @@ source:         ./_src
 destination:    ./_dist
 
 
+# Collections
+# --------------------
+collections:
+    docs:
+        output: true
+
+
 # Plugins
 # --------------------
 plugins:
