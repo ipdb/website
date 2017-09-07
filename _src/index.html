@@ -181,24 +181,27 @@ css: page-front
         <h2>TL;DR</h2>
 
         <div class="grid grid--full grid-medium--third">
-            <div class="grid__col">
-                <a class="getstarted" href="{{ site.signup.link }}">
-                    <h2 class="getstarted__title">Create account</h2>
-                    <p class="getstarted__text">Creating an account is free and takes just a second.</p>
-                </a>
-            </div>
-            <div class="grid__col">
-                <div class="getstarted">
-                    <h2 class="getstarted__title">Get your API credentials</h2>
-                    <p class="getstarted__text">After signing up, you will receive your <code>app_id</code> &amp; <code>app_key</code>.</p>
+
+            {% for step in content.getstarted.steps %}
+
+                <div class="grid__col">
+                    {% if step.link %}
+                    <a class="getstarted" href="{{ step.link }}">
+                    {% else %}
+                    <div class="getstarted">
+                    {% endif %}
+
+                        <h2 class="getstarted__title">{{ step.title }}</h2>
+                        <p class="getstarted__text">{{ step.text | markdownify }}</p>
+
+                    {% if step.link %}
+                    </a>
+                    {% else %}
+                    </div>
+                    {% endif %}
                 </div>
-            </div>
-            <div class="grid__col">
-                <a class="getstarted" href="https://www.bigchaindb.com/getstarted/#drivers">
-                    <h2 class="getstarted__title">Get drivers &amp; tools</h2>
-                    <p class="getstarted__text">Point your apps to <code>test.ipdb.io</code> and code along.</p>
-                </a>
-            </div>
+
+            {% endfor %}
         </div>
 
         <footer class="section__actions">

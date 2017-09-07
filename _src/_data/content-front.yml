@@ -63,6 +63,15 @@ roadmap:
 getstarted:
     title: "Get started with IPDB"
     description: "Since you don’t need to setup and maintain your own BigchainDB node, you can get started with IPDB in no time."
+    steps:
+        - title: "Create account"
+          link: "https://developers.ipdb.io/signup?plan_ids[]=2357355879577"
+          text: "Creating an account is free and takes just a second. →"
+        - title: "Get your API credentials"
+          text: "After signing up, you will receive your `app_id` & `app_key`."
+        - title: "Get drivers & tools"
+          link: "https://www.bigchaindb.com/getstarted/#drivers"
+          text: "Point your apps to `test.ipdb.io` and code along. →"
 
 
 connect:
