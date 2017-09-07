@@ -27,7 +27,46 @@ If you, as a developer, want to allow users to send HTTP requests directly to th
 
 ## How to Make HTTP Requests
 
-The IPDB Test Network is an instance of a BigchainDB cluster. The API is the [BigchainDB HTTP API](https://docs.bigchaindb.com/projects/server/en/latest/drivers-clients/http-client-server-api.html). Sign in and visit the home page for specific instructions about how to send requests to the IPDB Test Network.
+The IPDB Test Network is an instance of a BigchainDB cluster. The API is documented under [BigchainDB HTTP API](https://docs.bigchaindb.com/projects/server/en/latest/drivers-clients/http-client-server-api.html).
+
+### API root endpoint
+
+```
+https://test.ipdb.io/api/v1/
+```
+
+### Examples
+
+#### Connect using Python
+
+```python
+from bigchaindb_driver import BigchainDB
+tokens = {}
+tokens['app_id'] = 'bcdc4699'
+tokens['app_key'] = '0ab98d2ca2e8ca6f37518b9d0eb5ac50'
+bdb = BigchainDB('https://test.ipdb.io', headers=tokens)
+```
+[BigchainDB Python driver on GitHub](https://github.com/bigchaindb/bigchaindb-driver) | [Python driver usage documentation](https://docs.bigchaindb.com/projects/py-driver/en/master/usage.html)
+
+#### Connect using Node.js
+
+```js
+const driver = require('bigchaindb-driver')
+let bdb = new driver.Connection('https://test.ipdb.io/api/v1/', {
+    app_id: 'bcdc4699',
+    app_key: '0ab98d2ca2e8ca6f37518b9d0eb5ac50'
+})
+```
+[BigchainDB JavaScript driver on GitHub](https://github.com/bigchaindb/js-bigchaindb-driver)
+
+#### Connect using curl
+
+```bash
+curl -X "POST" "https://test.ipdb.io/api/v1/transactions/" \
+     -H "app_id: bcdc4699" \
+     -H "app_key: 0ab98d2ca2e8ca6f37518b9d0eb5ac50" \
+     -d "@tx.json"
+```
 
 ### Limits
 
@@ -41,8 +80,7 @@ The IPDB Test Network is an instance of a BigchainDB cluster. The API is the [Bi
 
 There are two ways for a developer to create a new application.
 
-1. One way is to sign in on the developer portal, click APPLICATIONS in the top menu, and then click the button labelled "Create new application".
-
+1. One way is to sign in on the developer portal, click APPLICATIONS in the top menu, and then click the button labelled *Create new application*.
 2. A second way is to make an HTTP request to the IPDB-Agent, an online microservice that can create new applications on behalf of IPDB. If you'd like to do this, please contact us using the IPDB Foundation's [contact page](/contact/).
 
 ## Billing
@@ -54,11 +92,8 @@ Right now, the IPDB Test Network only has one plan: a free plan, but it has a li
 The IPDB Production Network is not currently available, but we intend to offer the following plans once it is available:
 
 1. Free: 10 MB data transfer (IN) per month (about 10k transactions`*`)
-
 2. $20 per month: 200 MB data transfer (IN) per month (about 200k transactions*)
-
 3. $50 per month: 500 MB data transfer (IN) per month (about 500k transactions*)
-
 4. $100 per month: 1000 MB data transfer (IN) per month (about 1M transactions*)
 
 `*`assuming an average transaction size of 1 kb (typical).
