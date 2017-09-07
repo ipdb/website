@@ -17,7 +17,7 @@
                         {% assign active = 'active' %}
                     {% endif %}
 
-                    {% unless page.path contains 'foundation/index' %}
+                    {% unless page.path contains 'foundation/index' or page.language == 'de' %}
                         <a class="menu__link {{ active }}" href="{{ page.url }}">{{ page.title }}</a>
                     {% endunless %}
                 {% endif %}

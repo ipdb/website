@@ -48,6 +48,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
 
+    {% for alt in page.alternate %}
+        <link rel="alternate" href="{{ site.url }}{{ alt.link }}" hreflang="{{ alt.language }}" />
+    {% endfor %}
+
     <!-- Apple  -->
     <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
 
