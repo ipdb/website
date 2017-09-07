@@ -15,7 +15,6 @@
     &:hover,
     &:focus {
         .logo-caretaker {
-            opacity: 1;
             fill: $link-color;
             color: $link-color;
         }
@@ -25,14 +24,13 @@
 .logo-caretaker {
     fill: $brand-04;
     color: $brand-04;
-    opacity: .6;
     max-width: 100%;
-    height: 20px; // need to hardcode some size to overwrite browser's default 150px height for SVGs
+    height: 1.5rem; // need to hardcode some size to overwrite browser's default 150px height for SVGs
     transition: .25s ease-out;
 
     @media ($screen-sm) {
         height: auto;
-        max-height: 40px;
+        max-height: 2.2rem;
     }
 }
 

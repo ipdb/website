@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Documentation
+title: IPDB Developer Documentation
 subtitle: Sharing the knowledge
 
 narrow: true
