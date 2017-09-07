@@ -7,7 +7,7 @@ subtitle: Sharing the knowledge
 narrow: true
 ---
 
-Under [developers.ipdb.io](https://developers.ipdb.io) you can find the portal for developers who want to access IPDB. Right now, we are inviting users to participate in the IPDB Test Network. If you aren’t already in, you can sign up for early access to the IPDB Test Network. We plan to open the IPDB Production Network to everyone later this year.
+Under [developers.ipdb.io](https://developers.ipdb.io) you can find the portal for developers who want to access IPDB. Right now, we are inviting users to participate in the IPDB Test Network. If you aren’t already in, you can sign up for early access to the IPDB Test Network. We plan to open the IPDB Production Network to everyone soon.
 
 ## Getting Started
 
