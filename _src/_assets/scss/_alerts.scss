@@ -1,0 +1,44 @@
+//
+// Alerts
+// ---
+// ipdb.io
+//
+
+.alert {
+    font-size: $font-size-small;
+    padding: $spacer;
+    margin-bottom: $spacer;
+    border-radius: $border-radius;
+    text-align: left;
+
+    // Improve alignment and spacing of inner content
+    > p + p {
+        margin-top: 5px;
+    }
+
+    > p:last-child { margin-bottom: 0; }
+
+    &.hide {
+        display: none;
+    }
+}
+
+// Alerts
+@mixin alert-variant($background, $text-color) {
+    background-color: $background;
+    color: $text-color;
+
+    .alert__link { color: darken($text-color, 10%); }
+}
+
+.alert--success {
+    @include alert-variant($brand-success, darken($brand-success, 40%));
+}
+
+.alert--info {
+    @include alert-variant($brand-05, $text-color);
+}
+
+.alert--danger {
+    @include alert-variant($brand-failure, darken($brand-failure, 40%));
+}

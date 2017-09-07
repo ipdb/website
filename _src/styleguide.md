@@ -145,6 +145,29 @@ All `form__control` elements require an empty placeholder to make browser valida
     </div>
 </form>
 
+## Alerts
+
+<div class="alert alert--info">
+    <p>
+        <strong class="alert__title">Great to hear from  you!</strong>
+        We’ll get in touch soon.
+    </p>
+</div>
+
+<div class="alert alert--success">
+    <p>
+        <strong class="alert__title">Great to hear from  you!</strong>
+        We’ll get in touch soon.
+    </p>
+</div>
+
+<div class="alert alert--danger">
+    <p>
+        <strong class="alert__title">Oops, there was an error</strong>
+        Would you mind trying again?
+    </p>
+</div>
+
 ## Section header
 
 <header class="section__header">
