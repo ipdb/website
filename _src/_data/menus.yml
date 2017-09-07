@@ -1,14 +1,14 @@
 main:
     - title: Foundation
       url: /foundation/
-    - title: FAQ
-      url: /faq/
     - title: Docs
       url: /docs/
     - title: Contact
       url: /contact/
 
 footer:
+    - title: FAQ
+      url: /faq/
     - title: Blog
       url: https://blog.ipdb.io
     - title: Jobs
