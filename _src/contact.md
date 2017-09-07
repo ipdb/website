@@ -6,6 +6,7 @@ subtitle: Get in touch with IPDB Foundation
 
 narrow: true
 css: page-contact
+js: page-contact
 ---
 
 ## Get in touch

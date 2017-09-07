@@ -1,14 +1,14 @@
 <div class="grid grid--full grid-medium--columns grid--gutters">
     <div class="grid__col grid__col--4">
 
-        <form class="form" action="{{ config.site.forms.contact }}">
+        <form class="form form--contact" id="form-contact" action="{{ config.site.forms.contact }}" method="POST" accept-charset="UTF-8">
             <div class="form__group required">
                 <label class="form__label" for="name">Your Name</label>
                 <input class="form__control" type="text" id="name" name="name" required placeholder=" ">
             </div>
             <div class="form__group required">
                 <label class="form__label" for="email">Your Email</label>
-                <input class="form__control" type="email" id="email" name="email" required placeholder=" ">
+                <input class="form__control" type="email" id="email" name="_replyto" required placeholder=" ">
             </div>
             <div class="form__group required">
                 <label class="form__label" for="comment">Your message</label>
@@ -20,6 +20,21 @@
             <div class="form__group">
                 <input class="button button-primary" type="submit" value="Submit">
             </div>
+
+            <div class="alert alert--success hide">
+                <p>
+                    <strong class="alert__title">Great to hear from  you!</strong>
+                    We’ll get in touch soon.
+                </p>
+            </div>
+            <div class="alert alert--danger hide">
+                <p>
+                    <strong class="alert__title">Oops, there was an error</strong>
+                    Would you mind trying again?
+                </p>
+            </div>
+
+            <input type="hidden" name="_subject" value="New contact form submission" />
         </form>
 
     </div>

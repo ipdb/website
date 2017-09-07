@@ -1,5 +1,11 @@
 @import 'variables';
 
+.page--contact {
+    .row--narrow {
+        max-width: ($screen-md-min / 1.25);
+    }
+}
+
 .company__name {
     font-size: $font-size-large;
     margin-bottom: $spacer / 4;

@@ -183,9 +183,9 @@ Follows [stylelint-config-bigchaindb](https://github.com/bigchaindb/stylelint-co
 
 Follows [ascribe/javascript](https://github.com/ascribe/javascript) which itself extends [airbnb/javascript](https://github.com/airbnb/javascript).
 
-Try to not use any jQuery, always prefer vanilla JavaScript. 
+Try to not use any jQuery, always prefer vanilla JavaScript.
 
-At the moment, jQuery is only used for the newsletter subscription for its simple `$.ajax` functionality, and neither `XMLHttpRequest` or `fetch` seem to work with MailChimp.
+At the moment, jQuery is only used for the form submissions for its simple `$.ajax` functionality, and neither `XMLHttpRequest` or `fetch` seem to work with MailChimp.
 
 # Authors & Contributors
 
