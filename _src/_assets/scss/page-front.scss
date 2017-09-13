@@ -17,14 +17,17 @@
 }
 
 .feature__image {
-    margin: 0;
+    margin: 0 auto;
     background: $brand-05;
     border-radius: $border-radius;
-    min-height: 9rem;
-    display: flex;
-    align-items: flex-end;
+    overflow: hidden;
+    max-width: 400px;
 
-    svg {
+    @media ($screen-sm) {
+        margin: 0;
+    }
+
+    img {
         width: 100%;
         height: auto;
         max-width: 100%;
