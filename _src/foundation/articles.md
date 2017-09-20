@@ -13,7 +13,7 @@ alternate:
 ---
 
 <div class="alert alert--info">
-    IPDB Foundation is registered as a non-profit in Germany. The <a href="/foundation/satzung/">german version</a> of this document is the legally binding one.
+    IPDB Foundation is registered as a non-profit in Germany. The English version of this document is for information only. The <a href="/foundation/satzung/">German version</a> is legally binding.
 </div>
 
 *18 January 2017*
