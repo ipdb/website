@@ -31,7 +31,7 @@
     "ajaxchimp": "^1.3.0",
     "cookie-banner": "github:dobarkod/cookie-banner",
     "jquery": "^3.2.1",
-    "smooth-scroll": "^12.1.4",
+    "smooth-scroll": "^12.1.5",
     "textarea-autogrow": "^1.0.0"
   },
   "devDependencies": {
@@ -43,14 +43,14 @@
     "critical": "^0.9.1",
     "cross-spawn": "^5.1.0",
     "del": "^3.0.0",
-    "eslint": "^4.6.1",
+    "eslint": "^4.7.1",
     "eslint-config-ascribe": "^3.0.4",
     "eslint-plugin-import": "^2.7.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-awspublish": "^3.0.0",
     "gulp-awspublish-router": "^0.1.1",
-    "gulp-clean-css": "^3.7.0",
+    "gulp-clean-css": "^3.9.0",
     "gulp-cli": "^1.2.2",
     "gulp-concat": "^2.6.0",
     "gulp-header": "^1.8.9",
@@ -68,12 +68,12 @@
     "gulp-svg-sprite": "^1.3.7",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.6",
-    "js-yaml": "^3.9.0",
-    "request": "^2.81.0",
-    "stylelint": "^8.0.0",
+    "js-yaml": "^3.10.0",
+    "request": "^2.82.0",
+    "stylelint": "^8.1.1",
     "stylelint-config-bigchaindb": "^1.0.0",
     "stylelint-config-standard": "^17.0.0",
-    "uglify-es": "^3.0.28"
+    "uglify-es": "^3.1.1"
   },
   "engines": {
     "node": ">=7.0.0"
