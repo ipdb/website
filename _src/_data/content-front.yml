@@ -1,6 +1,7 @@
 hero:
     title: "The blockchain database network for the decentralized stack"
     description: "IPDB is a ready-to-use public network with a focus on strong governance, all powered by BigchainDB."
+    action: "Get started with IPDB"
 
 intro:
     title: "A planetary-scale blockchain database"

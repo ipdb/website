@@ -18,7 +18,7 @@ css: page-front
                 <div class="grid__col grid__col--4">
                     <h1 class="hero__title">{{ content.hero.title }}</h1>
                     <h2 class="hero__description">{{ content.hero.description }}</h2>
-                    <a class="hero__action button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
+                    <a class="hero__action button button--primary" href="#getstarted" data-scroll>{{ content.hero.action }}</a>
                 </div>
             </div>
         </hgroup>
@@ -164,7 +164,7 @@ css: page-front
 </section>
 
 
-<section class="section section--background section--getstarted">
+<section class="section section--background section--getstarted" id="getstarted">
     <div class="row">
         <header class="section__header">
             <div class="grid grid--full grid-medium--columns grid--gutters">
