@@ -9,6 +9,9 @@ $edge-height:    $spacer * 4;
     min-height: 580px;
     margin-bottom: $edge-height-sm;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     @media ($screen-sm) {
         height: calc(100vh - #{$edge-height});

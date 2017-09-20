@@ -4,9 +4,6 @@
 .section {
     padding-top: $spacer * 2;
     padding-bottom: $spacer * 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 
     @media ($screen-sm) {
         padding-top: $spacer * 5;
@@ -20,7 +17,7 @@
     text-rendering: optimizeLegibility;
 
     .row {
-        width: 100%;
+        flex: 0 0 100%;
     }
 
     p:last-child {
