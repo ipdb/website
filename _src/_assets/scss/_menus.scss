@@ -151,20 +151,9 @@
         display: flex;
         justify-content: space-between;
         margin-top: $spacer;
-    }
-
-    .social-link {
-        display: block;
-        border: 1.5px solid $brand-02;
-        border-radius: $border-radius;
-        padding: $spacer / 2;
-        width: 2rem;
-        height: 2rem;
-        line-height: 1;
 
         svg {
             fill: $brand-05;
-
         }
     }
 }

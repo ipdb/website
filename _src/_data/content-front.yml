@@ -84,5 +84,6 @@ connect:
     title: "Stay connected"
     description: "Stalk us like there's no tomorrow."
     blog_title: "From the blog"
-    newsletter_title: "Newsletter"
+    follow_title: "Follow us"
+    newsletter_title: "Subscribe to our newsletter"
     newsletter_text: "Our email newsletter will keep you informed of major developments."

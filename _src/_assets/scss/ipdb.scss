@@ -41,12 +41,35 @@
         }
 
         &:active {
-            transform: translateY(0);
+            transform: none;
         }
     }
 
     .icon {
         width: $font-size-base;
         height: $font-size-base;
+    }
+}
+
+.social-link {
+    display: inline-block;
+    border: 1.5px solid $brand-02;
+    border-radius: $border-radius;
+    padding: $spacer / 2;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: none;
+    }
+
+    svg {
+        fill: $brand-04;
     }
 }

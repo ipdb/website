@@ -266,7 +266,6 @@
 //
 .articles {
     max-width: 100%;
-    margin-bottom: $spacer * 4;
 }
 
 .article {
@@ -309,4 +308,14 @@
     margin: 0;
     align-self: flex-end;
     transition: .15s ease-out;
+}
+
+.section--connect {
+    .social {
+        margin-bottom: $spacer * 3;
+    }
+
+    .social-link {
+        margin-right: $spacer / 2;
+    }
 }

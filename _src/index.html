@@ -237,6 +237,18 @@ css: page-front
                 </header>
             </div>
             <div class="grid__col">
+                <div class="social">
+                    <h2 class="connect__title">{{ content.connect.follow_title }}</h2>
+                    {% for item in site.data.contact.social %}
+                        <a class="social-link" href="{{ item.link }}" title="{{ item.name }}">
+                            <svg class="icon" aria-labelledby="title">
+                                <title>{{ item.name }}</title>
+                                <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                            </svg>
+                        </a>
+                    {% endfor %}
+                </div>
+
                 <div class="connect connect--newsletter">
                     <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
                     <p>{{ content.connect.newsletter_text }}</p>
