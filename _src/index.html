@@ -175,8 +175,6 @@ css: page-front
             </div>
         </header>
 
-        <h2>TL;DR</h2>
-
         <div class="grid grid--full grid-medium--third">
 
             {% for step in content.getstarted.steps %}
@@ -189,7 +187,7 @@ css: page-front
                     {% endif %}
 
                         <h2 class="getstarted__title">{{ step.title }}</h2>
-                        <p class="getstarted__text">{{ step.text | markdownify }}</p>
+                        <div class="getstarted__text">{{ step.text | markdownify }}</div>
 
                     {% if step.link %}
                     </a>

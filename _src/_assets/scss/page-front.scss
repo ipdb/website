@@ -210,6 +210,8 @@
     counter-increment: getstarted-steps;
     margin-top: $spacer * 2;
     display: block;
+    padding-top: $spacer;
+    padding-bottom: $spacer;
 
     @media ($screen-sm) {
         display: flex;
