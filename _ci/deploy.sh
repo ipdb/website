@@ -16,7 +16,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
 elif [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
     #gulp deploy --live;
-    gulp deploy --beta;
+    gulp deploy --live;
 
 else
 

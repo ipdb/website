@@ -47,7 +47,7 @@ const SRC = `${site.source}/`
 const DIST = `${site.destination}/`
 
 // deployment
-const S3BUCKET = 'beta.ipdb.io'
+const S3BUCKET = 'ipdb.io'
 const S3REGION = 'eu-central-1'
 const S3BUCKET_BETA = 'beta.ipdb.io'
 const S3REGION_BETA = 'eu-central-1'
@@ -315,10 +315,8 @@ const deployBanner = (done) => {
 
     if ($.util.env.live) {
         deployTarget = 'Live'
-    } else if ($.util.env.beta) {
-        deployTarget = 'Beta'
     } else {
-        deployTarget = 'Gamma'
+        deployTarget = 'Beta'
     }
 
     if (($.util.env.live || $.util.env.beta || $.util.env.gamma) === true) {

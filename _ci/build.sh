@@ -36,11 +36,11 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; th
 ##
 elif [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
-    gulp build --staging
+    gulp build --production
 
 else
 
-    gulp build --staging
+    gulp build --production
 
 fi;
 
