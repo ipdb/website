@@ -1,9 +1,7 @@
-# ![ipdb/site](.png)
+# ![ipdb/site](_src/_assets/img/share-image.png)
 
 > The blockchain database governance site the universe needs
 > https://ipdb.io
-
-🐉🐲 **Highly in development right now, nothing in `master` is final. Content & structure development [happening in Google Doc](https://docs.google.com/a/bigchaindb.com/document/d/1bgQozCf47XGOViYT0KOCwRV2UdPlpeDQh1JuAPaHi-A/edit?usp=sharing)** 🐲🐉
 
 [![Build Status](https://travis-ci.org/ipdb/site.svg?branch=master)](https://travis-ci.org/ipdb/site)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
@@ -12,7 +10,7 @@
 
 ---
 
-[**Beta**](https://beta.ipdb.io) | [**Styleguide**](https://beta.ipdb.io/styleguide/)
+[**Live**](https://ipdb.io) | [**Beta**](https://beta.ipdb.io) | [**Styleguide**](https://beta.ipdb.io/styleguide/)
 
 ---
 
