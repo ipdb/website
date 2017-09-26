@@ -5,17 +5,23 @@
 }
 
 .caretaker {
-    text-align: center;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: none;
     max-width: 130px;
     margin: auto;
+    height: 100%;
     transition: .25s ease-out;
 
     &:hover,
     &:focus {
         .logo-caretaker {
             fill: $link-color;
+            color: $link-color;
+        }
+
+        .caretaker__name {
             color: $link-color;
         }
     }
@@ -40,4 +46,13 @@
 
 .logo-caretaker--human-data-commons-foundation {
     transform: scale(1.3);
+}
+
+//
+// The logo fallback
+//
+.caretaker__name {
+    font-size: $font-size-base;
+    color: $brand-04;
+    vertical-align: middle;
 }

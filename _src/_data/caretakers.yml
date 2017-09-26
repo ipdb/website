@@ -1,5 +1,6 @@
 - name: COALA
   link: http://coala.global
+  logo: false
 
 - name: Internet Archive
   link: https://archive.org
@@ -30,6 +31,7 @@
 
 - name: SmartContract
   link: https://smartcontract.com
+  logo: false
 
 - name: OuiShare
   link: http://ouishare.net
@@ -42,3 +44,4 @@
 
 - name: CREATE-NET
   link: http://create-net.fbk.eu
+  logo: false
