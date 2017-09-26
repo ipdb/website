@@ -1,6 +1,6 @@
 # ![ipdb/site](_src/_assets/img/share-image.png)
 
-> The blockchain database governance site the universe needs
+> The blockchain database network for the decentralized stack
 > https://ipdb.io
 
 [![Build Status](https://travis-ci.org/ipdb/site.svg?branch=master)](https://travis-ci.org/ipdb/site)
@@ -36,8 +36,6 @@
 
 # Content editing
 
-![unknown](https://user-images.githubusercontent.com/90316/28792395-c1b74594-762f-11e7-8ff6-b49586f39360.jpeg)
-
 Most content on the site can be edited on GitHub without messing with HTML markup.
 
 The site's source and structure is in the [`_src/`](_src) folder. Ignore everything with an underscore in its name.
@@ -66,8 +64,6 @@ Some pages like front page source their content dynamically during site build. T
 
 
 # Development
-
-![200](https://user-images.githubusercontent.com/90316/28792559-56cbe02c-7630-11e7-851f-40192e0ce50a.gif)
 
 You need to have the following tools installed on your development machine before moving on:
 
@@ -99,8 +95,6 @@ gulp
 ```
 
 # Continuous deployment: always be shipping
-
-![shipping](https://cloud.githubusercontent.com/assets/90316/26559768/e21e9724-44b1-11e7-90cf-6ef6ebb06d09.gif)
 
 The site gets built & deployed automatically via Travis. This is the preferred way of deployment, it makes sure the site is always deployed with fresh dependencies and only after a successful build.
 
@@ -187,7 +181,8 @@ At the moment, jQuery is only used for the form submissions for its simple `$.aj
 
 # Authors & Contributors
 
-- Greg McMullen ([@gmcmullen](https://github.com/gmcmullen)) - [IPDB Foundation](https://ipdb.foundation)
+- Greg McMullen ([@gmcmullen](https://github.com/gmcmullen)) - [IPDB Foundation](https://ipdb.io)
+- Morgan Sutherland ([@msutherl](https://github.com/msutherl)) - [IPDB Foundation](https://ipdb.io)
 - Matthias Kretschmann ([@kremalicious](https://github.com/kremalicious)) - [BigchainDB](https://www.bigchaindb.com)
 - Members of the IPDB Foundation team
 - Members of the BigchainDB development team
