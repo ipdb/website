@@ -1,30 +1,30 @@
 intro: |
-    Building an organization that is both decentralized and stable enough to govern itself is not easy. We’ve worked hard to learn from those who came before us, from the DNS to The DAO.
+    Building an organization that is both decentralized and stable enough to govern itself is not easy. We’ve learn from those who came before us, from the DNS to The DAO.
 
-    IPDB is governed by the IPDB Foundation, which is made up of its member caretakers and elected Management Board.
+    IPDB is governed by the IPDB Foundation, which is made up of its member caretakers and elected management board.
 
 caretakers:
     title: IPDB Caretakers
-    description: "The IPDB Foundation is made up of member organizations we call caretakers. Caretakers elect the IPDB Management Board and run the nodes that store and validate transactions sent to IPDB."
+    description: "The IPDB Foundation is made up of members we call caretakers. Caretakers elect our management board and run the nodes that store and validate transactions sent to IPDB."
     features:
         - title: "Not-for-profit leadership"
-          description: "To avoid capture by financial conflict of interests, the majority of caretakers have to be non-for-profit organizations or public benefit corporations."
+          description: "To avoid capture by financial interests, the majority of caretakers must be not-for-profit organizations or public benefit corporations."
         - title: "Jurisdictional diversity"
-          description: "To avoid being under the jurisdiction of a single government, no one country can host a majority of caretakers."
+          description: "To avoid falling under the jurisdiction of a single government, no one country can host a majority of caretakers."
         - title: "Geographical diversity"
           description: "Our caretakers are spread around the world to limit disruption from regional events like power outages or natural disasters."
         - title: "Management Board"
-          description: "Caretakers elect the Management Board, which is responsible for the day-to-day operations of IPDB."
+          description: "Caretakers elect the management board, which is responsible for the day-to-day operations of IPDB."
     members:
         title: "Current Caretakers"
-        description: "We've assembled a group of caretakers who work together to build a free, open, and decentralized internet—organizations that have a long-standing commitment to the decentralized web."
+        description: "Our caretakers share our commitment to building a free, open, and decentralized internet."
 
 board:
     title: Management Board
-    description: "The IPDB Management Board handles the day-to-day management of the IDPB Foundation, including most decisions about the operation of IPDB. IPDB Board Members are elected by the caretakers for a two year term."
+    description: "The IPDB mnagement board handles the day-to-day management of the IDPB Foundation. IPDB Board Members are elected by the caretakers for a two year term."
 
 vision:
-    title: "Vision & Research"
+    title: "Science & Research"
     description: "The IPDB Foundation promotes science and research on the operation of scalable blockchain databases, the governance of decentralized systems, and the applications of blockchain technology."
     text: |
         The IPDB Foundation promotes science and research on the operation of scalable blockchain databases, the governance of decentralized systems, and the applications of blockchain technology.
