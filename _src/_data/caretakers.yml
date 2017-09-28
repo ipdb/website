@@ -42,3 +42,11 @@
 - name: CREATE-NET
   link: http://create-net.fbk.eu
   logo: false
+  
+- name: KICTANet
+  link: https://www.kictanet.or.ke
+  logo: false
+  
+- name: Global Consent
+  link: http://www.consent.global/
+  logo: false
