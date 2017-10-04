@@ -20,10 +20,10 @@ intro:
           text: "IPDB allows you to store data indefinitely. It provides blockchain-style tamper-resistance and database-style queryability to give you the best of both worlds."
           image: feature-03
         - title: "Predictable pricing"
-          text: "Use of IPDB is not based on a cryptocurrency, so you don’t have to worry about a spike in the price making it too expensive to run your application. Usage of IPDB during the test net phase is free of charge."
+          text: "Use of IPDB is not based on a cryptocurrency, so a spike in the price won't make it too expensive to run your application. Usage of IPDB during the test net phase is free of charge."
           image: feature-04
-        - title: "Governed by Caretakers"
-          text: "The IPDB Foundation is run by its internet-loving Caretakers around the world."
+        - title: "Responsible governance"
+          text: "The IPDB Foundation relies on its caretakers and elected board to navigate governance issues."
           image: feature-05
         - title: "A Dashboard for your IPDB apps"
           text: "Manage your apps, give users access, and get statistical insights about your app’s API usage."
@@ -35,40 +35,40 @@ intro:
 
 foundation:
     title: "IPDB Foundation: human-scale governance"
-    description: "IPDB relies on caretakers to run the BigchainDB nodes that store and validate transactions. The IPDB Caretakers are the members of the IPDB Foundation."
-    button: "Learn about IPDB Foundation and its caretakers"
+    description: "The IPDB Foundation is made up of members called caretakers. Our caretakers elect the management board and operate the nodes that validate blocks and store data."
+    button: "Learn about the IPDB Foundation"
 
 
 roadmap:
     title: "Roadmap"
-    description: "The IPDB rollout plan follows six steps. First, a test network for demos, then for invited users, and then for the general public. When the test phase is complete, a production network will be launched in the same sequence."
+    description: "The IPDB rollout plan is as follows: A test network for demos, then for invited users, and then the general public. When the test phase is complete, a production network will be launched in the same sequence."
     steps:
-        - net: Test net
+        - net: Test network
           target: Demo app
           status: complete
           time: Q4 2016
-        - net: Test net
+        - net: Test network
           target: Invited users
           status: complete
           time: Q1 2017
-        - net: Test net
+        - net: Test network
           target: General public
           status: complete
           time: Q2 2017
-        - net: Production net
+        - net: Production network
           target: Demo app
           status: progress
           time: In progress
-        - net: Production net
+        - net: Production network
           target: Invited users
           status: planned
-        - net: Production net
+        - net: Production network
           target: General public
           status: planned
 
 getstarted:
     title: "Get started with IPDB"
-    description: "Since you don’t need to setup and maintain your own BigchainDB node, you can get started with IPDB in no time."
+    description: "You can get started with IPDB in no time:"
     steps:
         - title: "Create account"
           link: "https://developers.ipdb.io/signup?plan_ids[]=2357355879577"
@@ -83,7 +83,7 @@ getstarted:
 connect:
     title: "Stay connected"
     description: "We'll keep you updated on our progress."
-    blog_title: "From the blog"
+    blog_title: "What we're writing about"
     follow_title: "Follow us"
-    newsletter_title: "Subscribe to our newsletter"
-    newsletter_text: "Our email newsletter will keep you informed of major developments."
+    newsletter_title: "Subscribe to the newsletter"
+    newsletter_text: "Our email newsletter keeps you up-to-date on IPDB."
