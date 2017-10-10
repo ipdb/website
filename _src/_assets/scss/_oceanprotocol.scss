@@ -1,0 +1,49 @@
+.oceanprotocol {
+    display: block;
+    box-shadow: none;
+    height: 100%;
+    background: #141414;
+    padding-top: $spacer / 2;
+    padding-bottom: $spacer / 2;
+
+    &:hover,
+    &:focus {
+        background: #fff;
+
+        .oceanprotocol__title {
+            opacity: 1;
+            color: #141414;
+        }
+
+        .oceanprotocol__logo {
+            fill: #141414;
+        }
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+.oceanprotocol__title {
+    font-size: .65rem;
+    margin: 0;
+    opacity: .8;
+    color: #fff;
+
+    @media ($screen-sm) {
+        font-size: .75rem;
+    }
+}
+
+.oceanprotocol__logo {
+    fill: #fff;
+    width: 1rem;
+    height: 1rem;
+    margin-right: $spacer / 4;
+    margin-bottom: -.3rem;
+    display: inline-block;
+}
