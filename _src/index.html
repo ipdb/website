@@ -232,37 +232,26 @@ css: page-front
 
                 <div class="grid__col grid__col--4">
 
-                    <div class="tool">
-                        <h3 class="tool__title">
-                            <a href="http://www.nileshtrivedi.com/bigchaindb-explorer/">BigchainDB Explorer</a>
-                            <a href="https://github.com/nileshtrivedi/bigchaindb-explorer" title="GitHub">
-                                <svg class="icon" aria-labelledby="title">
-                                    <title>GitHub</title>
-                                    <use xlink:href="/assets/img/sprite.svg#icon-github"></use>
-                                </svg>
-                            </a>
-                        </h3>
+                    {% for tool in content.getstarted.tools %}
+                        <div class="tool">
+                            <h3 class="tool__title">
+                                <a href="{{ tool.link }}">{{ tool.title }}</a>
 
-                        <p class="tool__description">
-                            Use BigchainDB's HTTP API to explore assets, accounts and transactions.
-                        </p>
-                    </div>
+                                {% if tool.github %}
+                                <a href="{{ tool.github }}" title="GitHub">
+                                    <svg class="icon" aria-labelledby="title">
+                                        <title>GitHub</title>
+                                        <use xlink:href="/assets/img/sprite.svg#icon-github"></use>
+                                    </svg>
+                                </a>
+                                {% endif %}
+                            </h3>
 
-                    <div class="tool">
-                        <h3 class="tool__title">
-                            <a href="https://ipdb-explorer.license.rocks/">IPDB Explorer</a>
-                            <a href="https://github.com/LicenseRocks/ipdb-explorer" title="GitHub">
-                                <svg class="icon" aria-labelledby="title">
-                                    <title>GitHub</title>
-                                    <use xlink:href="/assets/img/sprite.svg#icon-github"></use>
-                                </svg>
-                            </a>
-                        </h3>
-
-                        <p class="tool__description">
-                             Tool for exploring IPDB txs based on asset ids and public keys
-                        </p>
-                    </div>
+                            <p class="tool__description">
+                                 {{ tool.description }}
+                            </p>
+                        </div>
+                    {% endfor %}
 
                 </div>
             </div>

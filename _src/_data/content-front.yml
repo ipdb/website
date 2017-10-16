@@ -78,7 +78,15 @@ getstarted:
         - title: "Get drivers & tools"
           link: "https://www.bigchaindb.com/getstarted/#drivers"
           text: "Point your apps to `test.ipdb.io` and code along. →"
-
+    tools:
+        - title: "BigchainDB Explorer"
+          description: "Use BigchainDB's HTTP API to explore assets, accounts and transactions."
+          link: "http://www.nileshtrivedi.com/bigchaindb-explorer/"
+          github: "https://github.com/nileshtrivedi/bigchaindb-explorer"
+        - title: "IPDB Explorer"
+          description: "Tool for exploring IPDB txs based on asset ids and public keys."
+          link: "https://ipdb-explorer.license.rocks/"
+          github: "https://github.com/LicenseRocks/ipdb-explorer"
 
 connect:
     title: "Stay connected"
