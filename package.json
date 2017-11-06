@@ -40,7 +40,7 @@
     "babel-preset-env": "^1.6.1",
     "browser-sync": ">=2.10.0",
     "concurrent-transform": "^1.0.0",
-    "critical": "^0.9.1",
+    "critical": "^1.0.0",
     "cross-spawn": "^5.1.0",
     "del": "^3.0.0",
     "eslint": "^4.10.0",
