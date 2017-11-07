@@ -2,6 +2,15 @@
 
 <div class="company">
     <h4 class="company__name">{{ contact.company }}</h4>
+    {% if include.imprint %}
+        <p>{{ contact.registration}}</p>
+        <h5>Represented by</h5>
+        <p>
+            {% for representative in site.data.board | limit: 3 %}
+                {{ representative.position }}: {{ representative.name }}<br />
+            {% endfor %}
+        </p>
+    {% endif %}
     <p>
         <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
     </p>
