@@ -6,4 +6,4 @@ title: Imprint
 narrow: true
 ---
 
-{% include contact.html %}
+{% include contact.html imprint="true" %}
