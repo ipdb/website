@@ -60,7 +60,7 @@
 
 - question: Can my organization be a Caretaker?
   answer: |
-    Maybe! If you think you’re a good fit, contact us at {{ site.data.contact.email_caretakers }}.
+    Maybe! If you think you’re a good fit, contact us at !EMAIL_CARETAKERS!.
 
 ## Transactions
 - question: Can I delete a Transaction?
