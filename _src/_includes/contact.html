@@ -6,9 +6,9 @@
         <p>{{ contact.registration}}</p>
         <h5>Represented by</h5>
         <p>
-            {{ site.data.board[0].position }}: {{ site.data.board[0].name }}<br />
-            {{ site.data.board[1].position }}: {{ site.data.board[1].name }}<br />
-            {{ site.data.board[2].position }}: {{ site.data.board[2].name }}
+            {% for representative in site.data.board | limit: 3 %}
+                {{ representative.position }}: {{ representative.name }}<br />
+            {% endfor %}
         </p>
     {% endif %}
     <p>
