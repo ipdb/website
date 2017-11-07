@@ -7,6 +7,8 @@ subtitle: Get answers to your most pressing questions
 css: page-faq
 ---
 
+{% capture email_caretakers %}<a href="mailto:{{ site.data.contact.email_caretakers }}">{{ site.data.contact.email_caretakers }}</a>{% endcapture %}
+
 <section class="section section--faq">
     <div class="row row--narrow">
 
@@ -21,7 +23,7 @@ css: page-faq
                 {% assign id = faq.question | downcase | replace: ' ','-' | replace: '?', '' %}
 
                 <h1 class="faq__question" id="{{ id }}"><a class="header-link" href="#{{ id }}">#</a> {{ faq.question }}</h1>
-                <div class="faq__answer">{{ faq.answer | markdownify }}</div>
+                <div class="faq__answer">{{ faq.answer | replace: '!EMAIL_CARETAKERS!', email_caretakers | markdownify }}</div>
             {% endfor %}
         </div>
 
