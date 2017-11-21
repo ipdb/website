@@ -91,9 +91,9 @@ Right now, the IPDB Test Network only has one plan: a free plan, but it has a li
 
 The IPDB Production Network is not currently available, but we intend to offer the following plans once it is available:
 
-1. Free: 10 MB data transfer (IN) per month (about 10k transactions`*`)
-2. $20 per month: 200 MB data transfer (IN) per month (about 200k transactions*)
-3. $50 per month: 500 MB data transfer (IN) per month (about 500k transactions*)
+1. Free: 1 MB data transfer (IN) per month (about 1k transactions`*`)
+2. $10 per month: 10 MB data transfer (IN) per month (about 10k transactions*)
+3. $20 per month: 100 MB data transfer (IN) per month (about 100k transactions*)
 4. $100 per month: 1000 MB data transfer (IN) per month (about 1M transactions*)
 
 `*`assuming an average transaction size of 1 kb (typical).
