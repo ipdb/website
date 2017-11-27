@@ -1,0 +1,23 @@
+---
+layout: page
+
+title: Articles
+subtitle: Articles of Association of the IPDB Foundation
+---
+
+{% capture articles %}{% include_relative _articles.md %}{% endcapture %}
+{% capture satzung %}{% include_relative _satzung.md %}{% endcapture %}
+
+<div class="row">
+    <div class="alert alert--info">
+        IPDB Foundation is registered as a non-profit in Germany. The English version of this document is for information only. The German version is legally binding.
+    </div>
+    <div class="grid grid--full grid-small--half grid--gutters">
+        <div class="grid__col">
+            {{ articles | markdownify }}
+        </div>
+        <div class="grid__col">
+            {{ satzung | markdownify }}
+        </div>
+    </div>
+</div>
