@@ -64,24 +64,14 @@ redirect_from:
 </header>
 
 
-<section class="section section--intro">
-    <div class="row">
+<section class="section section--farewell">
+    <div class="row row--narrow">
         <header class="section__header">
-            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
-                <div class="grid__col grid__col--4">
-                    <h1 class="section__title">{{ content.intro.title }}</h1>
-                    <p class="section__description">{{ content.intro.description }}</p>
-
-                    {{ content.intro.text | markdownify }}
-                </div>
-                <div class="grid__col grid__col--2 grid__col--center">
-                    <svg width="298" height="220" aria-labelledby="title">
-                        <title>IPDB Distributed</title>
-                        <use xlink:href="/assets/img/sprite.svg#distributed"></use>
-                    </svg>
-                </div>
-            </div>
+            <h1 class="section__title">{{ content.farewell.title }}</h1>
+            <p class="section__description">{{ content.farewell.description }}</p>
         </header>
+
+         {{ content.farewell.text | markdownify }}
 
     </div>
 </section>
@@ -96,7 +86,7 @@ redirect_from:
         <div class="connect connect--blog">
             <div class="articles">
                 <div class="grid grid--full grid-small--half grid-medium--fourth grid--gutters">
-                    {% for article in site.articles limit: 8 %}
+                    {% for article in site.articles limit: 4 %}
                         <div class="grid__col">
                             <a class="article" href="{{ article.link }}">
                                 <figure class="article__image" style="background-image: url('{{ article.image | escape | strip_html }}')"></figure>
