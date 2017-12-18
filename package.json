@@ -36,15 +36,15 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "^8.0.3",
     "babel-preset-env": "^1.6.1",
     "browser-sync": ">=2.10.0",
     "concurrent-transform": "^1.0.0",
     "critical": "^1.0.0",
     "cross-spawn": "^5.1.0",
     "del": "^3.0.0",
-    "eslint": "^4.10.0",
-    "eslint-config-ascribe": "^3.0.4",
+    "eslint": "^4.13.1",
+    "eslint-config-ascribe": "^3.0.5",
     "eslint-plugin-import": "^2.8.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
@@ -61,7 +61,7 @@
     "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
-    "gulp-rev": "^8.0.0",
+    "gulp-rev": "^8.1.0",
     "gulp-rev-replace": "^0.4.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
@@ -70,10 +70,10 @@
     "gulp-util": "^3.0.6",
     "js-yaml": "^3.10.0",
     "request": "^2.83.0",
-    "stylelint": "^8.2.0",
-    "stylelint-config-bigchaindb": "^1.0.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-bigchaindb": "^1.2.0",
     "stylelint-config-standard": "^18.0.0",
-    "uglify-es": "^3.1.6"
+    "uglify-es": "^3.2.2"
   },
   "engines": {
     "node": ">=7.0.0"
