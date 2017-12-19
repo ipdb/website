@@ -3,5 +3,7 @@ main:
       url: /contact/
 
 legal:
+    - title: Contact
+      url: /contact/
     - title: Imprint
       url: /imprint/

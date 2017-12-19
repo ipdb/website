@@ -4,7 +4,6 @@
 .section--farewell {
     margin-top: -4rem;
     z-index: 2;
-    padding-top: $spacer * 3;
 }
 
 //
@@ -12,6 +11,12 @@
 //
 .articles {
     max-width: 100%;
+    margin-top: $spacer;
+    margin-bottom: -$spacer;
+
+    .button {
+        padding-bottom: 0;
+    }
 }
 
 .article {
