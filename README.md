@@ -3,6 +3,8 @@
 > The blockchain database network for the decentralized stack
 > https://ipdb.io
 
+**Note: As of January 5, 2018, IPDB will be shutting down. [Read about why](https://ipdb.io).**
+
 [![Build Status](https://travis-ci.org/ipdb/website.svg?branch=master)](https://travis-ci.org/ipdb/website)
 [![css bigchaindb](https://img.shields.io/badge/css-bigchaindb-39BA91.svg)](https://github.com/bigchaindb/stylelint-config-bigchaindb)
 [![js ascribe](https://img.shields.io/badge/js-ascribe-39BA91.svg)](https://github.com/ascribe/javascript)
@@ -10,7 +12,7 @@
 
 ---
 
-[**Live**](https://ipdb.io) | [**Beta**](https://beta.ipdb.io) | [**Styleguide**](https://beta.ipdb.io/styleguide/)
+[**Live**](https://ipdb.io) | [**Styleguide**](https://ipdb.io/styleguide/)
 
 ---
 
