@@ -1,6 +1,3 @@
-sudo: required
-dist: trusty
-
 language: ruby
 rvm:
     - 2.4
@@ -11,7 +8,7 @@ cache:
   - $TRAVIS_BUILD_DIR/node_modules
 
 before_install:
-    - nvm install 8
+    - nvm install 9
 
 before_script: "_ci/setup.sh"
 script: "_ci/build.sh"
