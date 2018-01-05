@@ -4,6 +4,18 @@ layout: base
 front_page: true
 
 css: page-front
+
+redirect_from:
+    - /foundation/
+    - /foundation/articles/
+    - /foundation/satzung/
+    - /foundation/bylaws/
+    - /docs/
+    - /jobs/
+    - /privacy/
+    - /terms/
+    - /faq/
+    - /canary/
 ---
 
 {% assign content = site.data.content-front %}
@@ -20,7 +32,6 @@ css: page-front
                 <div class="grid__col grid__col--4">
                     <h1 class="hero__title">{{ content.hero.title }}</h1>
                     <h2 class="hero__description">{{ content.hero.description }}</h2>
-                    <a class="hero__action button button--primary" href="#getstarted" data-scroll>{{ content.hero.action }}</a>
                 </div>
             </div>
         </hgroup>
@@ -53,247 +64,22 @@ css: page-front
 </header>
 
 
-<section class="section section--intro">
-    <div class="row">
+<section class="section section--farewell section--background" id="farewell">
+    <div class="row row--narrow">
         <header class="section__header">
-            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
-                <div class="grid__col grid__col--4">
-                    <h1 class="section__title">{{ content.intro.title }}</h1>
-                    <p class="section__description">{{ content.intro.description }}</p>
-
-                    {{ content.intro.text | markdownify }}
-                </div>
-                <div class="grid__col grid__col--2 grid__col--center">
-                    <svg width="298" height="220" aria-labelledby="title">
-                        <title>IPDB Distributed</title>
-                        <use xlink:href="/assets/img/sprite.svg#distributed"></use>
-                    </svg>
-                </div>
-            </div>
+            <h1 class="section__title">{{ content.farewell.title }}</h1>
         </header>
 
-        <section class="features">
-            {% for feature in content.intro.features %}
-            <div class="feature">
-                <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
-                    <div class="grid__col grid__col--2">
-                        <figure class="feature__image">
-                            <img src="/assets/img/{{ feature.image }}.jpg" srcset="/assets/img/{{ feature.image }}.jpg 1x, /assets/img/{{ feature.image }}@2x.jpg 2x" alt="{{ feature.title }}" width="400">
-                        </figure>
-                    </div>
-
-                    <div class="grid__col grid__col--4">
-                        <h1 class="feature__title">{{ feature.title }}</h1>
-                        <div class="feature__text">{{ feature.text | markdownify }}</div>
-                        {% if feature.list %}
-                            <ul class="feature__list">
-                                {% for item in feature.list %}
-                                    <li>{{ item }}</li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </section>
-
-        <footer class="section__actions">
-            <a class="button button--primary" href="{{ site.signup.link }}">{{ site.signup.button }}</a>
-            <a href="" class="button button--text">Read IPDB Documentation</a>
-        </footer>
-    </div>
-</section>
-
-
-<section class="section section--background section--foundation">
-    <div class="row">
-        <header class="section__header">
-            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
-                <div class="grid__col grid__col--4">
-                    <h1 class="section__title">{{ content.foundation.title }}</h1>
-                    <p class="section__description">{{ content.foundation.description }}</p>
-                </div>
-                <div class="grid__col grid__col--2">
-                    <svg width="559" height="253" aria-labelledby="title">
-                        <title>IPDB Governance</title>
-                        <use xlink:href="/assets/img/sprite.svg#governance"></use>
-                    </svg>
-                </div>
-            </div>
-        </header>
-
-        {% include caretakers.html %}
-
-        <footer class="section__actions">
-            <a href="/foundation/" class="button button--text">{{ content.foundation.button }}</a>
-        </footer>
-    </div>
-</section>
-
-
-<section class="section section--roadmap">
-    <div class="row">
-        <header class="section__header">
-            <div class="grid grid--full grid-medium--columns grid--gutters">
-                <div class="grid__col grid__col--4">
-                    <h1 class="section__title">{{ content.roadmap.title }}</h1>
-                    <p class="section__description">{{ content.roadmap.description }}</p>
-                </div>
-            </div>
-
-        </header>
-    </div>
-
-    <div class="roadmap">
-        <div class="row">
-
-            {% for step in content.roadmap.steps %}
-
-                {% assign status = step.status %}
-
-                <div class="roadmap__step is-{{ status }}">
-                    <p class="roadmap__net">{{ step.net }}</p>
-                    <p class="roadmap__target">{{ step.target }}</p>
-                    {% if step.time %}<p class="roadmap__time">{{ step.time }}</p>{% endif %}
-                </div>
-
-            {% endfor %}
-
-        </div>
-    </div>
-
-</section>
-
-
-<section class="section section--background section--getstarted" id="getstarted">
-    <div class="row">
-        <header class="section__header">
-            <div class="grid grid--full grid-medium--columns grid--gutters">
-                <div class="grid__col grid__col--4">
-                    <h1 class="section__title">{{ content.getstarted.title }}</h1>
-                    <p class="section__description">{{ content.getstarted.description }}</p>
-                </div>
-            </div>
-        </header>
-
-        <div class="grid grid--full grid-medium--third">
-
-            {% for step in content.getstarted.steps %}
-
-                <div class="grid__col">
-                    {% if step.link %}
-                    <a class="getstarted" href="{{ step.link }}">
-                    {% else %}
-                    <div class="getstarted">
-                    {% endif %}
-
-                        <h2 class="getstarted__title">{{ step.title }}</h2>
-                        <div class="getstarted__text">{{ step.text | markdownify }}</div>
-
-                    {% if step.link %}
-                    </a>
-                    {% else %}
-                    </div>
-                    {% endif %}
-                </div>
-
-            {% endfor %}
+        <div class="lead">
+            {{ content.farewell.text | markdownify }}
         </div>
 
-        <footer class="section__actions">
-            <a href="/docs/" class="button button--text">IPDB Documentation</a>
-        </footer>
-
-        <div class="getstarted-bigchaindb">
-            <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
-                <div class="grid__col grid__col--2">
-                    <figure class="feature__image">
-                        <svg aria-labelledby="title">
-                            <title>BigchainDB</title>
-                            <use xlink:href="/assets/img/sprite.svg#feature-bigchaindb"></use>
-                        </svg>
-                    </figure>
-                </div>
-
-                <div class="grid__col grid__col--4">
-                    <h1 class="feature__title">Want to send a transaction to IPDB right now?</h1>
-                    <p class="feature__text">Create your first transaction quickly and easily on the BigchainDB Get Started page, or the art of crafting a perfect transaction.</p>
-                    <a class="button button--text" href="https://www.bigchaindb.com/getstarted/">Send your first transaction</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="getstarted-tools">
-            <div class="grid grid--full grid-small--half grid-medium--columns grid--gutters">
-                <div class="grid__col grid__col--2">
-                    <h2 class="feature__title">Community Tools</h2>
-                </div>
-
-                <div class="grid__col grid__col--4">
-
-                    {% for tool in content.getstarted.tools %}
-                        <div class="tool">
-                            <h3 class="tool__title">
-                                <a href="{{ tool.link }}">{{ tool.title }}</a>
-
-                                {% if tool.github %}
-                                <a href="{{ tool.github }}" title="GitHub">
-                                    <svg class="icon" aria-labelledby="title">
-                                        <title>GitHub</title>
-                                        <use xlink:href="/assets/img/sprite.svg#icon-github"></use>
-                                    </svg>
-                                </a>
-                                {% endif %}
-                            </h3>
-
-                            <p class="tool__description">
-                                 {{ tool.description }}
-                            </p>
-                        </div>
-                    {% endfor %}
-
-                </div>
-            </div>
-        </div>
     </div>
 </section>
-
 
 <section class="section section--connect">
     <div class="row">
-        <div class="grid grid--full grid-small--half grid--gutters">
-            <div class="grid__col">
-                <header class="section__header">
-                    <h1 class="section__title">{{ content.connect.title }}</h1>
-                    <p class="section__description">{{ content.connect.description }}</p>
-                </header>
-            </div>
-            <div class="grid__col">
-                <div class="social">
-                    <h2 class="connect__title">{{ content.connect.follow_title }}</h2>
-                    {% for item in site.data.contact.social %}
-                        <a class="social-link" href="{{ item.link }}" title="{{ item.name }}">
-                            <svg class="icon" aria-labelledby="title">
-                                <title>{{ item.name }}</title>
-                                <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
-                            </svg>
-                        </a>
-                    {% endfor %}
-                </div>
-
-                <div class="connect connect--newsletter">
-                    <h2 class="connect__title">{{ content.connect.newsletter_title }}</h2>
-                    <p>{{ content.connect.newsletter_text }}</p>
-
-                    {% include form-newsletter.html %}
-                </div>
-            </div>
-        </div>
-
         <div class="connect connect--blog">
-            <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
-
             <div class="articles">
                 <div class="grid grid--full grid-small--half grid-medium--fourth grid--gutters">
                     {% for article in site.articles limit: 4 %}

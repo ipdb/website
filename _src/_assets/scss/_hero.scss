@@ -1,12 +1,11 @@
 $edge-height-sm: $spacer * 2;
-$edge-height:    $spacer * 4;
+$edge-height:    $spacer * 3;
 
 .hero {
     background: $brand-07;
-    padding-top: $spacer * 2;
+    padding-top: $spacer * 3;
     padding-bottom: 0;
-    height: calc(100vh - #{$edge-height-sm});
-    min-height: 580px;
+    height: calc(80vh - #{$edge-height-sm});
     margin-bottom: $edge-height-sm;
     position: relative;
     display: flex;
@@ -14,8 +13,9 @@ $edge-height:    $spacer * 4;
     align-items: center;
 
     @media ($screen-sm) {
-        height: calc(100vh - #{$edge-height});
+        height: calc(90vh - #{$edge-height});
         margin-bottom: $edge-height;
+        min-height: 500px;
     }
 
     &:after {

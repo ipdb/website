@@ -1,23 +1,9 @@
 main:
-    - title: Foundation
-      url: /foundation/
-    - title: Docs
-      url: /docs/
     - title: Contact
       url: /contact/
 
-footer:
-    - title: FAQ
-      url: /faq/
-    - title: Blog
-      url: https://medium.com/ipdb-blog
-    - title: Jobs
-      url: /jobs/
-
 legal:
-    - title: Terms
-      url: /terms/
-    - title: Privacy
-      url: /privacy/
+    - title: Contact
+      url: /contact/
     - title: Imprint
       url: /imprint/
