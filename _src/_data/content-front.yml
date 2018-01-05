@@ -4,7 +4,7 @@ hero:
     action: "Get started with IPDB"
 
 farewell:
-    title: "As of January 5, 2018, IPDB will be shutting down."
+    title: "As of January 19th, 2018, IPDB will be shutting down."
     text: |
         We've thought long and hard about this decision. Our plan to be an internet-scale blockchain database for the world started in mid-2015, and those two and a half years are an eternity in blockchain time. The world has changed, and funding to maintain and operate IPDB while maintaining its core values became an insurmountable struggle.
 
@@ -14,9 +14,9 @@ farewell:
 
         We also want to thank the people who have been using the IPDB Test Network. We’ve been driven by the dreams of what you’ll build.
 
-        The IPDB Test Network will continue to run until January 5, 2018, at which point it will be shut down. All accounts and data will be erased and no new sign-ups will be accepted.
+        The IPDB Test Network will continue to run until January 19, 2018, at which point it will be shut down. All accounts and data will be erased and no new sign-ups will be accepted.
 
-        [BigchainDB](https://www.bigchaindb.com) has started its own test network running the same BigchainDB software that powered IPDB. If you want to continue building on the BigchainDB, you can [sign up today](https://testnet.bigchaindb.com).
+        [BigchainDB](https://www.bigchaindb.com) has started its own test network running the same BigchainDB software that powered IPDB. [You can sign up to use it today](https://testnet.bigchaindb.com).
 
         **Thank you for being part of this journey with us.**
 
