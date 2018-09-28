@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-
 import fs from 'fs'
+import cp from 'child_process'
 import { src, dest, watch, parallel, series } from 'gulp'
 import del from 'del'
 import parallelize from 'concurrent-transform'
@@ -8,16 +8,17 @@ import browser from 'browser-sync'
 import critical from 'critical'
 import yaml from 'js-yaml'
 import request from 'request'
+import chalk from 'chalk'
+import minimist from 'minimist'
 
 // required to get our mix of old and ES6+ js to work with ugify-js 3
 import uglifyjs from 'uglify-es'
 import composer from 'gulp-uglify/composer'
 
 // get all the configs: `pkg` and `site`
-import pkg from './package.json'
+import pkg from './package'
 
 // load plugins
-const spawn = require('child_process').spawn
 const $ = require('gulp-load-plugins')()
 
 const minify = composer(uglifyjs, console)
@@ -25,14 +26,16 @@ const site = yaml.safeLoad(fs.readFileSync('./_config.yml'))
 
 // handle errors
 const onError = (error) => {
-    console.log($.util.colors.red('\nYou fucked up:', error.message, 'on line', error.lineNumber, '\n'))
+    console.log(chalk.red('\nYou fucked up:', error.message, 'on line', error.lineNumber, '\n'))
     this.emit('end')
 }
 
 // 'development' is just default, production overrides are triggered
 // by adding the production flag to the gulp command e.g. `gulp build --production`
-const isProduction = ($.util.env.production === true)
-const isStaging = ($.util.env.staging === true)
+const options = minimist(process.argv.slice(2))
+
+const isProduction = options.production === true
+const isStaging = options.staging === true
 
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,9 +112,15 @@ export const jekyll = (done) => {
         jekyllOptions = 'jekyll build --incremental --drafts --future'
     }
 
-    const jekyllInstance = spawn('bundle', ['exec', jekyllOptions], { stdio: 'inherit' })
+    const jekyllInstance = cp.execFile('bundle', ['exec', jekyllOptions], { stdio: 'inherit' })
 
-    jekyllInstance.on('error', (error) => onError(error)).on('close', done)
+    const jekyllLogger = (buffer) => {
+        buffer.toString()
+            .split(/\n/)
+            .forEach((message) => console.log(message))
+    }
+
+    jekyllInstance.stdout.on('data', jekyllLogger).on('close', done)
 }
 
 
@@ -291,17 +300,17 @@ export const watchSrc = () => {
 const buildBanner = (done) => {
     let buildEnvironment
 
-    if ($.util.env.production) {
+    if (isProduction) {
         buildEnvironment = 'production'
-    } else if ($.util.env.staging) {
+    } else if (isStaging) {
         buildEnvironment = 'staging'
     } else {
         buildEnvironment = 'dev'
     }
 
-    console.log($.util.colors.gray('         ------------------------------------------'))
-    console.log($.util.colors.green(`                Building ${buildEnvironment} version...`))
-    console.log($.util.colors.gray('         ------------------------------------------'))
+    console.log(chalk.gray('         ------------------------------------------'))
+    console.log(chalk.green(`                Building ${buildEnvironment} version...`))
+    console.log(chalk.gray('         ------------------------------------------'))
 
     done()
 }
@@ -313,18 +322,18 @@ const buildBanner = (done) => {
 const deployBanner = (done) => {
     let deployTarget
 
-    if ($.util.env.live) {
+    if (options.live) {
         deployTarget = 'Live'
     } else {
         deployTarget = 'Beta'
     }
 
-    if (($.util.env.live || $.util.env.beta || $.util.env.gamma) === true) {
-        console.log($.util.colors.gray('        ------------------------------------------'))
-        console.log($.util.colors.green(`                    Deploying to ${deployTarget}... `))
-        console.log($.util.colors.gray('        ------------------------------------------'))
+    if ((options.live || options.beta || options.gamma) === true) {
+        console.log(chalk.gray('        ------------------------------------------'))
+        console.log(chalk.green(`                    Deploying to ${deployTarget}... `))
+        console.log(chalk.gray('        ------------------------------------------'))
     } else {
-        console.log($.util.colors.red('\nHold your horses! You need to specify a deployment target like so: gulp deploy --beta. Possible targets are: --live, --beta, --gamma\n'))
+        console.log(chalk.red('\nHold your horses! You need to specify a deployment target like so: gulp deploy --beta. Possible targets are: --live, --beta, --gamma\n'))
     }
     done()
 }
@@ -352,9 +361,7 @@ export const build = series(
 //
 // `gulp dev`
 //
-export const dev = series(
-    build, server, watchSrc
-)
+export const dev = series(build, server, watchSrc)
 
 // Set `gulp dev` as default: `gulp`
 export default dev
@@ -373,14 +380,14 @@ export const s3 = () => {
     // create publisher, define config
     let publisher
 
-    if ($.util.env.live === true) {
+    if (options.live === true) {
         publisher = $.awspublish.create({
             'params': { 'Bucket': S3BUCKET },
             'accessKeyId': process.env.AWS_ACCESS_KEY,
             'secretAccessKey': process.env.AWS_SECRET_KEY,
             'region': S3REGION
         })
-    } else if ($.util.env.beta === true) {
+    } else if (options.beta === true) {
         publisher = $.awspublish.create({
             'params': { 'Bucket': S3BUCKET_BETA },
             'accessKeyId': process.env.AWS_BETA_ACCESS_KEY,
@@ -456,17 +463,17 @@ export const seo = (done) => {
 
     const showResponse = (error, response) => {
         if (error) {
-            $.util.log($.util.colors.red(error))
+            console.log(chalk.red(error))
         } else {
-            $.util.log($.util.colors.gray('Status:', response && response.statusCode))
+            console.log(chalk.gray('Status:', response && response.statusCode))
 
             if (response.statusCode === 200) {
-                $.util.log($.util.colors.green('Successfully notified'))
+                console.log(chalk.green('Successfully notified'))
             }
         }
     }
 
-    if ($.util.env.live === true) {
+    if (options.live === true) {
         request(`${googleUrl + site.url}/sitemap.xml`, showResponse)
         request(`${bingUrl + site.url}/sitemap.xml`, showResponse)
     }

@@ -3,7 +3,7 @@
 /* eslint-disable spaced-comment */
 //=include _dnt.js
 //=include _newsletter.js
-//=include smooth-scroll/dist/js/smooth-scroll.js
+//=include smooth-scroll/dist/smooth-scroll.js
 //=include textarea-autogrow/textarea-autogrow.js
 //=include cookie-banner/src/cookiebanner.js
 /* eslint-enable spaced-comment */
