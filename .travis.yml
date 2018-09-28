@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-    - 2.4
+    - 2.5
 
 cache:
   bundler: true
@@ -8,7 +8,7 @@ cache:
   - $TRAVIS_BUILD_DIR/node_modules
 
 before_install:
-    - nvm install 9
+    - nvm install 10
 
 before_script: "_ci/setup.sh"
 script: "_ci/build.sh"

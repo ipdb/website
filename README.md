@@ -66,8 +66,7 @@ Some pages like front page source their content dynamically during site build. T
 
 You need to have the following tools installed on your development machine before moving on:
 
-- [node.js](http://nodejs.org/) & [npm](https://npmjs.org/)
-- (optional) use [Yarn](https://yarnpkg.com) instead of npm for faster dependency installations
+- [Node.js](http://nodejs.org/) & [npm](https://npmjs.org/)
 - [Ruby](https://www.ruby-lang.org) (for sanity, install with [rvm](https://rvm.io/))
 - [Bundler](http://bundler.io/)
 
@@ -185,7 +184,7 @@ At the moment, jQuery is only used for the form submissions for its simple `$.aj
 For all code in this repository the Apache License, Version 2.0 is applied.
 
 ```text
-Copyright Interplanetary Database Foundation 2017. All rights reserved.
+Copyright Interplanetary Database Foundation 2018. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
