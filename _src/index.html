@@ -6,16 +6,16 @@ front_page: true
 css: page-front
 
 redirect_from:
-    - /foundation/
-    - /foundation/articles/
-    - /foundation/satzung/
-    - /foundation/bylaws/
-    - /docs/
-    - /jobs/
-    - /privacy/
-    - /terms/
-    - /faq/
-    - /canary/
+- /foundation/
+- /foundation/articles/
+- /foundation/satzung/
+- /foundation/bylaws/
+- /docs/
+- /jobs/
+- /privacy/
+- /terms/
+- /faq/
+- /canary/
 ---
 
 {% assign content = site.data.content-front %}
@@ -64,7 +64,7 @@ redirect_from:
 </header>
 
 
-<section class="section section--farewell section--background" id="farewell">
+<!-- <section class="section section--farewell section--background" id="farewell">
     <div class="row row--narrow">
         <header class="section__header">
             <h1 class="section__title">{{ content.farewell.title }}</h1>
@@ -75,7 +75,7 @@ redirect_from:
         </div>
 
     </div>
-</section>
+</section> -->
 
 <section class="section section--connect">
     <div class="row">
@@ -83,12 +83,12 @@ redirect_from:
             <div class="articles">
                 <div class="grid grid--full grid-small--half grid-medium--fourth grid--gutters">
                     {% for article in site.articles limit: 4 %}
-                        <div class="grid__col">
-                            <a class="article" href="{{ article.link }}">
-                                <figure class="article__image" style="background-image: url('{{ article.image | escape | strip_html }}')"></figure>
-                                <h1 class="article__title">{{ article.title }}</h1>
-                            </a>
-                        </div>
+                    <div class="grid__col">
+                        <a class="article" href="{{ article.link }}">
+                            <figure class="article__image" style="background-image: url('{{ article.image | escape | strip_html }}')"></figure>
+                            <h1 class="article__title">{{ article.title }}</h1>
+                        </a>
+                    </div>
                     {% endfor %}
                 </div>
 
