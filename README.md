@@ -17,6 +17,7 @@
 - [Content editing](#content-editing)
     - [Pages](#pages)
     - [Special pages](#special-pages)
+    - [Front page](#front-page)
 - [Development](#development)
     - [Install dependencies](#install-dependencies)
     - [Development build](#development-build)
