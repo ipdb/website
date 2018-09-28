@@ -376,7 +376,7 @@ export default dev
 // gulp deploy --beta
 // gulp deploy --gamma
 //
-export const s3 = () => {
+export const s3 = (done) => {
     // create publisher, define config
     let publisher
 
@@ -451,6 +451,8 @@ export const s3 = () => {
         .pipe($.awspublish.reporter({
             states: ['create', 'update', 'delete']
         }))
+
+    done()
 }
 
 
