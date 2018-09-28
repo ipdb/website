@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-
 import fs from 'fs'
+import cp from 'child_process'
 import { src, dest, watch, parallel, series } from 'gulp'
 import del from 'del'
 import parallelize from 'concurrent-transform'
@@ -14,10 +14,9 @@ import uglifyjs from 'uglify-es'
 import composer from 'gulp-uglify/composer'
 
 // get all the configs: `pkg` and `site`
-import pkg from './package.json'
+import pkg from './package'
 
 // load plugins
-const spawn = require('child_process').spawn
 const $ = require('gulp-load-plugins')()
 
 const minify = composer(uglifyjs, console)
@@ -109,9 +108,15 @@ export const jekyll = (done) => {
         jekyllOptions = 'jekyll build --incremental --drafts --future'
     }
 
-    const jekyllInstance = spawn('bundle', ['exec', jekyllOptions], { stdio: 'inherit' })
+    const jekyllInstance = cp.execFile('bundle', ['exec', jekyllOptions], { stdio: 'inherit' })
 
-    jekyllInstance.on('error', (error) => onError(error)).on('close', done)
+    const jekyllLogger = (buffer) => {
+        buffer.toString()
+            .split(/\n/)
+            .forEach((message) => console.log(message))
+    }
+
+    jekyllInstance.stdout.on('data', jekyllLogger).on('close', done)
 }
 
 
@@ -352,9 +357,7 @@ export const build = series(
 //
 // `gulp dev`
 //
-export const dev = series(
-    build, server, watchSrc
-)
+export const dev = series(build, server, watchSrc)
 
 // Set `gulp dev` as default: `gulp`
 export default dev
