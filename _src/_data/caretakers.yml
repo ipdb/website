@@ -1,0 +1,42 @@
+- name: Jolocom
+  link: http://jolocom.io
+
+- name: Riddle And Code
+  link: https://www.riddleandcode.com
+
+- name: COALA
+  link: http://coala.global
+
+- name: Internet Archive
+  link: https://archive.org
+
+- name: Human Data Commons Foundation
+  link: https://humandatacommons.org
+
+- name: Monax
+  link: https://monax.io
+
+- name: IPFS
+  link: https://ipfs.io
+
+- name: unMonastery
+  link: http://unmonastery.org
+
+- name: BigchainDB
+  link: https://www.bigchaindb.com
+
+- name: OuiShare
+  link: http://ouishare.net
+
+- name: Tendermint
+  link: https://tendermint.com
+
+- name: Stratumn
+  link: https://www.stratumn.com
+
+- name: CREATE-NET
+  link: http://create-net.fbk.eu
+  logo: false
+
+- name: KICTANet
+  link: https://www.kictanet.or.ke

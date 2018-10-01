@@ -6,21 +6,13 @@ front_page: true
 css: page-front
 
 redirect_from:
-- /foundation/
-- /foundation/articles/
-- /foundation/satzung/
-- /foundation/bylaws/
 - /docs/
 - /jobs/
-- /privacy/
-- /terms/
-- /faq/
-- /canary/
 ---
 
 {% assign content = site.data.content-front %}
 
-{% include oceanprotocol.html %}
+{% include banner.html %}
 
 <header class="hero section">
 
@@ -64,22 +56,120 @@ redirect_from:
 </header>
 
 
-<!-- <section class="section section--farewell section--background" id="farewell">
-    <div class="row row--narrow">
+<section class="section section--intro">
+    <div class="row">
         <header class="section__header">
-            <h1 class="section__title">{{ content.farewell.title }}</h1>
+            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.intro.title }}</h1>
+                    <p class="section__description">{{ content.intro.description }}</p>
+
+                    {{ content.intro.text | markdownify }}
+                </div>
+                <div class="grid__col grid__col--2 grid__col--center">
+                    <svg width="298" height="220" aria-labelledby="title">
+                        <title>IPDB Distributed</title>
+                        <use xlink:href="/assets/img/sprite.svg#distributed"></use>
+                    </svg>
+                </div>
+            </div>
         </header>
 
-        <div class="lead">
-            {{ content.farewell.text | markdownify }}
-        </div>
+        <section class="features">
+            {% for feature in content.intro.features %}
+            <div class="feature">
+                <div class="grid grid--full grid-small--half grid-medium--columns grid--center grid--gutters">
+                    <div class="grid__col grid__col--2">
+                        <figure class="feature__image">
+                            <img src="/assets/img/{{ feature.image }}.jpg" srcset="/assets/img/{{ feature.image }}.jpg 1x, /assets/img/{{ feature.image }}@2x.jpg 2x"
+                                alt="{{ feature.title }}" width="400">
+                        </figure>
+                    </div>
 
+                    <div class="grid__col grid__col--4">
+                        <h1 class="feature__title">{{ feature.title }}</h1>
+                        <div class="feature__text">{{ feature.text | markdownify }}</div>
+                        {% if feature.list %}
+                        <ul class="feature__list">
+                            {% for item in feature.list %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
     </div>
+</section>
+
+
+<section class="section section--background section--foundation">
+    <div class="row">
+        <header class="section__header">
+            <div class="grid grid--full grid-small--columns grid--center grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.foundation.title }}</h1>
+                    <p class="section__description">{{ content.foundation.description }}</p>
+                </div>
+                <div class="grid__col grid__col--2">
+                    <svg width="559" height="253" aria-labelledby="title">
+                        <title>IPDB Governance</title>
+                        <use xlink:href="/assets/img/sprite.svg#governance"></use>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        {% include caretakers.html %}
+
+        <footer class="section__actions">
+            <a href="/foundation/" class="button button--text">{{ content.foundation.button }}</a>
+        </footer>
+    </div>
+</section>
+
+
+<!-- <section class="section section--roadmap">
+    <div class="row">
+        <header class="section__header">
+            <div class="grid grid--full grid-medium--columns grid--gutters">
+                <div class="grid__col grid__col--4">
+                    <h1 class="section__title">{{ content.roadmap.title }}</h1>
+                    <p class="section__description">{{ content.roadmap.description }}</p>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <div class="roadmap">
+        <div class="row">
+
+            {% for step in content.roadmap.steps %}
+
+            {% assign status = step.status %}
+
+            <div class="roadmap__step is-{{ status }}">
+                <p class="roadmap__net">{{ step.net }}</p>
+                <p class="roadmap__target">{{ step.target }}</p>
+                {% if step.time %}<p class="roadmap__time">{{ step.time }}</p>{% endif %}
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
 </section> -->
 
 <section class="section section--connect">
     <div class="row">
+
         <div class="connect connect--blog">
+            <h2 class="connect__title">{{ content.connect.blog_title }}</h2>
+
             <div class="articles">
                 <div class="grid grid--full grid-small--half grid-medium--fourth grid--gutters">
                     {% for article in site.articles limit: 4 %}

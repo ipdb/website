@@ -1,0 +1,34 @@
+intro: |
+    Building a decentralized organization that runs smoothly is not easy. We’ve learned from those who came before us, from the DNS to The DAO.
+
+    IPDB is coordinated by the IPDB Foundation, which is made up of its member caretakers and its elected management board. The IPDB Foundation advances the research of blockchain technology and decentralized governance for the benefit of society.
+
+caretakers:
+    title: Caretakers
+    description: "The IPDB Foundation is made up of member organizations we call caretakers. Our caretakers elect our management board and run the nodes that store and validate blocks containing the transactions sent to IPDB."
+    features:
+        - title: "Public interest mandate"
+          description: "A majority of caretakers must be not-for-profit organizations so the mission will take priority over profit."
+        - title: "Jurisdictional diversity"
+          description: "Less than half of the caretakers can be based in any one legal jurisdiction, so a single legal attack can't shut down the network."
+        - title: "Geographical diversity"
+          description: "Our caretakers are based around the world to limit disruption from regional events such as power outages or natural disasters."
+        - title: "Management board"
+          description: "Caretakers elect the management board, which is responsible for the day-to-day operations of IPDB."
+    members:
+        title: "Current Caretakers"
+        description: "Our caretakers share our commitment to building a decentralized internet."
+
+board:
+    title: Management Board
+    description: "The management board oversees the day-to-day operations of the IDPB Foundation. The management board is elected by the caretakers for a two year term."
+
+vision:
+    title: "Science & Research"
+    description: "The IPDB Foundation advances science and research."
+    text: |
+        The IPDB Foundation promotes science and research on the operation of scalable blockchain databases, the governance of decentralized systems, and the applications of blockchain technology.
+
+        The IPDB Foundation has taken a leading role in the Berlin blockchain community. We co-organized the [9984 Summit](https://2017.9984.io/), a two-day conference in Berlin bringing together top blockchain thinkers from around the world. We co-organize the [IPDB Meetup](https://www.meetup.com/blockchain-and-identity/) in Berlin. We have sent speakers to numerous conferences and events in Berlin and across the EU, and have published numerous [blog posts](https://medium.com/ipdb-blog) on blockchain technology.
+
+        In the future we will continue to make our work available in many ways——hosting or presenting at conferences and workshops, publishing research results and technical papers, releasing open source software, and more. Everything we do will be made available online, for the benefit of the public.

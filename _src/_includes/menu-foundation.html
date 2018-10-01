@@ -1,0 +1,28 @@
+<nav class="menu menu--sub menu--foundation section--background">
+    <div class="row">
+
+        <div class="menu-overflow">
+            <a class="menu__link" href="/foundation/#caretakers" data-scroll>{{ site.data.content-foundation.caretakers.title }}</a>
+            <a class="menu__link" href="/foundation/#board" data-scroll>{{ site.data.content-foundation.board.title }}</a>
+            <a class="menu__link" href="/foundation/#vision" data-scroll>{{ site.data.content-foundation.vision.title }}</a>
+
+            {% assign current_page = page %}
+
+            |
+
+            {% for page in site.pages %}
+                {% if page.path contains 'foundation' %}
+                    {% assign active = nil %}
+                    {% if page.url == current_page.url %}
+                        {% assign active = 'active' %}
+                    {% endif %}
+
+                    {% unless page.path contains 'foundation/index' or page.language == 'de' %}
+                        <a class="menu__link {{ active }}" href="{{ page.url }}">{{ page.title }}</a>
+                    {% endunless %}
+                {% endif %}
+            {% endfor%}
+        </div>
+
+    </div>
+</nav>

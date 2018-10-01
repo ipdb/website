@@ -2,7 +2,10 @@
     <div class="row">
         <div class="menu__logo">
             <a class="menu__link menu__link--logo" href="/">
-                <svg class="logo" aria-labelledby="title"><title>Logo IPDB</title><use xlink:href="/assets/img/sprite.svg#logo"></use></svg>
+                <svg class="logo" aria-labelledby="title">
+                    <title>Logo IPDB</title>
+                    <use xlink:href="/assets/img/sprite.svg#logo"></use>
+                </svg>
             </a>
         </div>
 
@@ -11,12 +14,12 @@
             <div class="menu-overflow">
 
                 {% for link in site.data.menus.main %}
-                    {% assign active = nil %}
-                    {% if page.url contains link.url %}
-                        {% assign active = 'active' %}
-                    {% endif %}
+                {% assign active = nil %}
+                {% if page.url contains link.url %}
+                {% assign active = 'active' %}
+                {% endif %}
 
-                    <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+                <a class="menu__link {{ active }}" href="{{ link.url }}">{{ link.title }}</a>
                 {% endfor %}
 
             </div>

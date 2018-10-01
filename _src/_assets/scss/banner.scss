@@ -1,8 +1,8 @@
-.oceanprotocol {
+.banner {
     display: block;
     box-shadow: none;
     height: 100%;
-    background: #141414;
+    background: $brand-01;
     padding-top: $spacer / 2;
     padding-bottom: $spacer / 2;
 
@@ -10,12 +10,12 @@
     &:focus {
         background: #fff;
 
-        .oceanprotocol__title {
+        .banner__title {
             opacity: 1;
             color: #141414;
         }
 
-        .oceanprotocol__logo {
+        .banner__logo {
             fill: #141414;
         }
     }
@@ -28,22 +28,21 @@
     }
 }
 
-.oceanprotocol__title {
-    font-size: .65rem;
+.banner__title {
+    font-size: .7rem;
     margin: 0;
-    opacity: .8;
     color: #fff;
 
     @media ($screen-sm) {
-        font-size: .75rem;
+        font-size: $font-size-small;
     }
 }
 
-.oceanprotocol__logo {
+.banner__logo {
     fill: #fff;
     width: 1rem;
     height: 1rem;
     margin-right: $spacer / 4;
-    margin-bottom: -.3rem;
+    margin-bottom: -.2rem;
     display: inline-block;
 }
