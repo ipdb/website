@@ -40,7 +40,7 @@ We only use one cookie: [Google Analytics](https://www.google.com/analytics/). I
 
 ## Updating or deleting your personal information
 
-We will update or delete your personal information if you ask us to unless we are under a legal obligation to keep it. Just email us at privacy@ipdb.foundation.
+We will update or delete your personal information if you ask us to unless we are under a legal obligation to keep it. Just email us at contact@ipdb.global.
 
 ## Legal requests
 
@@ -48,4 +48,4 @@ We may be required to disclose information to comply with the law or processes s
 
 ## Open door policy
 
-We believe privacy policies should be easy to read and make sense to non-lawyers. If something isn't clear or if you have questions, email us at privacy@ipdb.foundation.
+We believe privacy policies should be easy to read and make sense to non-lawyers. If something isn't clear or if you have questions, email us at contact@ipdb.global.

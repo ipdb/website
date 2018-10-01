@@ -5,8 +5,8 @@ address:
     zip: "10997"
     city: "Berlin"
     country: "Germany"
-email: "contact@ipdb.io"
-email_caretakers: "caretakers@ipdb.io"
+email: "contact@ipdb.global"
+email_caretakers: "contact@ipdb.global"
 
 # All the social links
 social:
