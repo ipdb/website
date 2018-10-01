@@ -6,46 +6,52 @@ title: Privacy policy
 narrow: true
 ---
 
-*29 November 2016*
+_Last updated: 2018/05/19_
 
-## Introduction
+This notice falls under the [General Data Protection Regulation (GDPR)](https://www.eugdpr.org/).
 
-These policies apply to your use of this website and to information you submit through this website. Use of the IPDB network is subject to its own Terms of Service and Privacy Policy.
+## Who we are
 
-We collect and use information in accordance with the German Telemedia Act (Telemediengesetz) and (Bundesdatenschutzgesetz), or with your express consent. We do not knowingly collect personal information from children under 18 without permission from a parent or guardian.
+{% include contact.html imprint="true" %}
 
-## What information we collect and how we use it
+## How to contact us
 
-We may log information about your visit to this site (your IP address, browser version, and so on) so we can improve the site and keep it secure.
+We can be reached via the contact information on our website.
 
-If you submit information through the forms on this site, we will collect the information you submit. We may use that information to contact you or to improve IPDB.
+## Personal data we collect
 
-## How we store information
+- email address;
+- names;
+- IP;
+- newsletter: opens, clicks, opt-ins.
 
-We may use cloud service providers to store information. Information may be stored outside of the European Union, but we only use providers that comply with the US-EU [Privacy Shield](http://ec.europa.eu/justice/data-protection/international-transfers/eu-us-privacy-shield/index_en.htm). Right now we use the following providers, which each have their own privacy policies:
+## Consent to collect
 
-* Google Apps for email and internal document sharing ([Privacy Policy](https://www.google.com/policies/privacy/)).
-* Mailchimp for mailing lists ([Privacy Policy](https://mailchimp.com/legal/privacy/)).
-* 3Scale for the Test Network user portal ([Privacy Policy](https://www.redhat.com/en/about/privacy-statement)).
+We store data from users that have submitted information via our contact form.
+After a user submits a request to receive updates, we ask for additional consent from the user via email, i.e. we ask the user to confirm the request to receive updates.
 
-## How information is shared
+## Your data, your rights
 
-We will not share or sell the identifiable personal information we collect or generate except as we explain in this section.
+- You can request a copy of your data which we will provide within 30 days;
+- We strive to keep our service secure, and in the event of a data breach or misuse, we will inform our users of the incident as well as the steps we have taken to ameliorate the situation within 30 days.
 
-We may share non-personal or aggregate information, such as usage statistics for the site.
+## Services and third parties where IPDB stores data
 
-## Cookies
+IPDB relies on a limited number of third-party services to maintain its own services. IPDB never shares or resell any of its data. We store your email address and name on the following third-party services (which offer secure, privacy-focused storage solutions):
 
-We only use one cookie: [Google Analytics](https://www.google.com/analytics/). It provides information about how you use the site so we can make it better. We respect the [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) header. You can block tracking cookies entirely by installing a browser add-on such as [Privacy Badger](https://www.eff.org/privacybadger) or [uBlock Origin](https://github.com/gorhill/uBlock).
+- [Sender](http://sender.net/)
 
-## Updating or deleting your personal information
+## Newsletter & account statistics and reporting
 
-We will update or delete your personal information if you ask us to unless we are under a legal obligation to keep it. Just email us at contact@ipdb.global.
+IPDB records behavioural data, such as opens and clicks, for emails we distribute to our subscribers via Sender.
 
-## Legal requests
+## Length of data collection
 
-We may be required to disclose information to comply with the law or processes such as warrants or court orders. [Watch our canary](/canary/).
+IPDB will keep identifiable data for an undetermined amount of time or until the user asks us to anonymize and / or delete his data.
 
-## Open door policy
+## Who has access to our data?
 
-We believe privacy policies should be easy to read and make sense to non-lawyers. If something isn't clear or if you have questions, email us at contact@ipdb.global.
+Data at IPDB is not shared with or sold to any third party.
+IPDB staff and contractors retain access to users’ data for the exclusive purpose of electronic communications.
+
+No personal identifiable data is stored on staff or contractor computers on a permanent basis. Contractors are requested to delete this data at the end of their work agreement.
