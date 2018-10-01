@@ -1,0 +1,31 @@
+---
+layout: page
+
+title: Frequently Asked Questions
+subtitle: Get answers to your most pressing questions
+
+css: page-faq
+---
+
+{% capture email_caretakers %}<a href="mailto:{{ site.data.contact.email_caretakers }}">{{ site.data.contact.email_caretakers }}</a>{% endcapture %}
+
+<section class="section section--faq">
+    <div class="row row--narrow">
+
+        <div class="faq-contents">
+            {% for faq in site.data.faq %}
+                <h1 class="faq-contents__title"><a href="#{{ faq.question | downcase | replace: ' ','-' | replace: '?', '' }}" data-scroll>{{ faq.question }}</a></h1>
+            {% endfor %}
+        </div>
+
+        <div class="faq content--page--markdown">
+            {% for faq in site.data.faq %}
+                {% assign id = faq.question | downcase | replace: ' ','-' | replace: '?', '' %}
+
+                <h1 class="faq__question" id="{{ id }}"><a class="header-link" href="#{{ id }}">#</a> {{ faq.question }}</h1>
+                <div class="faq__answer">{{ faq.answer | replace: '!EMAIL_CARETAKERS!', email_caretakers | markdownify }}</div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

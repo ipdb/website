@@ -3,23 +3,6 @@ hero:
     description: "IPDB is a ready-to-use public network with a focus on strong governance, all powered by BigchainDB."
     action: "Get started with IPDB"
 
-farewell:
-    title: "As of February 2nd, 2018, IPDB will be shutting down."
-    text: |
-        We've thought long and hard about this decision. Our plan to be an internet-scale blockchain database for the world started in mid-2015, and those two and a half years are an eternity in blockchain time. The world has changed, and funding to maintain and operate IPDB while maintaining its core values became an insurmountable struggle.
-
-        We’ve reached milestones in our short time that make us extremely proud. We built a governance model that offered transparency and legitimacy. We confronted the reality of data protection law. We will make these and other learnings available to you in the form of blog posts, reports, or contributions to other projects over the coming months.
-
-        We want to thank everyone who has contributed to IPDB, especially our caretakers and board members. IPDB would not have made it this far without your guidance and expertise.
-
-        We also want to thank the people who have been using the IPDB Test Network. We’ve been driven by the dreams of what you’ll build.
-
-        The IPDB Test Network will continue to run until February 2nd, 2018, at which point it will be shut down. All accounts and data will be erased and no new sign-ups will be accepted.
-
-        [BigchainDB](https://www.bigchaindb.com) has started its own test network running the same BigchainDB software that powered IPDB. [You can sign up to use it today](https://testnet.bigchaindb.com).
-
-        See you on the internet.
-
 intro:
     title: "A planetary-scale blockchain database"
     description: "The distributed, permanent web is evolving and needs a decentralized database. We are that database."

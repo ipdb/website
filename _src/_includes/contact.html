@@ -20,3 +20,16 @@
         {{ contact.address.country }}
     </p>
 </div>
+
+<ul class="social-list">
+    {% for item in contact.social %}
+        <li>
+            <a href="{{ item.link }}" title="{{ item.name }}">
+                <svg class="icon" aria-labelledby="title">
+                    <title>{{ item.name }}</title>
+                    <use xlink:href="/assets/img/sprite.svg#icon-{{ item.name | downcase }}"></use>
+                </svg>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,102 @@
+- question: What is IPDB?
+  answer: |
+    IPDB is the Interplanetary Database. It's a ready-to-use public network with a focus on strong governance, all powered by BigchainDB. Think of IPDB as being the database for a decentralized world computer.
+
+- question: Who owns IPDB?
+  answer: |
+    No one “owns” IPDB. We see it as a public good. IPDB is operated by the IPDB Foundation e.V., a charitable organization registered in Berlin, Germany. The IPDB Foundation has a number of member organizations, or Caretakers, who provide consensus voting and input on governance.
+
+- question: How is IPDB funded?
+  answer: |
+    The IPDB Foundation is currently funded by BigchainDB GmbH, but plans to become self-sufficient through donations and by selling transactions on IPDB.
+
+- question: Where can I find the IPDB governance documents?
+  answer: |
+    Our [Articles of Association](/foundation/articles/) are available in German and in English.
+
+- question: Who is on the Board of Directors?
+  answer: |
+    You can always find the current [Board of Directors on the Foundation page](/foundation/#board).
+
+- question: Who can use IPDB?
+  answer: |
+    Anyone can use IPDB. You can learn more about getting started [on the front page](/).
+
+- question: What are the IPDB Terms of Service and Privacy Policy?
+  answer: |
+    The most recent versions of the [IPDB Terms of Service](https://ipdb.io/terms) and [IPDB Privacy Policy](https://ipdb.io/privacy) are always available on the IPDB website.
+
+- question: How do I use IPDB?
+  answer: |
+    IPDB is based on [BigchainDB](https://www.bigchaindb.com/). You can learn about using the IPDB client API on the BigchainDB documentation page.
+
+- question: How much does it cost to use IPDB?
+  answer: |
+    When it launches, IPDB will be free to everyone. Eventually IPDB will start charging its heavy users on a per-transaction basis. For most users, IPDB will remain free.
+
+- question: How much *will* it cost?
+  answer: |
+    We don’t know yet, but we intend to keep it really cheap. Cheap means orders of magnitude cheaper than other blockchain databases.
+
+- question: Is it open source?
+  answer: |
+    All the code and documentation used or produced by IPDB is open source. You can view the source for [BigchainDB](https://github.com/bigchaindb/bigchaindb), or better yet, make a contribution!
+
+- question: What do Caretakers do?
+  answer: |
+    Caretakers play a critical role in IPDB’s operation and governance (see “How does consensus work on IPDB?”). In addition to voting on transactions on IPDB, Caretakers vote to approve new Caretakers and to select the IPDB Foundation’s board of directors.
+
+- question: How are Caretakers chosen?
+  answer: |
+    Caretakers can apply to IPDB to be considered. The existing Caretakers will vote to decide whether a new Caretaker should be added.
+
+- question: Who can become a Caretaker?
+  answer: |
+    Caretakers must have demonstrated a commitment to building or protecting an open, decentralized Internet. A majority of the Caretaker roles must be held by not-for-profit organizations. Caretakers are chosen to reflect a diversity of roles, geographical locations, and jurisdictions.
+
+- question: Who are the current Caretakers?
+  answer: |
+    You can always find the current list of [IPDB Caretakers on the Foundation page](/foundation/#caretakers).
+
+- question: Can my organization be a Caretaker?
+  answer: |
+    Maybe! If you think you’re a good fit, contact us at !EMAIL_CARETAKERS!.
+
+## Transactions
+- question: Can I delete a Transaction?
+  answer: |
+    No. Transactions cannot be deleted from IPDB once they have been written. Not even the IPDB Foundation or any of the Caretakers can delete or change Transactions once they have been written.
+
+- question: Who owns the information I write to IPDB?
+  answer: |
+    You do. You keep the copyright or other rights in all information you record to IPDB.
+
+## Technical
+
+- question: What technology is IPDB based on?
+  answer: |
+    IPDB is a public instance of [BigchainDB](https://www.bigchaindb.com/), a scalable blockchain database.
+
+- question: What is the IPDB consensus model?
+  answer: |
+    IPDB operates on a federated model for consensus. The IPDB federation relies on a number of trusted entities we call Caretakers. The Caretakers vote on all transactions on the network, and transactions approved by the majority are added to the database. You can learn more about the consensus model in the BigchainDB [whitepaper](https://www.bigchaindb.com/whitepaper/).
+
+- question: Is IPDB a blockchain?
+  answer: |
+    No. IPDB brings blockchain characteristics to an open source big data database: 1) decentralized control, 2) immutability, and 3)  assets.
+
+- question: Is IPDB a currency?
+  answer: |
+    No. IPDB has native assets but those assets are not a currency. Instead, anyone can issue and transfer assets or tokens that represent something else.
+
+- question: Can other people see my transactions?
+  answer: |
+    Yes. Anyone can see the transactions made on IPDB. IPDB is a public instance of BigchainDB.
+
+- question: Can IPDB talk to other blockchains?
+  answer: |
+    BigchainDB has already been integrated with other services. Other integrations are waiting to be created. If you have a request, or better still, if you want to help out, you can head over to the [BigchainDB developer community](https://github.com/bigchaindb/bigchaindb) at Github.
+
+- question: Why is IPDB better than Ethereum, Bitcoin, IPFS, Dogecoin…?
+  answer: |
+    IPDB is not a replacement for decetralized computation platforms such as Ethereum, file storage from IPFS, or cryptocurrencies such as Bitcoin. IPDB is *complimentary* to them. We see IPDB as filling a gap in the decentralized stack.
