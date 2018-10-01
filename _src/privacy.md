@@ -32,8 +32,6 @@ We may use cloud service providers to store information. Information may be stor
 
 We will not share or sell the identifiable personal information we collect or generate except as we explain in this section.
 
-We may share personal information with BigchainDB GmbH, the company responsible for the development of the software IPDB runs on. This information will be used in accordance with the [BigchainDB Privacy Policy](https://bigchaindb.com/privacy) and our information sharing agreement with BigchainDB.
-
 We may share non-personal or aggregate information, such as usage statistics for the site.
 
 ## Cookies

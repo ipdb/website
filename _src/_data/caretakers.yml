@@ -1,3 +1,9 @@
+- name: Jolocom
+  link: http://jolocom.io
+
+- name: Riddle And Code
+  link: https://www.riddleandcode.com
+
 - name: COALA
   link: http://coala.global
 
@@ -6,9 +12,6 @@
 
 - name: Human Data Commons Foundation
   link: https://humandatacommons.org
-
-- name: Dyne.org
-  link: https://www.dyne.org
 
 - name: Monax
   link: https://monax.io
@@ -21,13 +24,6 @@
 
 - name: BigchainDB
   link: https://www.bigchaindb.com
-
-- name: OpenMedia
-  link: https://openmedia.org
-
-- name: SmartContract
-  link: https://smartcontract.com
-  logo: false
 
 - name: OuiShare
   link: http://ouishare.net
@@ -44,7 +40,3 @@
 
 - name: KICTANet
   link: https://www.kictanet.or.ke
-
-- name: Global Consent
-  link: http://www.consent.global/
-  logo: false

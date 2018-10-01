@@ -25,7 +25,7 @@ narrow: true
 
 ## The blockchain database network for the decentralized stack
 
-IPDB is a planetary-scale blockchain database built on [BigchainDB](https://www.bigchaindb.com). It’s a ready-to-use public network with a focus on **strong governance**. It shares _all the features_ of BigchainDB to make developers’ lives easier.
+IPDB is a planetary-scale blockchain database built on BigchainDB. It’s a ready-to-use public network with a focus on **strong governance**. It shares _all the features_ of BigchainDB to make developers’ lives easier.
 
 ### Maecenas sed diam eget risus
 

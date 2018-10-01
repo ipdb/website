@@ -28,7 +28,7 @@
 
 - question: How do I use IPDB?
   answer: |
-    IPDB is based on [BigchainDB](https://www.bigchaindb.com/). You can learn about using the IPDB client API on the BigchainDB documentation page.
+    IPDB is based on BigchainDB. You can learn about using the IPDB client API on the BigchainDB documentation page.
 
 - question: How much does it cost to use IPDB?
   answer: |
@@ -75,7 +75,7 @@
 
 - question: What technology is IPDB based on?
   answer: |
-    IPDB is a public instance of [BigchainDB](https://www.bigchaindb.com/), a scalable blockchain database.
+    IPDB is a public instance of BigchainDB, a scalable blockchain database.
 
 - question: What is the IPDB consensus model?
   answer: |

@@ -13,8 +13,49 @@
 #
 
 
+- name: Joachim Lohkamp
+  position: Member-at-Large
+
+  bio: |
+    Joachim Lohkamp is an entrepreneur and tech-enthusiast with a heart for activism. As the founder of Jolocom, he has been working at the forefront of the decentralization movement in Berlin since 2014. With Jolocom, he is providing the identity solution that will enable real world use cases in smart contract based business models.
+
+    To ultimately harvest this potential and inform innovation aimed regulation, he co-founded the German Blockchain Association (Bundesblock) that establishes the dialogue between blockchain businesses and politics. He is further active as an advisor for BlockchainHub, a decentralized Think Tank and as a Connector for OuiShare. Finally, you might find him as the Organizer of events like GetDecentralized, Decentralized Web Summit among others.
+
+  social:
+      - name: Twitter
+        link: https://twitter.com/JockelLohkamp
+      - name: LinkedIn
+        link: https://www.linkedin.com/in/joachimlohkamp/
+
+
+- name: Thomas Fürstner
+  position: General Secretary
+  bio: |
+    Tom Fuerstner is a research scientist and university professor with over 30 years of experience in formal logic, social economy theory and digital art. Tom is the founder and CTO of Riddle & Code, a company focused on developing dedicated hardware for the physical internet and public ledger systems.
+
+    These days, he is working on hardened server systems for operating BigchainDB and IPFS. The aim is to enable sustainable and resilient identity services in an emerging world of shared sovereignty between humans, machines, algorithms and protocols.
+
+  social:
+      - name: LinkedIn
+        link: https://www.linkedin.com/in/thomas-fuerstner-0797592/
+
+
+- name: Elfriede Sixt
+  position: Treasurer
+  bio: |
+    Elfriede Sixt believes in the disruptive potential of decentralized peer-to-peer networks and blockchains. She is curious to learn how industries and business models will change along this way.
+
+    Elfriede Sixt is a blogger and book author writing about crowdfunding, blockchains, and regulation. Her background is in Business administration and corporate finance. Besides that she is a founder of fintech.academy as well as ebit4u.
+
+  social:
+      - name: Twitter
+        link: https://twitter.com/ebit4u
+      - name: LinkedIn
+        link: https://www.linkedin.com/in/elfriede-sixt-05384719/
+
+
 - name: David Holtzman
-  position: President
+  position: Member-at-Large
 
   bio: |
     David Holtzman is an information technology security expert, educator and activist. He started his career as a cryptographic analyst, military codebreaker, U.S. Naval Security Group submariner, and Soviet Manned Space Program analyst. Holtzman is an early-stage internet pioneer.
@@ -24,31 +65,6 @@
   social:
       - name: Twitter
         link: https://twitter.com/theglobalpov
-
-
-- name: Constance Choi
-  position: Secretary
-
-  bio: |
-    Constance Choi is the co-founder and Director of [COALA](http://coala.global/), an international multidisciplinary collaborative research and development initiative on blockchain technologies, smart contracts, and decentralized autonomous applications. Choi co-founded and was General Counsel and Chief Compliance Officer of the Kraken digital asset exchange.
-
-    She holds a J.D. from UC Berkeley School of Law, and undergraduate degrees from Brown University and University of Cambridge. She has practiced at several law firms, including the Electronic Frontier Foundation, focusing on internet and technology law, intellectual property, privacy, data security, and constitutional rights.
-
-  social:
-      - name: Twitter
-        link: https://twitter.com/sevenadvisory
-
-
-- name: Greg McMullen
-  position: Treasurer
-  bio: |
-    Greg McMullen is a lawyer, internet advocate, and Chief Policy Officer at BigchainDB, where he built the framework for the IPDB Foundation and helped bring together its founding caretakers. He is a leading member of the [COALA IP](https://www.coalaip.org/) working group and co-authored the COALA IP specification and policy paper.
-
-    Before joining BigchainDB and IPDB, he was a litigator at one of Canada’s top class actions law firms, where he worked on class actions involving privacy, copyright, competition law, and price fixing conspiracies. He served on the board of directors the BC Civil Liberties Association, Canada’s largest civil liberties organization, and authored the BCCLA’s guide to privacy and security when crossing borders with electronic devices.
-
-  social:
-      - name: Twitter
-        link: https://twitter.com/gmcmullen
 
 
 - name: Nina-Luisa Siedler
@@ -63,14 +79,3 @@
       - name: Twitter
         link: https://twitter.com/ninsie3
 
-
-- name: Kaspar Korjus
-  position: Member-at-Large
-  bio: |
-    Kaspar Korjus is the Managing Director of Estonia’s [e-Residency](https://e-estonia.com/e-residents/about/) program, which offers a fully digital identity for global citizens. e-Residency is built on inclusion, transparency, and legitimacy. It is meant to empower citizens globally and provide world-wide digital and financial inclusion.
-
-    Korjus was chosen by Megan Smith, CTO of the United States, as one of 20 digital leaders for the Global Leaders Digital Exchange (GLDE) program, and is listed in Forbes Estonia’s “30 under 30” as #1 in Technology and Finance.
-
-  social:
-      - name: Twitter
-        link: https://twitter.com/kasparkorjus
