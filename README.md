@@ -174,7 +174,6 @@ At the moment, jQuery is only used for the form submissions for its simple `$.aj
 ## Authors & Contributors
 
 - Greg McMullen ([@gmcmullen](https://github.com/gmcmullen)) - [IPDB Foundation](https://ipdb.io)
-- Morgan Sutherland ([@msutherl](https://github.com/msutherl)) - [IPDB Foundation](https://ipdb.io)
 - Matthias Kretschmann ([@kremalicious](https://github.com/kremalicious)) - [BigchainDB](https://www.bigchaindb.com)/[Ocean Protocol](https://oceanprotocol.com)
 - Members of the BigchainDB development team
 - Representatives of Caretakers in the IPDB
